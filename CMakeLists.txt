@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.20)
+project(workProject C)
+
+set(CMAKE_C_STANDARD 11)
+
+add_executable(workProject main.c libs/algorithms/array/array.c libs/algorithms/array/array.h libs/algorithms/random/random.c libs/algorithms/random/random.h libs/algorithms/algorithms.c libs/algorithms/algorithms.h libs/data_structures/bitset/bitset.c libs/data_structures/bitset/bitset.h libs/data_structures/unordered_array_set/unordered_array_set.c libs/data_structures/unordered_array_set/unordered_array_set.h libs/data_structures/ordered_array_set/ordered_array_set.c libs/data_structures/ordered_array_set/ordered_array_set.h libs/data_structures/unordered_array_set_test/unordered_array_set_test.c libs/data_structures/unordered_array_set_test/unordered_array_set_test.h libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.h libs/data_structures/matrix/matrix.c libs/data_structures/matrix/matrix.h libs/algorithms/base/base.c libs/algorithms/base/base.h)

@@ -1,0 +1,3 @@
+C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir
+C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/edit_cache.dir

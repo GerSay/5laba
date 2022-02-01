@@ -1,0 +1,8 @@
+//
+// Created by krytm on 12.12.2021.
+//
+
+#ifndef WORKPROJECT_ALGORITHMS_H
+#define WORKPROJECT_ALGORITHMS_H
+
+#endif //WORKPROJECT_ALGORITHMS_H
