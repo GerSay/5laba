@@ -136,6 +136,12 @@
 		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/data_structures/unordered_array_set_test/unordered_array_set_test.h">
 			<Option target="workProject"/>
 		</Unit>
+		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vector/vector.c">
+			<Option target="workProject"/>
+		</Unit>
+		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vector/vector.h">
+			<Option target="workProject"/>
+		</Unit>
 		<Unit filename="C:/Users/krytm/CLionProjects/workProject/main.c">
 			<Option target="workProject"/>
 		</Unit>

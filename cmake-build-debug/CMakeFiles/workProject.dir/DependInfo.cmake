@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/krytm/CLionProjects/workProject/libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c.obj"
   "C:/Users/krytm/CLionProjects/workProject/libs/data_structures/unordered_array_set/unordered_array_set.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/data_structures/unordered_array_set/unordered_array_set.c.obj"
   "C:/Users/krytm/CLionProjects/workProject/libs/data_structures/unordered_array_set_test/unordered_array_set_test.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/data_structures/unordered_array_set_test/unordered_array_set_test.c.obj"
+  "C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vector/vector.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/data_structures/vector/vector.c.obj"
   "C:/Users/krytm/CLionProjects/workProject/main.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

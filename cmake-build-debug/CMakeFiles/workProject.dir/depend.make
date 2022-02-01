@@ -39,6 +39,8 @@ CMakeFiles/workProject.dir/libs/data_structures/unordered_array_set_test/unorder
  ../libs/data_structures/unordered_array_set/unordered_array_set.h \
  ../libs/data_structures/unordered_array_set_test/unordered_array_set_test.c \
  ../libs/data_structures/unordered_array_set_test/unordered_array_set_test.h
+CMakeFiles/workProject.dir/libs/data_structures/vector/vector.c.obj: \
+ ../libs/data_structures/vector/vector.c \
+ ../libs/data_structures/vector/vector.h
 CMakeFiles/workProject.dir/main.c.obj: \
- ../libs/algorithms/array/array.h \
  ../main.c
