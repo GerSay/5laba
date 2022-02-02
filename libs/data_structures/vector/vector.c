@@ -18,7 +18,7 @@ void reserve(vector *v, size_t newCapacity) {
     v->data = realloc(v->data, sizeof(int) * newCapacity);
     if (v->data == NULL)
         error();
-    if (newCapacity == 0)
+    if (newCapacity == 0 && v->capacity != 0)
         v->data = NULL;
     if (newCapacity < v->size)
         v->size = newCapacity;
@@ -38,7 +38,11 @@ void deleteVector(vector *v) {
     v->capacity = 0;
 }
 
+int main() {
 
+
+    return 0;
+}
 
 
 
