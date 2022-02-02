@@ -42,5 +42,9 @@ CMakeFiles/workProject.dir/libs/data_structures/unordered_array_set_test/unorder
 CMakeFiles/workProject.dir/libs/data_structures/vector/vector.c.obj: \
  ../libs/data_structures/vector/vector.c \
  ../libs/data_structures/vector/vector.h
+CMakeFiles/workProject.dir/libs/data_structures/vector_tests/vector_tests.c.obj: \
+ ../libs/data_structures/vector/vector.h \
+ ../libs/data_structures/vector_tests/vector_tests.c \
+ ../libs/data_structures/vector_tests/vector_tests.h
 CMakeFiles/workProject.dir/main.c.obj: \
  ../main.c

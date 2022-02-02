@@ -53,20 +53,30 @@ int getVectorValue(vector *v, size_t i) {
 }
 
 void pushBack(vector *v, int x) {
-    if (v->size < v->capacity)
-        v->data[v->size++] = x;
-    else
+    if (v->size >= v->capacity)
         reserve(v, v->capacity * 2);
+    v->data[v->size] = x;
+    v->size++;
 }
 
+//--89-
 void test_pushBack_emptyVector() {
-    vector v = createVector(0);
+    vector v = createVector(1);
     pushBack(&v, 5);
-    printf("%d", v.data[v.size]);
+    printf("%d\n", v.data[v.size - 1]);
+}
+
+//--90-
+void test_pushBack_fullVector() {
+    vector v = createVector(1);
+    v.size = v.capacity;
+    pushBack(&v, 5);
+    printf("%d\n", v.data[v.size - 1]);
 }
 
 int main() {
     test_pushBack_emptyVector();
+    test_pushBack_fullVector();
 
     return 0;
 }

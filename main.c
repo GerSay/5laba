@@ -1,14 +1,11 @@
-//#include "libs/data_structures/matrix/matrix.h"
-//
-//int main() {
-//    matrix m;
-//    inputAndCreateMatrix(&m);
-//
-//    swapColumns(m, 0, 1);
-//
-//    outputMatrix(m);
-//
-//    freeMemMatrix(m);
-//
-//    return 0;
-//}
+#include "libs/data_structures/vector/vector.h"
+
+void test() {
+    test_pushBack_emptyVector();
+}
+
+int main() {
+
+
+    return 0;
+}
