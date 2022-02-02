@@ -1,7 +1,6 @@
 #include "../../algorithms/algorithms.h"
 #include "vector_tests.h"
 
-
 //--89-
 void test_pushBack_emptyVector() {
     vector v = createVector(0);

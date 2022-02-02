@@ -18,4 +18,14 @@ void test_back_oneElementInVector();
 
 void test_front_oneElementInVector();
 
+void _tests() {
+    test_pushBack_emptyVector();
+    test_pushBack_fullVector();
+    test_popBack_notEmptyVector();
+    test_atVector_notEmptyVector();
+    test_atVectorRequestToLastElement();
+    test_back_oneElementInVector();
+    test_front_oneElementInVector();
+}
+
 #endif //WORKPROJECT_VECTOR_TESTS_H
