@@ -5,6 +5,11 @@ void error() {
     exit(1);
 }
 
+void indexError(size_t index) {
+    fprintf(stderr, "IndexError: a[%d] is not exists", index);
+    exit(2);
+}
+
 vector createVector(size_t n) {
     vector v;
     v.size = 0;
@@ -76,6 +81,22 @@ void popBack(vector *v) {
     v->size = v->size - 1;
 }
 
+int *atVector(vector *v, size_t index) {
+    if (index < v->size)// size на 1 больше индекса последнего элемента
+        return v->data + index;
+    indexError(index);
+}
 
+int *back(vector *v) {
+    if (v->data != NULL && v->size)
+        return v->data + v->size - 1;
+    error();
+}
+
+int *front(vector *v) {
+    if (v->data != NULL && v->size)
+        return v->data;
+    error();
+}
 
 
