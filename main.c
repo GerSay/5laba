@@ -1,11 +1,13 @@
-#include "libs/data_structures/vector/vector.h"
+#include "libs/data_structures/vector_tests//vector_tests.h"
 
-void test() {
+void _tests() {
     test_pushBack_emptyVector();
-}
+    test_pushBack_fullVector();
+    test_popBack_notEmptyVector();
+    }
 
 int main() {
-
+    _tests();
 
     return 0;
 }

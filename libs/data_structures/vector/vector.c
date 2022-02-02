@@ -1,6 +1,5 @@
 #include "vector.h"
 
-
 void error() {
     fprintf(stderr, "bad alloc");
     exit(1);
@@ -10,19 +9,29 @@ vector createVector(size_t n) {
     vector v;
     v.size = 0;
     v.capacity = n;
-    v.data = malloc(sizeof(int) * v.capacity);
-    if (v.data == NULL)
-        error();
+    if (n) {
+        v.data = malloc(sizeof(int) * v.capacity);
+        if (v.data == NULL)
+            error();
+    } else
+        v.data = NULL;
+
     return v;
 }
 
 void reserve(vector *v, size_t newCapacity) {
-    v->data = realloc(v->data, sizeof(int) * newCapacity);
+    if (!newCapacity) {
+        free(v->data);
+        v->data = NULL;
+        return;
+    }
+
+    v->data = (int *) realloc(v->data, newCapacity * sizeof(int));
     if (v->data == NULL)
         error();
-    if (newCapacity == 0 && v->capacity != 0)
-        v->data = NULL;
-    if (newCapacity < v->size)
+
+    v->capacity = newCapacity;
+    if (v->size > newCapacity)
         v->size = newCapacity;
 }
 
@@ -53,33 +62,20 @@ int getVectorValue(vector *v, size_t i) {
 }
 
 void pushBack(vector *v, int x) {
-    if (v->size >= v->capacity)
+    if (v->size >= v->capacity && v->capacity)
         reserve(v, v->capacity * 2);
+    else if (!v->capacity)
+        reserve(v, 1);
     v->data[v->size] = x;
     v->size++;
 }
 
-//--89-
-void test_pushBack_emptyVector() {
-    vector v = createVector(1);
-    pushBack(&v, 5);
-    printf("%d\n", v.data[v.size - 1]);
+void popBack(vector *v) {
+    if (isEmpty(v))
+        error();
+    v->size = v->size - 1;
 }
 
-//--90-
-void test_pushBack_fullVector() {
-    vector v = createVector(1);
-    v.size = v.capacity;
-    pushBack(&v, 5);
-    printf("%d\n", v.data[v.size - 1]);
-}
-
-int main() {
-    test_pushBack_emptyVector();
-    test_pushBack_fullVector();
-
-    return 0;
-}
 
 
 

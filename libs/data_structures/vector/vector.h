@@ -29,8 +29,6 @@ int getVectorValue(vector *v, size_t i);
 
 void pushBack(vector *v, int x);
 
-void test_pushBack_fullVector();
-
-void test_pushBack_emptyVector();
+void popBack(vector *v);
 
 #endif //WORKPROJECT_VECTOR_H
