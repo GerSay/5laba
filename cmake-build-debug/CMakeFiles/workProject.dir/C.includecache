@@ -9,14 +9,12 @@
 C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vector/vector.c
 vector.h
 C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vector/vector.h
-stdint.h
--
 
 C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vector/vector.h
 stdio.h
 -
 malloc.h
 -
-
-C:/Users/krytm/CLionProjects/workProject/main.c
+stdbool.h
+-
 

@@ -1,5 +1,6 @@
 #include "vector.h"
 
+
 void error() {
     fprintf(stderr, "bad alloc");
     exit(1);
@@ -7,11 +8,12 @@ void error() {
 
 vector createVector(size_t n) {
     vector v;
-    v.data = malloc(sizeof(int) * n);
-    if (v.data != NULL)
-        return v;
-
-    error();
+    v.size = 0;
+    v.capacity = n;
+    v.data = malloc(sizeof(int) * v.capacity);
+    if (v.data == NULL)
+        error();
+    return v;
 }
 
 void reserve(vector *v, size_t newCapacity) {
@@ -38,8 +40,33 @@ void deleteVector(vector *v) {
     v->capacity = 0;
 }
 
-int main() {
+bool isEmpty(vector *v) {
+    return v->size == 0;
+}
 
+bool isFull(vector *v) {
+    return v->size == v->capacity;
+}
+
+int getVectorValue(vector *v, size_t i) {
+    return v->data[i];
+}
+
+void pushBack(vector *v, int x) {
+    if (v->size < v->capacity)
+        v->data[v->size++] = x;
+    else
+        reserve(v, v->capacity * 2);
+}
+
+void test_pushBack_emptyVector() {
+    vector v = createVector(0);
+    pushBack(&v, 5);
+    printf("%d", v.data[v.size]);
+}
+
+int main() {
+    test_pushBack_emptyVector();
 
     return 0;
 }
