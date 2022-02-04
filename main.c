@@ -1,7 +1,7 @@
-#include "libs/data_structures/vector_tests//vector_tests.h"
+#include "libs/data_structures/vector_tests/vector_tests.h"
 
 int main() {
-    _tests();
+    test_vector();
 
     return 0;
 }

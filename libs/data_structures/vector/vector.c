@@ -31,7 +31,7 @@ void reserve(vector *v, size_t newCapacity) {
         return;
     }
 
-    v->data = (int *) realloc(v->data, newCapacity * sizeof(int));
+    v->data = realloc(v->data, newCapacity * sizeof(int));
     if (v->data == NULL)
         error();
 
@@ -98,5 +98,3 @@ int *front(vector *v) {
         return v->data;
     error();
 }
-
-
