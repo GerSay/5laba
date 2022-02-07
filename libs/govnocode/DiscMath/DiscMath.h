@@ -17,4 +17,8 @@ int varSix(int *a, size_t sizeA, int *b, size_t sizeB);
 
 int varSeven(int *a, size_t sizeA, int *b, size_t sizeB);
 
+void varEight(int *a, size_t sizeA, int *b, size_t sizeB, int *c, size_t *sizeC);
+
+void varNine(int *a, size_t sizeA, int *b, size_t sizeB, int *c, size_t *sizeC);
+
 #endif //WORKPROJECT_DISCMATH_H

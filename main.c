@@ -8,10 +8,10 @@ int main() {
     int a[sizeA], b[sizeB];
     inputArray_(a, sizeA);
     inputArray_(b, sizeB);
-//    size_t sizeC = sizeA + sizeB;
-//    int c[sizeC];
-    printf("%d", varSeven(a, sizeA, b, sizeB));
-//    outputArray_(c, sizeC);
+    size_t sizeC = sizeA + sizeB;
+    int c[sizeC];
+    varNine(a, sizeA, b, sizeB, c, &sizeC);
+    outputArray_(c, sizeC);
 
     return 0;
 }

@@ -137,16 +137,26 @@ int varSeven(int *a, size_t sizeA, int *b, size_t sizeB) {
     return 1;
 }
 
-int *varEight(int *a, size_t sizeA, int *b, size_t sizeB, int *c, size_t *sizeC) {
+void varEight(int *a, size_t sizeA, int *b, size_t sizeB, int *c, size_t *sizeC) {
     size_t iA = 0, iB = 0;
     *sizeC = 0;
-    for (size_t i = 0; i < sizeA + sizeB; i++)
-        if (a[iA] < b[iB] && iA <= sizeA) {
-            c[*sizeC] = a[iA];
-            iA++;
-            (*sizeC)++;
-        } else if (a[iA] == b[iB]) {
-            c[*sizeC] = a[iA];
-        }
+    while (iA < sizeA || iB < sizeB)
+        if ((iA < sizeA) && ((iB == sizeB) || (a[iA] <= b[iB])))
+            c[(*sizeC)++] = a[iA++];
+        else if (b[iB] == c[*sizeC])
+            iB++;
+        else
+            c[(*sizeC)++] = b[iB++];
+}
 
+void varNine(int *a, size_t sizeA, int *b, size_t sizeB, int *c, size_t *sizeC) {
+    size_t iA = 0, iB = 0;
+    *sizeC = 0;
+    while (iA < sizeA || iB < sizeB)
+        if ((iA < sizeA) && ((iB == sizeB) || (a[iA] <= b[iB])))
+            c[(*sizeC)++] = a[iA++];
+        else if (b[iB] == c[*sizeC])
+            iB++;
+        else
+            iA++;
 }
