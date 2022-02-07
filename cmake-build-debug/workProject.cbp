@@ -148,6 +148,12 @@
 		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vector_tests/vector_tests.h">
 			<Option target="workProject"/>
 		</Unit>
+		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/govnocode/DiscMath/DiscMath.c">
+			<Option target="workProject"/>
+		</Unit>
+		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/govnocode/DiscMath/DiscMath.h">
+			<Option target="workProject"/>
+		</Unit>
 		<Unit filename="C:/Users/krytm/CLionProjects/workProject/main.c">
 			<Option target="workProject"/>
 		</Unit>

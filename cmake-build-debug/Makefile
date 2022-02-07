@@ -416,6 +416,30 @@ libs/data_structures/vector_tests/vector_tests.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/vector_tests/vector_tests.c.s
 .PHONY : libs/data_structures/vector_tests/vector_tests.c.s
 
+libs/govnocode/DiscMath/DiscMath.obj: libs/govnocode/DiscMath/DiscMath.c.obj
+.PHONY : libs/govnocode/DiscMath/DiscMath.obj
+
+# target to build an object file
+libs/govnocode/DiscMath/DiscMath.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.obj
+.PHONY : libs/govnocode/DiscMath/DiscMath.c.obj
+
+libs/govnocode/DiscMath/DiscMath.i: libs/govnocode/DiscMath/DiscMath.c.i
+.PHONY : libs/govnocode/DiscMath/DiscMath.i
+
+# target to preprocess a source file
+libs/govnocode/DiscMath/DiscMath.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.i
+.PHONY : libs/govnocode/DiscMath/DiscMath.c.i
+
+libs/govnocode/DiscMath/DiscMath.s: libs/govnocode/DiscMath/DiscMath.c.s
+.PHONY : libs/govnocode/DiscMath/DiscMath.s
+
+# target to generate assembly for a file
+libs/govnocode/DiscMath/DiscMath.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.s
+.PHONY : libs/govnocode/DiscMath/DiscMath.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -485,6 +509,9 @@ help:
 	@echo ... libs/data_structures/vector_tests/vector_tests.obj
 	@echo ... libs/data_structures/vector_tests/vector_tests.i
 	@echo ... libs/data_structures/vector_tests/vector_tests.s
+	@echo ... libs/govnocode/DiscMath/DiscMath.obj
+	@echo ... libs/govnocode/DiscMath/DiscMath.i
+	@echo ... libs/govnocode/DiscMath/DiscMath.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

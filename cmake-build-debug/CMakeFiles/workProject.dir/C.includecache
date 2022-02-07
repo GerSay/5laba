@@ -6,27 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/krytm/CLionProjects/workProject/libs/algorithms/algorithms.h
+C:/Users/krytm/CLionProjects/workProject/libs/govnocode/DiscMath/DiscMath.c
+DiscMath.h
+C:/Users/krytm/CLionProjects/workProject/libs/govnocode/DiscMath/DiscMath.h
 
-C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vector/vector.h
+C:/Users/krytm/CLionProjects/workProject/libs/govnocode/DiscMath/DiscMath.h
 stdio.h
--
-malloc.h
--
-stdbool.h
--
-
-C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vector_tests/vector_tests.c
-vector_tests.h
-C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vector_tests/vector_tests.h
-
-C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vector_tests/vector_tests.h
-../../algorithms/algorithms.h
-C:/Users/krytm/CLionProjects/workProject/libs/algorithms/algorithms.h
-../../data_structures/vector/vector.h
-C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vector/vector.h
-assert.h
--
-stdint.h
 -
 

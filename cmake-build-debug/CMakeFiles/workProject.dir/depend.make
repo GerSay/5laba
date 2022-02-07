@@ -47,8 +47,13 @@ CMakeFiles/workProject.dir/libs/data_structures/vector_tests/vector_tests.c.obj:
  ../libs/data_structures/vector/vector.h \
  ../libs/data_structures/vector_tests/vector_tests.c \
  ../libs/data_structures/vector_tests/vector_tests.h
+CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.obj: \
+ ../libs/govnocode/DiscMath/DiscMath.c \
+ ../libs/govnocode/DiscMath/DiscMath.h
 CMakeFiles/workProject.dir/main.c.obj: \
  ../libs/algorithms/algorithms.h \
+ ../libs/algorithms/array/array.h \
  ../libs/data_structures/vector/vector.h \
  ../libs/data_structures/vector_tests/vector_tests.h \
+ ../libs/govnocode/DiscMath/DiscMath.h \
  ../main.c
