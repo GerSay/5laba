@@ -143,7 +143,7 @@ void varEight(int *a, size_t sizeA, int *b, size_t sizeB, int *c, size_t *sizeC)
     while (iA < sizeA || iB < sizeB)
         if ((iA < sizeA) && ((iB == sizeB) || (a[iA] <= b[iB])))
             c[(*sizeC)++] = a[iA++];
-        else if (b[iB] == c[*sizeC])
+        else if (b[iB] == c[*sizeC - 1])
             iB++;
         else
             c[(*sizeC)++] = b[iB++];
@@ -155,8 +155,8 @@ void varNine(int *a, size_t sizeA, int *b, size_t sizeB, int *c, size_t *sizeC) 
     while (iA < sizeA || iB < sizeB)
         if ((iA < sizeA) && ((iB == sizeB) || (a[iA] <= b[iB])))
             c[(*sizeC)++] = a[iA++];
-        else if (b[iB] == c[*sizeC])
+        else if (b[iB] == c[*sizeC - 1])
             iB++;
         else
-            iA++;
+            c[(*sizeC)++] = b[iB++];
 }

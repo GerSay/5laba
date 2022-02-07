@@ -10,7 +10,7 @@ int main() {
     inputArray_(b, sizeB);
     size_t sizeC = sizeA + sizeB;
     int c[sizeC];
-    varNine(a, sizeA, b, sizeB, c, &sizeC);
+    varEight(a, sizeA, b, sizeB, c, &sizeC);
     outputArray_(c, sizeC);
 
     return 0;
