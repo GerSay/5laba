@@ -104,9 +104,3 @@ int *front(vector *v) {
 
 
 
-typedef struct vectorVoid {
-    void *data;
-    size_t size;
-    size_t capacity;
-    size_t baseTypeSize;
-} vectorVoid;

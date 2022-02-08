@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/workProject.dir/libs/data_structures/unordered_array_set/unordered_array_set.c.obj"
   "CMakeFiles/workProject.dir/libs/data_structures/unordered_array_set_test/unordered_array_set_test.c.obj"
   "CMakeFiles/workProject.dir/libs/data_structures/vector/vector.c.obj"
+  "CMakeFiles/workProject.dir/libs/data_structures/vectorVoid/vectorVoid.c.obj"
   "CMakeFiles/workProject.dir/libs/data_structures/vector_tests/vector_tests.c.obj"
   "CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.obj"
   "CMakeFiles/workProject.dir/main.c.obj"
