@@ -42,6 +42,9 @@ CMakeFiles/workProject.dir/libs/data_structures/unordered_array_set_test/unorder
 CMakeFiles/workProject.dir/libs/data_structures/vector/vector.c.obj
  C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vector/vector.c
  C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vector/vector.h
+CMakeFiles/workProject.dir/libs/data_structures/vectorVoid/vectorVoid.c.obj
+ C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid/vectorVoid.c
+ C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid/vectorVoid.h
 CMakeFiles/workProject.dir/libs/data_structures/vector_tests/vector_tests.c.obj
  C:/Users/krytm/CLionProjects/workProject/libs/algorithms/algorithms.h
  C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vector/vector.h
@@ -51,9 +54,5 @@ CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.obj
  C:/Users/krytm/CLionProjects/workProject/libs/govnocode/DiscMath/DiscMath.c
  C:/Users/krytm/CLionProjects/workProject/libs/govnocode/DiscMath/DiscMath.h
 CMakeFiles/workProject.dir/main.c.obj
- C:/Users/krytm/CLionProjects/workProject/libs/algorithms/algorithms.h
- C:/Users/krytm/CLionProjects/workProject/libs/algorithms/array/array.h
- C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vector/vector.h
- C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vector_tests/vector_tests.h
- C:/Users/krytm/CLionProjects/workProject/libs/govnocode/DiscMath/DiscMath.h
+ C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid/vectorVoid.h
  C:/Users/krytm/CLionProjects/workProject/main.c
