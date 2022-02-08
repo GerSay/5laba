@@ -416,29 +416,29 @@ libs/data_structures/vectorVoid/vectorVoid.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/vectorVoid/vectorVoid.c.s
 .PHONY : libs/data_structures/vectorVoid/vectorVoid.c.s
 
-libs/data_structures/vectorVoid_tests/VectorVoid_tests.obj: libs/data_structures/vectorVoid_tests/VectorVoid_tests.c.obj
-.PHONY : libs/data_structures/vectorVoid_tests/VectorVoid_tests.obj
+libs/data_structures/vectorVoid_tests/vectorVoid_tests.obj: libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.obj
+.PHONY : libs/data_structures/vectorVoid_tests/vectorVoid_tests.obj
 
 # target to build an object file
-libs/data_structures/vectorVoid_tests/VectorVoid_tests.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/VectorVoid_tests.c.obj
-.PHONY : libs/data_structures/vectorVoid_tests/VectorVoid_tests.c.obj
+libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.obj
+.PHONY : libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.obj
 
-libs/data_structures/vectorVoid_tests/VectorVoid_tests.i: libs/data_structures/vectorVoid_tests/VectorVoid_tests.c.i
-.PHONY : libs/data_structures/vectorVoid_tests/VectorVoid_tests.i
+libs/data_structures/vectorVoid_tests/vectorVoid_tests.i: libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.i
+.PHONY : libs/data_structures/vectorVoid_tests/vectorVoid_tests.i
 
 # target to preprocess a source file
-libs/data_structures/vectorVoid_tests/VectorVoid_tests.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/VectorVoid_tests.c.i
-.PHONY : libs/data_structures/vectorVoid_tests/VectorVoid_tests.c.i
+libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.i
+.PHONY : libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.i
 
-libs/data_structures/vectorVoid_tests/VectorVoid_tests.s: libs/data_structures/vectorVoid_tests/VectorVoid_tests.c.s
-.PHONY : libs/data_structures/vectorVoid_tests/VectorVoid_tests.s
+libs/data_structures/vectorVoid_tests/vectorVoid_tests.s: libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.s
+.PHONY : libs/data_structures/vectorVoid_tests/vectorVoid_tests.s
 
 # target to generate assembly for a file
-libs/data_structures/vectorVoid_tests/VectorVoid_tests.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/VectorVoid_tests.c.s
-.PHONY : libs/data_structures/vectorVoid_tests/VectorVoid_tests.c.s
+libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.s
+.PHONY : libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.s
 
 libs/data_structures/vector_tests/vector_tests.obj: libs/data_structures/vector_tests/vector_tests.c.obj
 .PHONY : libs/data_structures/vector_tests/vector_tests.obj
@@ -557,9 +557,9 @@ help:
 	@echo ... libs/data_structures/vectorVoid/vectorVoid.obj
 	@echo ... libs/data_structures/vectorVoid/vectorVoid.i
 	@echo ... libs/data_structures/vectorVoid/vectorVoid.s
-	@echo ... libs/data_structures/vectorVoid_tests/VectorVoid_tests.obj
-	@echo ... libs/data_structures/vectorVoid_tests/VectorVoid_tests.i
-	@echo ... libs/data_structures/vectorVoid_tests/VectorVoid_tests.s
+	@echo ... libs/data_structures/vectorVoid_tests/vectorVoid_tests.obj
+	@echo ... libs/data_structures/vectorVoid_tests/vectorVoid_tests.i
+	@echo ... libs/data_structures/vectorVoid_tests/vectorVoid_tests.s
 	@echo ... libs/data_structures/vector_tests/vector_tests.obj
 	@echo ... libs/data_structures/vector_tests/vector_tests.i
 	@echo ... libs/data_structures/vector_tests/vector_tests.s

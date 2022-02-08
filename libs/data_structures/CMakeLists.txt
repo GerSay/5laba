@@ -7,6 +7,7 @@ add_library(data_structures
         vector/vector.c
         vector_tests/vector_tests.c
         vectorVoid/vectorVoid.c
+        vectorVoid_tests/vectorVoid_tests.c
         )
 
 target_link_libraries(data_structures algorithms)

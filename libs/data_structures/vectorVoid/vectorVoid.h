@@ -6,6 +6,8 @@
 #include <stdbool.h>
 #include <string.h>
 
+#include "../../algorithms/array/array.h"
+
 typedef struct vectorVoid {
     void *data;
     size_t size;

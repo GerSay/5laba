@@ -21,7 +21,7 @@ vectorVoid createVectorV(size_t n, size_t baseTypeSize) {
     v.capacity = n;
     v.baseTypeSize = baseTypeSize;
     if (n) {
-        v.data = malloc(sizeof(int) * v.capacity);
+        v.data = malloc(v.baseTypeSize * v.capacity);
         if (v.data == NULL)
             errorV();
     } else

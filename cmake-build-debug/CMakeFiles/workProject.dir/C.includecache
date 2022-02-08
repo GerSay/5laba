@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/krytm/CLionProjects/workProject/libs/algorithms/array/array.h
+stddef.h
+-
+
 C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid/vectorVoid.c
 vectorVoid.h
 C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid/vectorVoid.h
@@ -19,8 +23,22 @@ stdbool.h
 -
 string.h
 -
+../../algorithms/array/array.h
+C:/Users/krytm/CLionProjects/workProject/libs/algorithms/array/array.h
+
+C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c
+vectorVoid_tests.h
+C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid_tests/vectorVoid_tests.h
+stdint.h
+-
+
+C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid_tests/vectorVoid_tests.h
+stdio.h
+-
+../../data_structures/vectorVoid/vectorVoid.h
+C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid/vectorVoid.h
 
 C:/Users/krytm/CLionProjects/workProject/main.c
-libs/data_structures/vectorVoid/vectorVoid.h
-C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid/vectorVoid.h
+libs/data_structures/vectorVoid_tests/vectorVoid_tests.c
+C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c
 

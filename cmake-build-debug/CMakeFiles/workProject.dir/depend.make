@@ -43,8 +43,14 @@ CMakeFiles/workProject.dir/libs/data_structures/vector/vector.c.obj: \
  ../libs/data_structures/vector/vector.c \
  ../libs/data_structures/vector/vector.h
 CMakeFiles/workProject.dir/libs/data_structures/vectorVoid/vectorVoid.c.obj: \
+ ../libs/algorithms/array/array.h \
  ../libs/data_structures/vectorVoid/vectorVoid.c \
  ../libs/data_structures/vectorVoid/vectorVoid.h
+CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.obj: \
+ ../libs/algorithms/array/array.h \
+ ../libs/data_structures/vectorVoid/vectorVoid.h \
+ ../libs/data_structures/vectorVoid_tests/vectorVoid_tests.c \
+ ../libs/data_structures/vectorVoid_tests/vectorVoid_tests.h
 CMakeFiles/workProject.dir/libs/data_structures/vector_tests/vector_tests.c.obj: \
  ../libs/algorithms/algorithms.h \
  ../libs/data_structures/vector/vector.h \
@@ -54,5 +60,8 @@ CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.obj: \
  ../libs/govnocode/DiscMath/DiscMath.c \
  ../libs/govnocode/DiscMath/DiscMath.h
 CMakeFiles/workProject.dir/main.c.obj: \
+ ../libs/algorithms/array/array.h \
  ../libs/data_structures/vectorVoid/vectorVoid.h \
+ ../libs/data_structures/vectorVoid_tests/vectorVoid_tests.c \
+ ../libs/data_structures/vectorVoid_tests/vectorVoid_tests.h \
  ../main.c
