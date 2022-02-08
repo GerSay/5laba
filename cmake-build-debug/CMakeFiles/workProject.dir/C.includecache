@@ -15,4 +15,12 @@ stdio.h
 -
 malloc.h
 -
+stdbool.h
+-
+string.h
+-
+
+C:/Users/krytm/CLionProjects/workProject/main.c
+libs/data_structures/vectorVoid/vectorVoid.h
+C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid/vectorVoid.h
 

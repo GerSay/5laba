@@ -5,6 +5,16 @@ void errorV() {
     exit(1);
 }
 
+void indexErrorV(size_t index) {
+    fprintf(stderr, "IndexError: a[%d] is not exists", index);
+    exit(2);
+}
+
+void ifCorrectIndex(vectorVoid *v, size_t index) {
+    if (index > v->size)
+        indexErrorV(index);
+}
+
 vectorVoid createVectorV(size_t n, size_t baseTypeSize) {
     vectorVoid v;
     v.size = 0;
@@ -49,4 +59,40 @@ void deleteVectorV(vectorVoid *v) {
     v->size = 0;
     v->capacity = 0;
     v->baseTypeSize = 0;
+}
+
+bool isEmptyV(vectorVoid *v) {
+    return v->size == 0;
+}
+
+bool isFullV(vectorVoid *v) {
+    return v->size == v->capacity;
+}
+
+void getVectorValueV(vectorVoid *v, size_t index,
+                     void *destination) {
+    ifCorrectIndex(v, index);
+    char *source = (char *) v->data + index * v->baseTypeSize;
+    memcpy(destination, source, v->baseTypeSize);
+}
+
+void setVectorValueV(vectorVoid *v, size_t index, void *source) {
+    ifCorrectIndex(v, index);
+    char *destination = (char *) v->data + index * v->baseTypeSize;
+    memcpy(destination, source, v->baseTypeSize);
+}
+
+void popBackV(vectorVoid *v) {
+    if (isEmptyV(v))
+        errorV();
+    v->size = v->size - 1;
+}
+
+void pushBackV(vectorVoid *v, void *source) {
+    if (v->size >= v->capacity && v->capacity)
+        reserveV(v, v->capacity * 2);
+    else if (!v->capacity)
+        reserveV(v, v->capacity + 1);
+
+    setVectorValueV(v, v->size++, source);
 }

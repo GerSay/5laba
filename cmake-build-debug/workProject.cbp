@@ -148,6 +148,12 @@
 		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid/vectorVoid.h">
 			<Option target="workProject"/>
 		</Unit>
+		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid_tests/VectorVoid_tests.c">
+			<Option target="workProject"/>
+		</Unit>
+		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid_tests/VectorVoid_tests.h">
+			<Option target="workProject"/>
+		</Unit>
 		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vector_tests/vector_tests.c">
 			<Option target="workProject"/>
 		</Unit>

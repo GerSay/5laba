@@ -63,6 +63,8 @@ bool isFull(vector *v) {
 }
 
 int getVectorValue(vector *v, size_t i) {
+    if (i > v->size)
+        indexError(i);
     return v->data[i];
 }
 
@@ -71,8 +73,7 @@ void pushBack(vector *v, int x) {
         reserve(v, v->capacity * 2);
     else if (!v->capacity)
         reserve(v, 1);
-    v->data[v->size] = x;
-    v->size++;
+    v->data[v->size++] = x;
 }
 
 void popBack(vector *v) {

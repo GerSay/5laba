@@ -3,6 +3,8 @@
 
 #include <stdio.h>
 #include <malloc.h>
+#include <stdbool.h>
+#include <string.h>
 
 typedef struct vectorVoid {
     void *data;
@@ -23,7 +25,16 @@ void clearV(vectorVoid *v);
 // обнуляет v.size, v.capacity и v.baseTypeSize
 void deleteVectorV(vectorVoid *v);
 
+bool isEmptyV(vectorVoid *v);
 
+bool isFullV(vectorVoid *v);
 
+void getVectorValueV(vectorVoid *v, size_t index, void *destination);
+
+void setVectorValueV(vectorVoid *v, size_t index, void *source);
+
+void popBackV(vectorVoid *v);
+
+void pushBackV(vectorVoid *v, void *source);
 
 #endif //WORKPROJECT_VECTORVOID_H
