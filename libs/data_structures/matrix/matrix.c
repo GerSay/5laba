@@ -38,7 +38,7 @@ void inputMatrix(matrix m) {
 void outputMatrix(matrix m) {
     for (size_t i = 0; i < m.nRows; i++)
         outputArray_(m.values[i], m.nCols);
-    printf("\n");
+//    printf("\n");
 }
 
 void inputMatrices(matrix *ms, size_t nMatrices) {
@@ -66,6 +66,16 @@ void swapColumns(matrix m, int j1, int j2) {
         swapU(&m.values[i][j1], &m.values[i][j2], sizeof(int));
 }
 
-void insertionSortRowsMatrixByRowCriteria(matrix m, int (* criteria) (int *, int)) {
-
+void insertionSortRowsMatrixByRowCriteria(matrix m, int (*criteria) (int *, int)) {
+    int *newEl;
+    size_t location;
+    for (size_t i = 1; i < m.nRows; i++) {
+        newEl = m.values[i];
+        location = i;
+        while(location > 0 && m.values[location - 1] > newEl) {
+            m.values[location] = m.values[location - 1];
+            location--;
+        }
+        m.values[location] = newEl;
+    }
 }

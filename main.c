@@ -1,8 +1,9 @@
-#include "libs/data_structures/vectorVoid_tests/vectorVoid_tests.c"
-
+#include "libs/data_structures/matrix/matrix.h"
 int main() {
-    test_createVectorV();
+    matrix m;
+    inputAndCreateMatrix(&m);
 
+    insertionSortRowsMatrixByRowCriteria(m, );
 
     return 0;
 }
