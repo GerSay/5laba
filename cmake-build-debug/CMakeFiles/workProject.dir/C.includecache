@@ -10,35 +10,29 @@ C:/Users/krytm/CLionProjects/workProject/libs/algorithms/array/array.h
 stddef.h
 -
 
-C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid/vectorVoid.c
-vectorVoid.h
-C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid/vectorVoid.h
+C:/Users/krytm/CLionProjects/workProject/libs/algorithms/base/base.h
+stdio.h
+-
 
-C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid/vectorVoid.h
+C:/Users/krytm/CLionProjects/workProject/libs/data_structures/matrix/matrix.c
+matrix.h
+C:/Users/krytm/CLionProjects/workProject/libs/data_structures/matrix/matrix.h
+
+C:/Users/krytm/CLionProjects/workProject/libs/data_structures/matrix/matrix.h
+../../algorithms/array/array.h
+C:/Users/krytm/CLionProjects/workProject/libs/algorithms/array/array.h
+../../algorithms/base/base.h
+C:/Users/krytm/CLionProjects/workProject/libs/algorithms/base/base.h
+stdbool.h
+-
 stdio.h
 -
 malloc.h
 -
-stdbool.h
--
 string.h
 -
-../../algorithms/array/array.h
-C:/Users/krytm/CLionProjects/workProject/libs/algorithms/array/array.h
-
-C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c
-vectorVoid_tests.h
-C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid_tests/vectorVoid_tests.h
-stdint.h
--
-
-C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid_tests/vectorVoid_tests.h
-stdio.h
--
-../../data_structures/vectorVoid/vectorVoid.h
-C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid/vectorVoid.h
 
 C:/Users/krytm/CLionProjects/workProject/main.c
-libs/data_structures/vectorVoid_tests/vectorVoid_tests.c
-C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c
+libs/data_structures/matrix/matrix.h
+C:/Users/krytm/CLionProjects/workProject/libs/data_structures/matrix/matrix.h
 

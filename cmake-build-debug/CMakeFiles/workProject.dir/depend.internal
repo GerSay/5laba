@@ -61,7 +61,6 @@ CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.obj
  C:/Users/krytm/CLionProjects/workProject/libs/govnocode/DiscMath/DiscMath.h
 CMakeFiles/workProject.dir/main.c.obj
  C:/Users/krytm/CLionProjects/workProject/libs/algorithms/array/array.h
- C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid/vectorVoid.h
- C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c
- C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid_tests/vectorVoid_tests.h
+ C:/Users/krytm/CLionProjects/workProject/libs/algorithms/base/base.h
+ C:/Users/krytm/CLionProjects/workProject/libs/data_structures/matrix/matrix.h
  C:/Users/krytm/CLionProjects/workProject/main.c

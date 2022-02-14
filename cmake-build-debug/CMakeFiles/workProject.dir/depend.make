@@ -61,7 +61,6 @@ CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.obj: \
  ../libs/govnocode/DiscMath/DiscMath.h
 CMakeFiles/workProject.dir/main.c.obj: \
  ../libs/algorithms/array/array.h \
- ../libs/data_structures/vectorVoid/vectorVoid.h \
- ../libs/data_structures/vectorVoid_tests/vectorVoid_tests.c \
- ../libs/data_structures/vectorVoid_tests/vectorVoid_tests.h \
+ ../libs/algorithms/base/base.h \
+ ../libs/data_structures/matrix/matrix.h \
  ../main.c

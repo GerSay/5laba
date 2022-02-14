@@ -4,6 +4,11 @@
 #include "../../algorithms/array/array.h"
 #include "../../algorithms/base/base.h"
 
+#include <stdbool.h>
+#include <stdio.h>
+#include <malloc.h>
+#include <string.h>
+
 typedef struct matrix {
     int **values;
     size_t nRows;
@@ -11,8 +16,8 @@ typedef struct matrix {
 } matrix;
 
 typedef struct position {
-    int rowIndex;
-    int colIndex;
+    size_t rowIndex;
+    size_t colIndex;
 } position;
 
 matrix getMemMatrix(size_t nRows, size_t nCols);
@@ -35,8 +40,28 @@ void inputAndCreateMatrix(matrix *m);
 
 void swapRows(matrix m, size_t i1, size_t i2);
 
-void swapColumns(matrix m, int j1, int j2);
+void swapColumns(matrix m, size_t j1, size_t j2);
 
 void insertionSortRowsMatrixByRowCriteria(matrix m, int (* criteria) (int *, int));
+
+void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(int *, int));
+
+bool isSquareMatrix(matrix m);
+
+bool twoMatricesEqual(matrix m1, matrix m2);
+
+bool isEMatrix(matrix m);
+
+bool isSymmetricMatrix(matrix m);
+
+void transposeSquareMatrix(matrix m);
+
+void transposeMatrix(matrix *m);
+
+position getMinValuePos(matrix m);
+
+position getMaxValuePos(matrix m);
+
+
 
 #endif //WORKPROJECT_MATRIX_H
