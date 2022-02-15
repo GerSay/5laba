@@ -64,7 +64,7 @@ void swapColumns(matrix m, size_t j1, size_t j2) {
         swapU(&m.values[i][j1], &m.values[i][j2], sizeof(int));
 }
 
-void insertionSortRowsMatrixByRowCriteria(matrix m, int (*criteria)(int *, int)) {
+void insertionSortRowsMatrixByRowCriteria(matrix m, int (*criteria)(int *, size_t)) {
     int rowsCriteria[m.nRows];
     for (size_t i = 0; i < m.nRows; i++)
         rowsCriteria[i] = criteria(m.values[i], (int) m.nCols);
@@ -76,7 +76,7 @@ void insertionSortRowsMatrixByRowCriteria(matrix m, int (*criteria)(int *, int))
         }
 }
 
-void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(int *, int)) {
+void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(int *, size_t)) {
     int colsCriteria[m.nCols];
     for (size_t j = 0; j < m.nCols; j++) {
         int colsEl[m.nRows];
@@ -213,10 +213,34 @@ matrix *createArrayOfMatrixFromArray(const int *values, size_t nMatrices,
     return ms;
 }
 
-
-
 void swapRowsSquareMatrixWithMaxMinElement(matrix m) {
     position min = getMinValuePos(m);
     position max = getMaxValuePos(m);
     swapRows(m, min.rowIndex, max.rowIndex);
 }
+
+int getMax(int *a, size_t n) {
+    int max = a[0];
+    for (size_t i = 0; i < n; i++)
+        max = max < a[i] ? a[i] : max;
+
+    return max;
+}
+
+void sortRowsByMaxElement(matrix m) {
+    insertionSortRowsMatrixByRowCriteria(m, getMax);
+}
+
+int getMin(int *a, size_t n) {
+
+    int min = a[0];
+    for (size_t i = 0; i < n; i++)
+        min = min > a[i] ? a[i] : min;
+
+    return min;
+}
+
+void sortColsByMinElement(matrix m) {
+    insertionSortColsMatrixByColCriteria(m, getMin);
+}
+

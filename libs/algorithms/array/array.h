@@ -2,6 +2,9 @@
 #define WORKPROJECT_ARRAY_H
 
 # include <stddef.h>
+#include <stdio.h>
+#include <limits.h>
+#include <assert.h>
 
 // ввод массива data размера n
 void inputArray_(int *a, size_t n);

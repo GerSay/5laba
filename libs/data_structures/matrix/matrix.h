@@ -5,7 +5,6 @@
 #include "../../algorithms/base/base.h"
 
 #include <stdbool.h>
-#include <stdio.h>
 #include <malloc.h>
 #include <string.h>
 
@@ -42,9 +41,9 @@ void swapRows(matrix m, size_t i1, size_t i2);
 
 void swapColumns(matrix m, size_t j1, size_t j2);
 
-void insertionSortRowsMatrixByRowCriteria(matrix m, int (* criteria) (int *, int));
+void insertionSortRowsMatrixByRowCriteria(matrix m, int (* criteria) (int *, size_t));
 
-void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(int *, int));
+void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(int *, size_t));
 
 bool isSquareMatrix(matrix m);
 

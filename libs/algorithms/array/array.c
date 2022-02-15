@@ -1,7 +1,4 @@
 #include "array.h"
-#include <stdio.h>
-#include <limits.h>
-#include <assert.h>
 
 void inputArray_(int *const a, const size_t n) {
     for (size_t i = 0; i < n; i++)

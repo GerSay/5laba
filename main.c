@@ -7,7 +7,6 @@ int main() {
     swapRowsSquareMatrixWithMaxMinElement(m);
 
     outputMatrix(m);
-
     freeMemMatrix(m);
 
     return 0;
