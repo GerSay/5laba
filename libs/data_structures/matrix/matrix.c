@@ -213,3 +213,10 @@ matrix *createArrayOfMatrixFromArray(const int *values, size_t nMatrices,
     return ms;
 }
 
+
+
+void swapRowsSquareMatrixWithMaxMinElement(matrix m) {
+    position min = getMinValuePos(m);
+    position max = getMaxValuePos(m);
+    swapRows(m, min.rowIndex, max.rowIndex);
+}
