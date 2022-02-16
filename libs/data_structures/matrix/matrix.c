@@ -1,5 +1,15 @@
 #include "matrix.h"
 
+void errorSquareMatrix() {
+    fprintf(stderr, "Matrix is not square");
+    exit(4);
+}
+
+void errorIndexMatrix(indexR, indexC) {
+    fprintf(stderr, "position [%d][%d] outside the array.\n", indexR, indexC);
+    exit(2);
+}
+
 matrix getMemMatrix(size_t nRows, size_t nCols) {
     int **values = (int **) malloc(sizeof(int *) * nRows);
     for (size_t i = 0; i < nRows; i++)
@@ -242,5 +252,26 @@ int getMin(int *a, size_t n) {
 
 void sortColsByMinElement(matrix m) {
     insertionSortColsMatrixByColCriteria(m, getMin);
+}
+
+matrix mulMatrices(matrix m1, matrix m2) {
+    if (m1.nCols != m2.nRows) {
+        errorSquareMatrix();
+    }
+
+    matrix m = getMemMatrix(m1.nRows, m2.nCols);
+    for (size_t iRow = 0; iRow < m1.nRows; iRow++)
+        for (size_t iCol = 0; iCol < m2.nCols; iCol++) {
+            m.values[iRow][iCol] = 0;
+            for (size_t i = 0; i < m1.nCols; i++)
+                m.values[iRow][iCol] += m1.values[iRow][i] * m2.values[i][iCol];
+        }
+
+    return m;
+}
+
+void getSquareOfMatrixIfSymmetric(matrix *m) {
+    if (isSymmetricMatrix(*m))
+        *m = mulMatrices(*m, *m);
 }
 

@@ -1,5 +1,5 @@
 #ifndef WORKPROJECT_MATRIX_H
-#define WORKPROJECT_MATRIX_H
+#decfine WORKPROJECT_MATRIX_H
 
 #include "../../algorithms/array/array.h"
 #include "../../algorithms/base/base.h"
