@@ -1,0 +1,161 @@
+[33mcommit 05a07f40210eaf375dc800cb975ffae487540fac[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Sat Feb 19 17:39:17 2022 +0300
+
+    isMutuallyInverseMatrices-test
+
+[33mcommit fadeaca2f83c45eb28e963429e85b7db9b37b811[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Sat Feb 19 17:29:04 2022 +0300
+
+    transposeIfMatrix
+
+[33mcommit 8149a1841cd594889736b49402f1d37f7f4a786f[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Sat Feb 19 17:19:56 2022 +0300
+
+    getSquareOfMatrixIfSymmetric
+
+[33mcommit a70363cfa35f4ce774c762afa1f5099b88b791f8[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Wed Feb 16 10:50:31 2022 +0300
+
+    getSquareOfMatrixIfSymmetric
+
+[33mcommit 839009f70d2e03ad322df4f42e52510f1448c200[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Tue Feb 15 14:45:30 2022 +0300
+
+    sort-for-maxMin-ArrElement
+
+[33mcommit b86b91f66efb62488f056f70a6772a1ce4c64a29[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Tue Feb 15 11:28:21 2022 +0300
+
+    swapRowsSquareMatrixWithMaxMinElements
+
+[33mcommit 56ae5bbaae23c0cf2a7c3ce778e302034212c5d1[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Mon Feb 14 22:43:15 2022 +0300
+
+    functions
+
+[33mcommit 9b49034859e6842efca5258f96cf03fa8c732355[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Mon Feb 14 19:25:06 2022 +0300
+
+    io-create
+
+[33mcommit 042a241d9df63bc053b4204b24e5262a854e6ed4[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Tue Feb 8 19:58:34 2022 +0300
+
+    refactoring / bug fix
+
+[33mcommit 6949b034439df563332021373b0c6a05a4ff8e72[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Tue Feb 8 15:56:52 2022 +0300
+
+    append push / pop functions
+
+[33mcommit d4536c61723bb6853569022a31e443efd234a432[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Tue Feb 8 14:52:12 2022 +0300
+
+    memory usage of vectorVoid
+
+[33mcommit b009bc6fa4154c0d139d5606e765dfe4ba368411[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Tue Feb 8 14:34:08 2022 +0300
+
+    init vectorVoid
+
+[33mcommit b28aa31739bb7910d4926117d1afe6b0401d4185[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Mon Feb 7 20:54:52 2022 +0300
+
+    refactoring-DiscMath
+
+[33mcommit 8bc34ae3dd2a04f2087a52e6135c2a8e28687a3f[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Mon Feb 7 19:46:11 2022 +0300
+
+    first-part-DiscMathLab1
+
+[33mcommit 62f6bbac26bf9ea7f4d962733f78396b0bbe1c90[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Mon Feb 7 18:29:50 2022 +0300
+
+    DiscMath
+
+[33mcommit 3a7654ce4728769ea2e7fcf82f2c83c098c4ca5d[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Fri Feb 4 21:53:29 2022 +0300
+
+    new-tests
+
+[33mcommit 0123f313fc654335cbaaf1eb1d0594a3b0bac39e[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Wed Feb 2 20:24:53 2022 +0300
+
+    refactoring
+
+[33mcommit c9b61adcf2ce0ad04698ba093178ca18000e1904[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Wed Feb 2 20:18:44 2022 +0300
+
+    refactoring
+
+[33mcommit 088374eca4ebbb011b523abbe36248880d77d072[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Wed Feb 2 20:03:18 2022 +0300
+
+    append access functions
+
+[33mcommit df1aec84ca086ce66248e752fddcfe9f4df0b1f1[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Wed Feb 2 19:11:50 2022 +0300
+
+    append push / pop functions
+
+[33mcommit 88a6ae5e0df86f0a2179bdd4a1a1b5f1bf15677f[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Wed Feb 2 15:41:06 2022 +0300
+
+    main-testAndDebug
+
+[33mcommit 64c244a39600427473f0cd7be95478619f954408[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Wed Feb 2 11:35:38 2022 +0300
+
+    error in tests
+
+[33mcommit 278a777b6d0110a93f3ea5c7c3e54a180e8c90ac[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Wed Feb 2 10:37:32 2022 +0300
+
+    bug fixes
+
+[33mcommit 36c02749720ed671eb8e99ac4e25cf18feced9d9[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Wed Feb 2 10:30:37 2022 +0300
+
+    memory usage of vector
+
+[33mcommit 96499f1649e174c82ce4c54bdf61ae04d2dc8548[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Wed Feb 2 00:23:51 2022 +0300
+
+    2 commit
+
+[33mcommit 5c7318ca6ec0a04ddf87a1a7f6931be6c8bded55[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Tue Feb 1 23:24:01 2022 +0300
+
+    first commit
+
+[33mcommit d5edfdcb8bfe0a9d376bf0944a61e2e91fbc73b1[m
+Author: GerSay <kryt.master@yandex.ru>
+Date:   Tue Feb 1 23:18:50 2022 +0300
+
+    first commit

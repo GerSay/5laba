@@ -328,4 +328,32 @@ int test_MutuallyInverseMatrices() {
     return 0;
 }
 
+int max(int a, int b) {
+    return a > b ? a : b;
+}
+
+int findDiagonalMax(matrix m, size_t i, size_t k) {
+    size_t iRow = i;
+    size_t iCol = k;
+    int max = m.values[iRow][iCol];
+    while (iCol < m.nCols && iRow < m.nRows) {
+        if (m.values[iRow][iCol] > max)
+            max = m.values[iRow][iCol];
+        iRow++;
+        iCol++;
+    }
+
+    return max;
+}
+
+long long findSumOfMaxesOfPseudoDiagonal(matrix m) {
+    long long sum = 0;
+    for (size_t iShift = m.nRows - 1; iShift > 0; iShift--)
+        sum += findDiagonalMax(m, iShift, 0);
+
+    for (size_t kShift = 1; kShift < m.nCols; kShift++)
+        sum += findDiagonalMax(m, 0, kShift);
+
+    return sum;
+}
 
