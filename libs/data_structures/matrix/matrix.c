@@ -275,6 +275,14 @@ void getSquareOfMatrixIfSymmetric(matrix *m) {
         *m = mulMatrices(*m, *m);
 }
 
+size_t find(long long *arr, size_t size, int element) {
+    for (size_t i = 0; i < size; i++)
+        if (arr[i] == element)
+            return i;
+
+    return size;
+}
+
 bool isUnique(long long *arr, size_t size) {
     for (size_t i = 0; i < size; i++) {
         const size_t pos = find(arr, size, (int) arr[i]);
@@ -285,12 +293,21 @@ bool isUnique(long long *arr, size_t size) {
     return 1;
 }
 
-size_t find(long long *arr, size_t size, int element) {
-    for (size_t i = 0; i < size; i++)
-        if (arr[i] == element)
-            return i;
+long long getSum(const int *a, size_t n) {
+    long long sum = 0;
+    for (size_t i = 0; i < n; i++)
+        sum += a[i];
 
-    return size;
+    return sum;
+}
+
+void transposeIfMatrixHasEqualSumOfRows(matrix m, size_t nRows, size_t nCols) {
+    long long *rSum = malloc(m.nRows * sizeof(long long));
+    for (size_t i = 0; i < m.nRows; i++)
+        rSum[i] = getSum(m.values[i], m.nCols);
+
+    if (isUnique(rSum, m.nRows))
+        transposeSquareMatrix(m);
 }
 
 
