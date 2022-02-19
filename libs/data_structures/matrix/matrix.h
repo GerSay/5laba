@@ -87,4 +87,16 @@ long long getSum(int *a, size_t n);
 
 void transposeIfMatrixHasEqualSumOfRows(matrix m, size_t nRows, size_t nCols);
 
+bool isMutuallyInverseMatrices(matrix m1, matrix m2);
+
+int max(int a, int b);
+
+int findDiagonalMax(matrix m, size_t i, size_t k);
+
+long long findSumOfMaxesOfPseudoDiagonal(matrix m);
+
+int min(int x, int y);
+
+int getMinInArea(matrix m);
+
 #endif //WORKPROJECT_MATRIX_H
