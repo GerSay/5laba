@@ -275,3 +275,22 @@ void getSquareOfMatrixIfSymmetric(matrix *m) {
         *m = mulMatrices(*m, *m);
 }
 
+bool isUnique(long long *arr, size_t size) {
+    for (size_t i = 0; i < size; i++) {
+        const size_t pos = find(arr, size, (int) arr[i]);
+        if (pos != i && pos != size)
+            return 0;
+    }
+
+    return 1;
+}
+
+size_t find(long long *arr, size_t size, int element) {
+    for (size_t i = 0; i < size; i++)
+        if (arr[i] == element)
+            return i;
+
+    return size;
+}
+
+

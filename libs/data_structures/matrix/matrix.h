@@ -67,4 +67,6 @@ matrix *createArrayOfMatrixFromArray(const int *values, size_t nMatrices, size_t
 
 void swapRowsSquareMatrixWithMaxMinElement(matrix m);
 
+size_t find(long long *arr, size_t size, int el);
+
 #endif //WORKPROJECT_MATRIX_H
