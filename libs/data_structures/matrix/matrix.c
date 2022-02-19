@@ -223,11 +223,15 @@ matrix *createArrayOfMatrixFromArray(const int *values, size_t nMatrices,
     return ms;
 }
 
+//---------------------------------------1-----------------------------------
+
 void swapRowsSquareMatrixWithMaxMinElement(matrix m) {
     position min = getMinValuePos(m);
     position max = getMaxValuePos(m);
     swapRows(m, min.rowIndex, max.rowIndex);
 }
+
+//---------------------------------------2-----------------------------------
 
 int getMax(int *a, size_t n) {
     int max = a[0];
@@ -241,8 +245,9 @@ void sortRowsByMaxElement(matrix m) {
     insertionSortRowsMatrixByRowCriteria(m, getMax);
 }
 
-int getMin(int *a, size_t n) {
+//---------------------------------------3-----------------------------------
 
+int getMin(int *a, size_t n) {
     int min = a[0];
     for (size_t i = 0; i < n; i++)
         min = min > a[i] ? a[i] : min;
@@ -254,10 +259,11 @@ void sortColsByMinElement(matrix m) {
     insertionSortColsMatrixByColCriteria(m, getMin);
 }
 
+//---------------------------------------4-----------------------------------
+
 matrix mulMatrices(matrix m1, matrix m2) {
-    if (m1.nCols != m2.nRows) {
+    if (m1.nCols != m2.nRows)
         errorSquareMatrix();
-    }
 
     matrix m = getMemMatrix(m1.nRows, m2.nCols);
     for (size_t iRow = 0; iRow < m1.nRows; iRow++)
@@ -274,6 +280,8 @@ void getSquareOfMatrixIfSymmetric(matrix *m) {
     if (isSymmetricMatrix(*m))
         *m = mulMatrices(*m, *m);
 }
+
+//---------------------------------------5-----------------------------------
 
 size_t find(long long *arr, size_t size, int element) {
     for (size_t i = 0; i < size; i++)
@@ -293,7 +301,7 @@ bool isUnique(long long *arr, size_t size) {
     return 1;
 }
 
-long long getSum(const int *a, size_t n) {
+long long getSum(int *a, size_t n) {
     long long sum = 0;
     for (size_t i = 0; i < n; i++)
         sum += a[i];
@@ -310,11 +318,13 @@ void transposeIfMatrixHasEqualSumOfRows(matrix m, size_t nRows, size_t nCols) {
         transposeSquareMatrix(m);
 }
 
+//---------------------------------------6-----------------------------------
+
 bool isMutuallyInverseMatrices(matrix m1, matrix m2) {
     return isSquareMatrix(m1) && isEMatrix(mulMatrices(m1, m2));
 }
 
-int test_MutuallyInverseMatrices() {
+/*int test_MutuallyInverseMatrices() {
     size_t n;
     scanf("%zu", &n);
 
@@ -326,7 +336,9 @@ int test_MutuallyInverseMatrices() {
     printf("%d", isMutuallyInverseMatrices(m1, m2));
 
     return 0;
-}
+}*/
+
+//---------------------------------------7-----------------------------------
 
 int max(int a, int b) {
     return a > b ? a : b;
@@ -355,5 +367,18 @@ long long findSumOfMaxesOfPseudoDiagonal(matrix m) {
         sum += findDiagonalMax(m, 0, kShift);
 
     return sum;
+}
+
+//---------------------------------------8-----------------------------------
+
+int getMinInArea(matrix m) {
+    size_t i = 0, j = 0;
+    position maxPos = getMaxValuePos(m);
+    /*types*/ min = m.values[/*row*/][/*col*/];
+
+
+
+
+    return min;
 }
 

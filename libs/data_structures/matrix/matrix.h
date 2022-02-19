@@ -83,7 +83,7 @@ size_t find(long long *arr, size_t size, int el);
 
 bool isUnique(long long *arr, size_t size);
 
-long long getSum(const int *a, size_t n);
+long long getSum(int *a, size_t n);
 
 void transposeIfMatrixHasEqualSumOfRows(matrix m, size_t nRows, size_t nCols);
 
