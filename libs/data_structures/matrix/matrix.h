@@ -67,6 +67,24 @@ matrix *createArrayOfMatrixFromArray(const int *values, size_t nMatrices, size_t
 
 void swapRowsSquareMatrixWithMaxMinElement(matrix m);
 
+int getMax(int *a, size_t n);
+
+void sortRowsByMaxElement(matrix m);
+
+int getMin(int *a, size_t n);
+
+void sortColsByMinElement(matrix m);
+
+matrix mulMatrices(matrix m1, matrix m2);
+
+void getSquareOfMatrixIfSymmetric(matrix *m);
+
 size_t find(long long *arr, size_t size, int el);
+
+bool isUnique(long long *arr, size_t size);
+
+long long getSum(const int *a, size_t n);
+
+void transposeIfMatrixHasEqualSumOfRows(matrix m, size_t nRows, size_t nCols);
 
 #endif //WORKPROJECT_MATRIX_H

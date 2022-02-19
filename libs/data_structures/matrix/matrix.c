@@ -310,4 +310,22 @@ void transposeIfMatrixHasEqualSumOfRows(matrix m, size_t nRows, size_t nCols) {
         transposeSquareMatrix(m);
 }
 
+bool isMutuallyInverseMatrices(matrix m1, matrix m2) {
+    return isSquareMatrix(m1) && isEMatrix(mulMatrices(m1, m2));
+}
+
+int test_MutuallyInverseMatrices() {
+    size_t n;
+    scanf("%zu", &n);
+
+    matrix m1 = getMemMatrix(n, n);
+    inputMatrix(m1);
+    matrix m2 = getMemMatrix(n, n);
+    inputMatrix(m2);
+
+    printf("%d", isMutuallyInverseMatrices(m1, m2));
+
+    return 0;
+}
+
 
