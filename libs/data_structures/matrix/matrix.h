@@ -112,6 +112,10 @@ int countNUnique(long long *a, size_t n);
 
 int countEqClassesByRowsSum(matrix m);
 
-int getNSpecialElement(matrix m, size_t nRows, size_t nCols);
+int getNSpecialElement(matrix m);
+
+position getLeftMin(matrix m);
+
+void swapPenultimateRow(matrix m, size_t n);
 
 #endif //WORKPROJECT_MATRIX_H

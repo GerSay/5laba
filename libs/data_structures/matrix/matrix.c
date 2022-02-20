@@ -452,12 +452,12 @@ int countEqClassesByRowsSum(matrix m) {
 
 //---------------------------------------11----------------------------------
 
-int getNSpecialElement(matrix m, size_t nRows, size_t nCols) {
+int getNSpecialElement(matrix m) {
     int countEl = 0;
-    for (size_t j = 0; j < nCols; j++) {
+    for (size_t j = 0; j < m.nCols; j++) {
         int specialEl = m.values[0][j];
         int sum = 0;
-        for (size_t i = 1; i < nRows; i++)
+        for (size_t i = 1; i < m.nRows; i++)
             if (m.values[i][j] > specialEl) {
                 sum += specialEl;
                 specialEl = m.values[i][j];
@@ -472,3 +472,37 @@ int getNSpecialElement(matrix m, size_t nRows, size_t nCols) {
 }
 
 //---------------------------------------12----------------------------------
+
+position getLeftMin(matrix m) {
+    int min = m.values[0][0];
+    position minPos = {0, 0};
+
+    for (size_t i = 0; i < m.nCols; i++)
+        for (size_t j = 0; j < m.nRows; j++)
+            if (m.values[j][i] < min) {
+                min = m.values[j][i];
+                minPos.colIndex = i;
+                minPos.rowIndex = j;
+            }
+
+    return minPos;
+}
+
+void penultimateError() {
+    fprintf(stderr, "Has not penultimate row.");
+    exit(5);
+}
+
+void swapPenultimateRow(matrix m, size_t n) {
+    if (m.nRows < 2)
+        penultimateError();
+
+    int col[m.nRows];
+    position min = getLeftMin(m);
+
+    for (size_t i = 0; i < m.nRows; i++)
+        col[i] = m.values[i][min.colIndex];
+
+    memcpy(m.values[m.nRows - 2], col, sizeof(int) * m.nCols);
+}
+
