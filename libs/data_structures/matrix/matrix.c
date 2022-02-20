@@ -452,3 +452,23 @@ int countEqClassesByRowsSum(matrix m) {
 
 //---------------------------------------11----------------------------------
 
+int getNSpecialElement(matrix m, size_t nRows, size_t nCols) {
+    int countEl = 0;
+    for (size_t j = 0; j < nCols; j++) {
+        int specialEl = m.values[0][j];
+        int sum = 0;
+        for (size_t i = 1; i < nRows; i++)
+            if (m.values[i][j] > specialEl) {
+                sum += specialEl;
+                specialEl = m.values[i][j];
+            } else
+                sum += m.values[i][j];
+
+        if (specialEl > sum)
+            countEl++;
+    }
+
+    return countEl;
+}
+
+//---------------------------------------12----------------------------------
