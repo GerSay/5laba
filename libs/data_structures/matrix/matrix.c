@@ -1,4 +1,5 @@
 #include "matrix.h"
+#include <math.h>
 
 void errorSquareMatrix() {
     fprintf(stderr, "Matrix is not square");
@@ -387,4 +388,33 @@ int getMinInArea(matrix m) {
 
     return minEl;
 }
+
+//---------------------------------------9-----------------------------------
+
+float getDistance(int *a, size_t n) {
+    float distance = 0;
+    for (size_t i = 0; i < n; i++)
+        distance += (float) (a[i] * a[i]);
+
+    return sqrtf(distance);
+}
+
+void insertionSortRowsMatrixByRowCriteriaF(matrix m, float (*criteria)(int *, size_t)) {
+    float rowsCriteria[m.nRows];
+    for (size_t i = 0; i < m.nRows; i++)
+        rowsCriteria[i] = criteria(m.values[i], m.nCols);
+
+    for (size_t i = 1; i < m.nRows; i++)
+        for (size_t j = i; j > 0 && rowsCriteria[j - 1] > rowsCriteria[j]; j--) {
+            swapU(&rowsCriteria[j - 1], &rowsCriteria[j], sizeof(float));
+            swapRows(m, j, j - 1);
+        }
+}
+
+void sortByDistances(matrix m) {
+    insertionSortRowsMatrixByRowCriteriaF(m, getDistance);
+}
+
+
+
 
