@@ -1,5 +1,5 @@
 #ifndef WORKPROJECT_MATRIX_H
-#decfine WORKPROJECT_MATRIX_H
+#define WORKPROJECT_MATRIX_H
 
 #include "../../algorithms/array/array.h"
 #include "../../algorithms/base/base.h"
@@ -7,6 +7,7 @@
 #include <stdbool.h>
 #include <malloc.h>
 #include <string.h>
+#include <math.h>
 
 typedef struct matrix {
     int **values;
@@ -98,5 +99,17 @@ long long findSumOfMaxesOfPseudoDiagonal(matrix m);
 int min(int x, int y);
 
 int getMinInArea(matrix m);
+
+float getDistance(int *a, size_t n);
+
+void insertionSortRowsMatrixByRowCriteriaF(matrix m, float (*criteria)(int *, size_t));
+
+void sortByDistances(matrix m);
+
+int cmp_long_long(const void *pa, const void *pb);
+
+int countNUnique(long long *a, size_t n);
+
+int countEqClassesByRowsSum(matrix m);
 
 #endif //WORKPROJECT_MATRIX_H

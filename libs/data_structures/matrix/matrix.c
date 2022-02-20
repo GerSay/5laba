@@ -1,5 +1,4 @@
 #include "matrix.h"
-#include <math.h>
 
 void errorSquareMatrix() {
     fprintf(stderr, "Matrix is not square");
@@ -415,6 +414,41 @@ void sortByDistances(matrix m) {
     insertionSortRowsMatrixByRowCriteriaF(m, getDistance);
 }
 
+//---------------------------------------10----------------------------------
 
+int cmp_long_long(const void *pa, const void *pb) {
+    long long arg1 = *(const long long *) pa;
+    long long arg2 = *(const long long *) pb;
 
+    if (arg1 < arg2)
+        return -1;
+    return arg1 > arg2;
+}
+
+int countNUnique(long long *a, size_t n) {
+    if (n == 1)
+        return 1;
+
+    qsort(a, n, sizeof(long long), cmp_long_long);
+
+    int counterOfUnique = 1;
+    size_t i = 1;
+    while (i < n) {
+        if (a[i] != a[i - 1])
+            counterOfUnique++;
+        i++;
+    }
+
+    return counterOfUnique;
+}
+
+int countEqClassesByRowsSum(matrix m) {
+    long long rowSums[m.nRows];
+    for (size_t i = 0; i < m.nRows; i++)
+        rowSums[i] = getSum(m.values[i], m.nCols);
+
+    return countNUnique(rowSums, m.nRows);
+}
+
+//---------------------------------------11----------------------------------
 
