@@ -118,4 +118,10 @@ position getLeftMin(matrix m);
 
 void swapPenultimateRow(matrix m, size_t n);
 
+bool isNonDescendingSorted(int *a, size_t n);
+
+bool hasAllNonDescendingRows(matrix m);
+
+int countNonDescendingRowsMatrices(matrix *ms, size_t nMatrix);
+
 #endif //WORKPROJECT_MATRIX_H

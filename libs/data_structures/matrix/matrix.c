@@ -508,7 +508,7 @@ void swapPenultimateRow(matrix m, size_t n) {
 
 //---------------------------------------13----------------------------------
 
-bool isNonDescendingSorted(int *a, int n) {
+bool isNonDescendingSorted(int *a, size_t n) {
     for (size_t i = 1; i < n; i++)
         if (a[i] < a[i - 1])
             return 0;
@@ -522,13 +522,44 @@ bool hasAllNonDescendingRows(matrix m) {
     return 1;
 }
 
-int countNonDescendingRowsMatrices(matrix *ms, int nMatrix) {
-    int counter = 0;
+int countNonDescendingRowsMatrices(matrix *ms, size_t nMatrix) {
+    int count = 0;
     for (size_t k = 0; k < nMatrix; k++)
         if (hasAllNonDescendingRows(ms[k]))
-            counter++;
+            count++;
 
-    return counter;
+    return count;
 }
 
+//---------------------------------------14----------------------------------
+
+int countValues(const int *a, size_t n, size_t value) {
+    int count = 0;
+    for (size_t i = 0; i < n; i++)
+        if (a[i] == value)
+            count++;
+
+    return count;
+}
+
+int countZeroRows(matrix m) {
+    int countZero = 0;
+    for (size_t i = 0; i < m.nRows; i++)
+        if (countValues(m.values[i], m.nCols, 0) == m.nCols)
+            countZero++;
+
+    return countZero;
+}
+
+void printMatrixWithMaxZeroRows(matrix *ms, size_t nMatrix) {
+    int zeroCount[nMatrix];
+    for (size_t i = 0; i < nMatrix; i++)
+        zeroCount[i] = countZeroRows(ms[i]);
+
+    int max = getMax(zeroCount, nMatrix);
+
+    for (size_t i = 0; i < nMatrix; i++)
+        if (zeroCount[i] == max)
+            outputMatrix(ms[i]);
+}
 
