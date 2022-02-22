@@ -488,6 +488,30 @@ libs/govnocode/DiscMath/DiscMath.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.s
 .PHONY : libs/govnocode/DiscMath/DiscMath.c.s
 
+libs/tasks/5d_tasks/5d_tasks.obj: libs/tasks/5d_tasks/5d_tasks.c.obj
+.PHONY : libs/tasks/5d_tasks/5d_tasks.obj
+
+# target to build an object file
+libs/tasks/5d_tasks/5d_tasks.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/tasks/5d_tasks/5d_tasks.c.obj
+.PHONY : libs/tasks/5d_tasks/5d_tasks.c.obj
+
+libs/tasks/5d_tasks/5d_tasks.i: libs/tasks/5d_tasks/5d_tasks.c.i
+.PHONY : libs/tasks/5d_tasks/5d_tasks.i
+
+# target to preprocess a source file
+libs/tasks/5d_tasks/5d_tasks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/tasks/5d_tasks/5d_tasks.c.i
+.PHONY : libs/tasks/5d_tasks/5d_tasks.c.i
+
+libs/tasks/5d_tasks/5d_tasks.s: libs/tasks/5d_tasks/5d_tasks.c.s
+.PHONY : libs/tasks/5d_tasks/5d_tasks.s
+
+# target to generate assembly for a file
+libs/tasks/5d_tasks/5d_tasks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/tasks/5d_tasks/5d_tasks.c.s
+.PHONY : libs/tasks/5d_tasks/5d_tasks.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -566,6 +590,9 @@ help:
 	@echo ... libs/govnocode/DiscMath/DiscMath.obj
 	@echo ... libs/govnocode/DiscMath/DiscMath.i
 	@echo ... libs/govnocode/DiscMath/DiscMath.s
+	@echo ... libs/tasks/5d_tasks/5d_tasks.obj
+	@echo ... libs/tasks/5d_tasks/5d_tasks.i
+	@echo ... libs/tasks/5d_tasks/5d_tasks.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

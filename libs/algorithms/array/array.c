@@ -171,3 +171,95 @@ void inputArrayD_(int *m, size_t size) {
     for (size_t i = 0; i < size; i++)
         scanf("%d", m + i);
 }
+
+int _getMax(int *a, size_t n) {
+    int max = a[0];
+    for (size_t i = 0; i < n; i++)
+        max = max < a[i] ? a[i] : max;
+
+    return max;
+}
+
+int _getMin(int *a, size_t n) {
+    int min = a[0];
+    for (size_t i = 0; i < n; i++)
+        min = min > a[i] ? a[i] : min;
+
+    return min;
+}
+
+size_t _find(long long *arr, size_t size, int element) {
+    for (size_t i = 0; i < size; i++)
+        if (arr[i] == element)
+            return i;
+
+    return size;
+}
+
+bool _isUnique(long long *arr, size_t size) {
+    for (size_t i = 0; i < size; i++) {
+        const size_t pos = _find(arr, size, (int) arr[i]);
+        if (pos != i && pos != size)
+            return 0;
+    }
+
+    return 1;
+}
+
+long long _getSum(int *a, size_t n) {
+    long long sum = 0;
+    for (size_t i = 0; i < n; i++)
+        sum += a[i];
+
+    return sum;
+}
+
+float _getDistance(int *a, size_t n) {
+    float distance = 0;
+    for (size_t i = 0; i < n; i++)
+        distance += (float) (a[i] * a[i]);
+
+    return sqrtf(distance);
+}
+
+int _cmp_long_long(const void *pa, const void *pb) {
+    long long arg1 = *(const long long *) pa;
+    long long arg2 = *(const long long *) pb;
+
+    if (arg1 < arg2)
+        return -1;
+    return arg1 > arg2;
+}
+
+int _countNUnique(long long *a, size_t n) {
+    if (n == 1)
+        return 1;
+
+    qsort(a, n, sizeof(long long), _cmp_long_long);
+
+    int counterOfUnique = 1;
+    size_t i = 1;
+    while (i < n) {
+        if (a[i] != a[i - 1])
+            counterOfUnique++;
+        i++;
+    }
+
+    return counterOfUnique;
+}
+
+bool _isNonDescendingSorted(int *a, size_t n) {
+    for (size_t i = 1; i < n; i++)
+        if (a[i] < a[i - 1])
+            return 0;
+    return 1;
+}
+
+int _countValues(const int *a, size_t n, size_t value) {
+    int count = 0;
+    for (size_t i = 0; i < n; i++)
+        if (a[i] == value)
+            count++;
+
+    return count;
+}

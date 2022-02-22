@@ -3,6 +3,7 @@
 
 #include "../../algorithms/array/array.h"
 #include "../../algorithms/base/base.h"
+#include "../../tasks/5d tasks/5d tasks.h"
 
 #include <stdbool.h>
 #include <malloc.h>
@@ -66,62 +67,5 @@ matrix createMatrixFromArray(const int *a, size_t nRows, size_t nCols);
 
 matrix *createArrayOfMatrixFromArray(const int *values, size_t nMatrices, size_t nRows, size_t nCols);
 
-void swapRowsSquareMatrixWithMaxMinElement(matrix m);
-
-int getMax(int *a, size_t n);
-
-void sortRowsByMaxElement(matrix m);
-
-int getMin(int *a, size_t n);
-
-void sortColsByMinElement(matrix m);
-
-matrix mulMatrices(matrix m1, matrix m2);
-
-void getSquareOfMatrixIfSymmetric(matrix *m);
-
-size_t find(long long *arr, size_t size, int el);
-
-bool isUnique(long long *arr, size_t size);
-
-long long getSum(int *a, size_t n);
-
-void transposeIfMatrixHasEqualSumOfRows(matrix m, size_t nRows, size_t nCols);
-
-bool isMutuallyInverseMatrices(matrix m1, matrix m2);
-
-int max(int a, int b);
-
-int findDiagonalMax(matrix m, size_t i, size_t k);
-
-long long findSumOfMaxesOfPseudoDiagonal(matrix m);
-
-int min(int x, int y);
-
-int getMinInArea(matrix m);
-
-float getDistance(int *a, size_t n);
-
-void insertionSortRowsMatrixByRowCriteriaF(matrix m, float (*criteria)(int *, size_t));
-
-void sortByDistances(matrix m);
-
-int cmp_long_long(const void *pa, const void *pb);
-
-int countNUnique(long long *a, size_t n);
-
-int countEqClassesByRowsSum(matrix m);
-
-int getNSpecialElement(matrix m);
-
-position getLeftMin(matrix m);
-
-void swapPenultimateRow(matrix m, size_t n);
-
-bool isNonDescendingSorted(int *a, size_t n);
-
-bool hasAllNonDescendingRows(matrix m);
-
-int countNonDescendingRowsMatrices(matrix *ms, size_t nMatrix);
 
 #endif //WORKPROJECT_MATRIX_H

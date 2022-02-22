@@ -5,6 +5,9 @@
 #include <stdio.h>
 #include <limits.h>
 #include <assert.h>
+#include <stdbool.h>
+#include <math.h>
+#include <stdlib.h>
 
 // ввод массива data размера n
 void inputArray_(int *a, size_t n);
@@ -14,7 +17,7 @@ void outputArray_(const int *a, size_t n);
 
 // возвращает значение первого вхождения элемента x
 // в массиве a размера n при его наличии, иначе - n
-size_t linearSearch_(const int *a, const size_t n, int x);
+size_t linearSearch_(const int *a, size_t n, int x);
 
 void copyArray(int *a, const int *b, size_t size);
 
@@ -24,7 +27,7 @@ int binarySearchLess(int *a, int size, int x);
 
 // возвращает позицию вхождения элемента x
 // в отсортированном массиве a размера n при его наличии, иначе - SIZE_MAX
-size_t binarySearch_(const int *a, const size_t n, int x);
+size_t binarySearch_(const int *a, size_t n, int x);
 
 size_t binarySearchIf_(const int *a, const size_t n, int x, int (*f) (int, int));
 
@@ -74,5 +77,28 @@ int countIf_(const int *a, size_t n, int (*predicate )(int));
 void deleteIf_(int *a, size_t *n, int (*deletePredicate )(int));
 
 void inputArrayD_(int *m, size_t size);
+
+int _getMax(int *a, size_t n);
+
+int _getMin(int *a, size_t n);
+
+size_t _find(long long *arr, size_t size, int element);
+
+bool _isUnique(long long *arr, size_t size);
+
+long long _getSum(int *a, size_t n);
+
+float _getDistance(int *a, size_t n);
+
+int _cmp_long_long(const void *pa, const void *pb);
+
+int _countNUnique(long long *a, size_t n);
+
+bool _isNonDescendingSorted(int *a, size_t n);
+
+int _countValues(const int *a, size_t n, size_t value);
+
+
+
 
 #endif //WORKPROJECT_ARRAY_H
