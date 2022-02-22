@@ -3,7 +3,6 @@
 
 #include "../../algorithms/array/array.h"
 #include "../../algorithms/base/base.h"
-#include "../../tasks/5dTasks/5dTasks.h"
 
 #include <stdbool.h>
 #include <malloc.h>
@@ -49,7 +48,7 @@ void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(int *, size_
 
 bool isSquareMatrix(matrix m);
 
-bool twoMatricesEqual(matrix m1, matrix m2);
+bool isTwoMatricesEqual(matrix m1, matrix m2);
 
 bool isEMatrix(matrix m);
 

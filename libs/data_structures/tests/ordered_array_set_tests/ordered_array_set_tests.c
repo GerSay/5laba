@@ -1,5 +1,5 @@
-#include "../../data_structures/ordered_array_set/ordered_array_set.h"
-#include "../../data_structures/bitset/bitset.h"
+#include "../../ordered_array_set/ordered_array_set.h"
+#include "../../bitset/bitset.h"
 
 /*-------------------------------------------------------------------------------------*/
 /*-------------Честно, я пытался сломать свой код, но, видимо, не судьба..-------------*/

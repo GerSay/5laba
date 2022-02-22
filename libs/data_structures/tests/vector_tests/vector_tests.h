@@ -1,8 +1,8 @@
 #ifndef WORKPROJECT_VECTOR_TESTS_H
 #define WORKPROJECT_VECTOR_TESTS_H
 
-#include "../../algorithms/algorithms.h"
-#include "../../data_structures/vector/vector.h"
+#include "../../../algorithms/algorithms.h"
+#include "../../vector/vector.h"
 #include <assert.h>
 #include <stdint.h>
 

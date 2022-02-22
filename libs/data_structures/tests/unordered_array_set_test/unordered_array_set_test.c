@@ -1,8 +1,8 @@
 #include <assert.h>
 
 #include "unordered_array_set_test.h"
-#include "../../data_structures/bitset/bitset.h"
-#include "../../data_structures/unordered_array_set/unordered_array_set.h"
+#include "../../bitset/bitset.h"
+#include "../../unordered_array_set/unordered_array_set.h"
 
 void test_unordered_array_set_create1() {
     unordered_array_set set1 = unordered_array_set_create(3);

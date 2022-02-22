@@ -66,6 +66,8 @@ CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.obj: \
  ../libs/data_structures/matrix/matrix.h \
  ../libs/tasks/5dTasks/5dTasks.c \
  ../libs/tasks/5dTasks/5dTasks.h
+CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.obj: \
+ ../libs/tasks/5dTasks/5dTasks_tests.c \
+ ../libs/tasks/5dTasks/5dTasks_tests.h
 CMakeFiles/workProject.dir/main.c.obj: \
- ../libs/algorithms/base/base.h \
  ../main.c

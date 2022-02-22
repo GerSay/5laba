@@ -16,7 +16,7 @@ void sortColsByMinElement(matrix m);
 void getSquareOfMatrixIfSymmetric(matrix *m);
 
 //5
-void transposeIfMatrixHasEqualSumOfRows(matrix m, size_t nRows, size_t nCols);
+void transposeIfMatrixHasEqualSumOfRows(matrix m);
 
 //6
 bool isMutuallyInverseMatrices(matrix m1, matrix m2);
@@ -37,15 +37,19 @@ int countEqClassesByRowsSum(matrix m);
 int getNSpecialElement(matrix m);
 
 //12
-void swapPenultimateRow(matrix m, size_t n);
+void swapPenultimateRow(matrix m);
 
 //13
 int countNonDescendingRowsMatrices(matrix *ms, size_t nMatrix);
 
 //14
+int countZeroRows(matrix m);
+
 void printMatrixWithMaxZeroRows(matrix *ms, size_t nMatrix);
 
 //15
+int getMatrixNormal(matrix m);
+
 void printMatrixWithNormal(matrix *ms, size_t nMatrix);
 
 

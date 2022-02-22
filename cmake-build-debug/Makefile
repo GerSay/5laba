@@ -296,29 +296,125 @@ libs/data_structures/ordered_array_set/ordered_array_set.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set/ordered_array_set.c.s
 .PHONY : libs/data_structures/ordered_array_set/ordered_array_set.c.s
 
-libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.obj: libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c.obj
-.PHONY : libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.obj
+libs/data_structures/tests/matrix_tests/matrix_tests.obj: libs/data_structures/tests/matrix_tests/matrix_tests.c.obj
+.PHONY : libs/data_structures/tests/matrix_tests/matrix_tests.obj
 
 # target to build an object file
-libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c.obj
-.PHONY : libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c.obj
+libs/data_structures/tests/matrix_tests/matrix_tests.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/tests/matrix_tests/matrix_tests.c.obj
+.PHONY : libs/data_structures/tests/matrix_tests/matrix_tests.c.obj
 
-libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.i: libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c.i
-.PHONY : libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.i
+libs/data_structures/tests/matrix_tests/matrix_tests.i: libs/data_structures/tests/matrix_tests/matrix_tests.c.i
+.PHONY : libs/data_structures/tests/matrix_tests/matrix_tests.i
 
 # target to preprocess a source file
-libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c.i
-.PHONY : libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c.i
+libs/data_structures/tests/matrix_tests/matrix_tests.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/tests/matrix_tests/matrix_tests.c.i
+.PHONY : libs/data_structures/tests/matrix_tests/matrix_tests.c.i
 
-libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.s: libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c.s
-.PHONY : libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.s
+libs/data_structures/tests/matrix_tests/matrix_tests.s: libs/data_structures/tests/matrix_tests/matrix_tests.c.s
+.PHONY : libs/data_structures/tests/matrix_tests/matrix_tests.s
 
 # target to generate assembly for a file
-libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c.s
-.PHONY : libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c.s
+libs/data_structures/tests/matrix_tests/matrix_tests.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/tests/matrix_tests/matrix_tests.c.s
+.PHONY : libs/data_structures/tests/matrix_tests/matrix_tests.c.s
+
+libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.obj: libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c.obj
+.PHONY : libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.obj
+
+# target to build an object file
+libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c.obj
+.PHONY : libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c.obj
+
+libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.i: libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c.i
+.PHONY : libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.i
+
+# target to preprocess a source file
+libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c.i
+.PHONY : libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c.i
+
+libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.s: libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c.s
+.PHONY : libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.s
+
+# target to generate assembly for a file
+libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c.s
+.PHONY : libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c.s
+
+libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.obj: libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c.obj
+.PHONY : libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.obj
+
+# target to build an object file
+libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c.obj
+.PHONY : libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c.obj
+
+libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.i: libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c.i
+.PHONY : libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.i
+
+# target to preprocess a source file
+libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c.i
+.PHONY : libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c.i
+
+libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.s: libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c.s
+.PHONY : libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.s
+
+# target to generate assembly for a file
+libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c.s
+.PHONY : libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c.s
+
+libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.obj: libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c.obj
+.PHONY : libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.obj
+
+# target to build an object file
+libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c.obj
+.PHONY : libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c.obj
+
+libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.i: libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c.i
+.PHONY : libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.i
+
+# target to preprocess a source file
+libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c.i
+.PHONY : libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c.i
+
+libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.s: libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c.s
+.PHONY : libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.s
+
+# target to generate assembly for a file
+libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c.s
+.PHONY : libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c.s
+
+libs/data_structures/tests/vector_tests/vector_tests.obj: libs/data_structures/tests/vector_tests/vector_tests.c.obj
+.PHONY : libs/data_structures/tests/vector_tests/vector_tests.obj
+
+# target to build an object file
+libs/data_structures/tests/vector_tests/vector_tests.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/tests/vector_tests/vector_tests.c.obj
+.PHONY : libs/data_structures/tests/vector_tests/vector_tests.c.obj
+
+libs/data_structures/tests/vector_tests/vector_tests.i: libs/data_structures/tests/vector_tests/vector_tests.c.i
+.PHONY : libs/data_structures/tests/vector_tests/vector_tests.i
+
+# target to preprocess a source file
+libs/data_structures/tests/vector_tests/vector_tests.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/tests/vector_tests/vector_tests.c.i
+.PHONY : libs/data_structures/tests/vector_tests/vector_tests.c.i
+
+libs/data_structures/tests/vector_tests/vector_tests.s: libs/data_structures/tests/vector_tests/vector_tests.c.s
+.PHONY : libs/data_structures/tests/vector_tests/vector_tests.s
+
+# target to generate assembly for a file
+libs/data_structures/tests/vector_tests/vector_tests.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/tests/vector_tests/vector_tests.c.s
+.PHONY : libs/data_structures/tests/vector_tests/vector_tests.c.s
 
 libs/data_structures/unordered_array_set/unordered_array_set.obj: libs/data_structures/unordered_array_set/unordered_array_set.c.obj
 .PHONY : libs/data_structures/unordered_array_set/unordered_array_set.obj
@@ -343,30 +439,6 @@ libs/data_structures/unordered_array_set/unordered_array_set.s: libs/data_struct
 libs/data_structures/unordered_array_set/unordered_array_set.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/unordered_array_set/unordered_array_set.c.s
 .PHONY : libs/data_structures/unordered_array_set/unordered_array_set.c.s
-
-libs/data_structures/unordered_array_set_test/unordered_array_set_test.obj: libs/data_structures/unordered_array_set_test/unordered_array_set_test.c.obj
-.PHONY : libs/data_structures/unordered_array_set_test/unordered_array_set_test.obj
-
-# target to build an object file
-libs/data_structures/unordered_array_set_test/unordered_array_set_test.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/unordered_array_set_test/unordered_array_set_test.c.obj
-.PHONY : libs/data_structures/unordered_array_set_test/unordered_array_set_test.c.obj
-
-libs/data_structures/unordered_array_set_test/unordered_array_set_test.i: libs/data_structures/unordered_array_set_test/unordered_array_set_test.c.i
-.PHONY : libs/data_structures/unordered_array_set_test/unordered_array_set_test.i
-
-# target to preprocess a source file
-libs/data_structures/unordered_array_set_test/unordered_array_set_test.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/unordered_array_set_test/unordered_array_set_test.c.i
-.PHONY : libs/data_structures/unordered_array_set_test/unordered_array_set_test.c.i
-
-libs/data_structures/unordered_array_set_test/unordered_array_set_test.s: libs/data_structures/unordered_array_set_test/unordered_array_set_test.c.s
-.PHONY : libs/data_structures/unordered_array_set_test/unordered_array_set_test.s
-
-# target to generate assembly for a file
-libs/data_structures/unordered_array_set_test/unordered_array_set_test.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/unordered_array_set_test/unordered_array_set_test.c.s
-.PHONY : libs/data_structures/unordered_array_set_test/unordered_array_set_test.c.s
 
 libs/data_structures/vector/vector.obj: libs/data_structures/vector/vector.c.obj
 .PHONY : libs/data_structures/vector/vector.obj
@@ -416,54 +488,6 @@ libs/data_structures/vectorVoid/vectorVoid.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/vectorVoid/vectorVoid.c.s
 .PHONY : libs/data_structures/vectorVoid/vectorVoid.c.s
 
-libs/data_structures/vectorVoid_tests/vectorVoid_tests.obj: libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.obj
-.PHONY : libs/data_structures/vectorVoid_tests/vectorVoid_tests.obj
-
-# target to build an object file
-libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.obj
-.PHONY : libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.obj
-
-libs/data_structures/vectorVoid_tests/vectorVoid_tests.i: libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.i
-.PHONY : libs/data_structures/vectorVoid_tests/vectorVoid_tests.i
-
-# target to preprocess a source file
-libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.i
-.PHONY : libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.i
-
-libs/data_structures/vectorVoid_tests/vectorVoid_tests.s: libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.s
-.PHONY : libs/data_structures/vectorVoid_tests/vectorVoid_tests.s
-
-# target to generate assembly for a file
-libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.s
-.PHONY : libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.s
-
-libs/data_structures/vector_tests/vector_tests.obj: libs/data_structures/vector_tests/vector_tests.c.obj
-.PHONY : libs/data_structures/vector_tests/vector_tests.obj
-
-# target to build an object file
-libs/data_structures/vector_tests/vector_tests.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/vector_tests/vector_tests.c.obj
-.PHONY : libs/data_structures/vector_tests/vector_tests.c.obj
-
-libs/data_structures/vector_tests/vector_tests.i: libs/data_structures/vector_tests/vector_tests.c.i
-.PHONY : libs/data_structures/vector_tests/vector_tests.i
-
-# target to preprocess a source file
-libs/data_structures/vector_tests/vector_tests.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/vector_tests/vector_tests.c.i
-.PHONY : libs/data_structures/vector_tests/vector_tests.c.i
-
-libs/data_structures/vector_tests/vector_tests.s: libs/data_structures/vector_tests/vector_tests.c.s
-.PHONY : libs/data_structures/vector_tests/vector_tests.s
-
-# target to generate assembly for a file
-libs/data_structures/vector_tests/vector_tests.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/vector_tests/vector_tests.c.s
-.PHONY : libs/data_structures/vector_tests/vector_tests.c.s
-
 libs/govnocode/DiscMath/DiscMath.obj: libs/govnocode/DiscMath/DiscMath.c.obj
 .PHONY : libs/govnocode/DiscMath/DiscMath.obj
 
@@ -511,6 +535,30 @@ libs/tasks/5dTasks/5dTasks.s: libs/tasks/5dTasks/5dTasks.c.s
 libs/tasks/5dTasks/5dTasks.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.s
 .PHONY : libs/tasks/5dTasks/5dTasks.c.s
+
+libs/tasks/5dTasks/5dTasks_tests.obj: libs/tasks/5dTasks/5dTasks_tests.c.obj
+.PHONY : libs/tasks/5dTasks/5dTasks_tests.obj
+
+# target to build an object file
+libs/tasks/5dTasks/5dTasks_tests.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.obj
+.PHONY : libs/tasks/5dTasks/5dTasks_tests.c.obj
+
+libs/tasks/5dTasks/5dTasks_tests.i: libs/tasks/5dTasks/5dTasks_tests.c.i
+.PHONY : libs/tasks/5dTasks/5dTasks_tests.i
+
+# target to preprocess a source file
+libs/tasks/5dTasks/5dTasks_tests.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.i
+.PHONY : libs/tasks/5dTasks/5dTasks_tests.c.i
+
+libs/tasks/5dTasks/5dTasks_tests.s: libs/tasks/5dTasks/5dTasks_tests.c.s
+.PHONY : libs/tasks/5dTasks/5dTasks_tests.s
+
+# target to generate assembly for a file
+libs/tasks/5dTasks/5dTasks_tests.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.s
+.PHONY : libs/tasks/5dTasks/5dTasks_tests.c.s
 
 main.obj: main.c.obj
 .PHONY : main.obj
@@ -566,33 +614,39 @@ help:
 	@echo ... libs/data_structures/ordered_array_set/ordered_array_set.obj
 	@echo ... libs/data_structures/ordered_array_set/ordered_array_set.i
 	@echo ... libs/data_structures/ordered_array_set/ordered_array_set.s
-	@echo ... libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.obj
-	@echo ... libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.i
-	@echo ... libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.s
+	@echo ... libs/data_structures/tests/matrix_tests/matrix_tests.obj
+	@echo ... libs/data_structures/tests/matrix_tests/matrix_tests.i
+	@echo ... libs/data_structures/tests/matrix_tests/matrix_tests.s
+	@echo ... libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.obj
+	@echo ... libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.i
+	@echo ... libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.s
+	@echo ... libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.obj
+	@echo ... libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.i
+	@echo ... libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.s
+	@echo ... libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.obj
+	@echo ... libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.i
+	@echo ... libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.s
+	@echo ... libs/data_structures/tests/vector_tests/vector_tests.obj
+	@echo ... libs/data_structures/tests/vector_tests/vector_tests.i
+	@echo ... libs/data_structures/tests/vector_tests/vector_tests.s
 	@echo ... libs/data_structures/unordered_array_set/unordered_array_set.obj
 	@echo ... libs/data_structures/unordered_array_set/unordered_array_set.i
 	@echo ... libs/data_structures/unordered_array_set/unordered_array_set.s
-	@echo ... libs/data_structures/unordered_array_set_test/unordered_array_set_test.obj
-	@echo ... libs/data_structures/unordered_array_set_test/unordered_array_set_test.i
-	@echo ... libs/data_structures/unordered_array_set_test/unordered_array_set_test.s
 	@echo ... libs/data_structures/vector/vector.obj
 	@echo ... libs/data_structures/vector/vector.i
 	@echo ... libs/data_structures/vector/vector.s
 	@echo ... libs/data_structures/vectorVoid/vectorVoid.obj
 	@echo ... libs/data_structures/vectorVoid/vectorVoid.i
 	@echo ... libs/data_structures/vectorVoid/vectorVoid.s
-	@echo ... libs/data_structures/vectorVoid_tests/vectorVoid_tests.obj
-	@echo ... libs/data_structures/vectorVoid_tests/vectorVoid_tests.i
-	@echo ... libs/data_structures/vectorVoid_tests/vectorVoid_tests.s
-	@echo ... libs/data_structures/vector_tests/vector_tests.obj
-	@echo ... libs/data_structures/vector_tests/vector_tests.i
-	@echo ... libs/data_structures/vector_tests/vector_tests.s
 	@echo ... libs/govnocode/DiscMath/DiscMath.obj
 	@echo ... libs/govnocode/DiscMath/DiscMath.i
 	@echo ... libs/govnocode/DiscMath/DiscMath.s
 	@echo ... libs/tasks/5dTasks/5dTasks.obj
 	@echo ... libs/tasks/5dTasks/5dTasks.i
 	@echo ... libs/tasks/5dTasks/5dTasks.s
+	@echo ... libs/tasks/5dTasks/5dTasks_tests.obj
+	@echo ... libs/tasks/5dTasks/5dTasks_tests.i
+	@echo ... libs/tasks/5dTasks/5dTasks_tests.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -107,7 +107,7 @@ bool isSquareMatrix(matrix m) {
     return m.nRows == m.nCols;
 }
 
-bool twoMatricesEqual(matrix m1, matrix m2) {
+bool isTwoMatricesEqual(matrix m1, matrix m2) {
     if (m1.nRows == m2.nRows && m1.nCols == m2.nCols) {
         for (size_t i = 0; i < m1.nRows; i++)
             if ((bool) memcmp(m1.values[i], m2.values[i], m1.nCols))

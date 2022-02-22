@@ -1,5 +1,6 @@
 #include "DiscMath.h"
 
+//1
 int *varFirst(int *a, size_t sizeA, int *b, size_t sizeB, int *c, size_t *sizeC) {
     size_t lastEl = 0;
     for (size_t i = 0; i < sizeA; i++) {
@@ -25,6 +26,7 @@ int *varFirst(int *a, size_t sizeA, int *b, size_t sizeB, int *c, size_t *sizeC)
     return c;
 }
 
+//2
 int *varSecond(int *a, size_t sizeA, int *b, size_t sizeB, int *c, size_t *sizeC) {
     size_t lastEl = 0;
     for (size_t i = 0; i < sizeA; i++) {
@@ -41,6 +43,7 @@ int *varSecond(int *a, size_t sizeA, int *b, size_t sizeB, int *c, size_t *sizeC
     return c;
 }
 
+//3
 int *varThird(int *a, size_t sizeA, int *b, size_t sizeB, int *c, size_t *sizeC) {
     size_t lastEl = 0;
     for (size_t i = 0; i < sizeA; i++) {
@@ -57,6 +60,7 @@ int *varThird(int *a, size_t sizeA, int *b, size_t sizeB, int *c, size_t *sizeC)
     return c;
 }
 
+//4
 int *varFour(int *a, size_t sizeA, int *b, size_t sizeB, int *c, size_t *sizeC) {
     size_t lastEl = 0;
     for (size_t i = 0; i < sizeA; i++) {
@@ -82,6 +86,7 @@ int *varFour(int *a, size_t sizeA, int *b, size_t sizeB, int *c, size_t *sizeC) 
     return c;
 }
 
+//5
 int varFive(int *a, size_t sizeA, int *b, size_t sizeB) {
     for (size_t i = 0; i < sizeA; i++) {
         int flag = 0;
@@ -95,6 +100,7 @@ int varFive(int *a, size_t sizeA, int *b, size_t sizeB) {
     return 1;
 }
 
+//6
 int varSix(int *a, size_t sizeA, int *b, size_t sizeB) {
     for (size_t i = 0; i < sizeA; i++) {
         int flag = 0;
@@ -116,6 +122,7 @@ int varSix(int *a, size_t sizeA, int *b, size_t sizeB) {
     return 1;
 }
 
+//7
 int varSeven(int *a, size_t sizeA, int *b, size_t sizeB) {
     for (size_t i = 0; i < sizeA; i++) {
         int flag = 1;
@@ -137,7 +144,8 @@ int varSeven(int *a, size_t sizeA, int *b, size_t sizeB) {
     return 1;
 }
 
-// Пересмотреть подход
+
+//8 Пересмотреть подход
 void varEight(int *a, size_t sizeA, int *b, size_t sizeB, int *c, size_t *sizeC) {
     size_t iA = 0, iB = 0;
     *sizeC = 0;
@@ -150,7 +158,7 @@ void varEight(int *a, size_t sizeA, int *b, size_t sizeB, int *c, size_t *sizeC)
             c[(*sizeC)++] = b[iB++];
 }
 
-// Заготовка
+//9 Заготовка
 void varNine(int *a, size_t sizeA, int *b, size_t sizeB, int *c, size_t *sizeC) {
     size_t iA = 0, iB = 0;
     *sizeC = 0;

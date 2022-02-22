@@ -156,31 +156,31 @@ CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set/ordered_array_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set/ordered_array_set.c.s"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krytm\CLionProjects\workProject\libs\data_structures\ordered_array_set\ordered_array_set.c -o CMakeFiles\workProject.dir\libs\data_structures\ordered_array_set\ordered_array_set.c.s
 
-CMakeFiles/workProject.dir/libs/data_structures/unordered_array_set_test/unordered_array_set_test.c.obj: CMakeFiles/workProject.dir/flags.make
-CMakeFiles/workProject.dir/libs/data_structures/unordered_array_set_test/unordered_array_set_test.c.obj: ../libs/data_structures/unordered_array_set_test/unordered_array_set_test.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/workProject.dir/libs/data_structures/unordered_array_set_test/unordered_array_set_test.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\workProject.dir\libs\data_structures\unordered_array_set_test\unordered_array_set_test.c.obj -c C:\Users\krytm\CLionProjects\workProject\libs\data_structures\unordered_array_set_test\unordered_array_set_test.c
+CMakeFiles/workProject.dir/libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c.obj: CMakeFiles/workProject.dir/flags.make
+CMakeFiles/workProject.dir/libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c.obj: ../libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/workProject.dir/libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\workProject.dir\libs\data_structures\tests\unordered_array_set_test\unordered_array_set_test.c.obj -c C:\Users\krytm\CLionProjects\workProject\libs\data_structures\tests\unordered_array_set_test\unordered_array_set_test.c
 
-CMakeFiles/workProject.dir/libs/data_structures/unordered_array_set_test/unordered_array_set_test.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/workProject.dir/libs/data_structures/unordered_array_set_test/unordered_array_set_test.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krytm\CLionProjects\workProject\libs\data_structures\unordered_array_set_test\unordered_array_set_test.c > CMakeFiles\workProject.dir\libs\data_structures\unordered_array_set_test\unordered_array_set_test.c.i
+CMakeFiles/workProject.dir/libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/workProject.dir/libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krytm\CLionProjects\workProject\libs\data_structures\tests\unordered_array_set_test\unordered_array_set_test.c > CMakeFiles\workProject.dir\libs\data_structures\tests\unordered_array_set_test\unordered_array_set_test.c.i
 
-CMakeFiles/workProject.dir/libs/data_structures/unordered_array_set_test/unordered_array_set_test.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/workProject.dir/libs/data_structures/unordered_array_set_test/unordered_array_set_test.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krytm\CLionProjects\workProject\libs\data_structures\unordered_array_set_test\unordered_array_set_test.c -o CMakeFiles\workProject.dir\libs\data_structures\unordered_array_set_test\unordered_array_set_test.c.s
+CMakeFiles/workProject.dir/libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/workProject.dir/libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krytm\CLionProjects\workProject\libs\data_structures\tests\unordered_array_set_test\unordered_array_set_test.c -o CMakeFiles\workProject.dir\libs\data_structures\tests\unordered_array_set_test\unordered_array_set_test.c.s
 
-CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c.obj: CMakeFiles/workProject.dir/flags.make
-CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c.obj: ../libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\workProject.dir\libs\data_structures\ordered_array_set_tests\ordered_array_set_tests.c.obj -c C:\Users\krytm\CLionProjects\workProject\libs\data_structures\ordered_array_set_tests\ordered_array_set_tests.c
+CMakeFiles/workProject.dir/libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c.obj: CMakeFiles/workProject.dir/flags.make
+CMakeFiles/workProject.dir/libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c.obj: ../libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/workProject.dir/libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\workProject.dir\libs\data_structures\tests\ordered_array_set_tests\ordered_array_set_tests.c.obj -c C:\Users\krytm\CLionProjects\workProject\libs\data_structures\tests\ordered_array_set_tests\ordered_array_set_tests.c
 
-CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krytm\CLionProjects\workProject\libs\data_structures\ordered_array_set_tests\ordered_array_set_tests.c > CMakeFiles\workProject.dir\libs\data_structures\ordered_array_set_tests\ordered_array_set_tests.c.i
+CMakeFiles/workProject.dir/libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/workProject.dir/libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krytm\CLionProjects\workProject\libs\data_structures\tests\ordered_array_set_tests\ordered_array_set_tests.c > CMakeFiles\workProject.dir\libs\data_structures\tests\ordered_array_set_tests\ordered_array_set_tests.c.i
 
-CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krytm\CLionProjects\workProject\libs\data_structures\ordered_array_set_tests\ordered_array_set_tests.c -o CMakeFiles\workProject.dir\libs\data_structures\ordered_array_set_tests\ordered_array_set_tests.c.s
+CMakeFiles/workProject.dir/libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/workProject.dir/libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krytm\CLionProjects\workProject\libs\data_structures\tests\ordered_array_set_tests\ordered_array_set_tests.c -o CMakeFiles\workProject.dir\libs\data_structures\tests\ordered_array_set_tests\ordered_array_set_tests.c.s
 
 CMakeFiles/workProject.dir/libs/data_structures/matrix/matrix.c.obj: CMakeFiles/workProject.dir/flags.make
 CMakeFiles/workProject.dir/libs/data_structures/matrix/matrix.c.obj: ../libs/data_structures/matrix/matrix.c
@@ -221,18 +221,18 @@ CMakeFiles/workProject.dir/libs/data_structures/vector/vector.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/workProject.dir/libs/data_structures/vector/vector.c.s"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krytm\CLionProjects\workProject\libs\data_structures\vector\vector.c -o CMakeFiles\workProject.dir\libs\data_structures\vector\vector.c.s
 
-CMakeFiles/workProject.dir/libs/data_structures/vector_tests/vector_tests.c.obj: CMakeFiles/workProject.dir/flags.make
-CMakeFiles/workProject.dir/libs/data_structures/vector_tests/vector_tests.c.obj: ../libs/data_structures/vector_tests/vector_tests.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/workProject.dir/libs/data_structures/vector_tests/vector_tests.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\workProject.dir\libs\data_structures\vector_tests\vector_tests.c.obj -c C:\Users\krytm\CLionProjects\workProject\libs\data_structures\vector_tests\vector_tests.c
+CMakeFiles/workProject.dir/libs/data_structures/tests/vector_tests/vector_tests.c.obj: CMakeFiles/workProject.dir/flags.make
+CMakeFiles/workProject.dir/libs/data_structures/tests/vector_tests/vector_tests.c.obj: ../libs/data_structures/tests/vector_tests/vector_tests.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/workProject.dir/libs/data_structures/tests/vector_tests/vector_tests.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\workProject.dir\libs\data_structures\tests\vector_tests\vector_tests.c.obj -c C:\Users\krytm\CLionProjects\workProject\libs\data_structures\tests\vector_tests\vector_tests.c
 
-CMakeFiles/workProject.dir/libs/data_structures/vector_tests/vector_tests.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/workProject.dir/libs/data_structures/vector_tests/vector_tests.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krytm\CLionProjects\workProject\libs\data_structures\vector_tests\vector_tests.c > CMakeFiles\workProject.dir\libs\data_structures\vector_tests\vector_tests.c.i
+CMakeFiles/workProject.dir/libs/data_structures/tests/vector_tests/vector_tests.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/workProject.dir/libs/data_structures/tests/vector_tests/vector_tests.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krytm\CLionProjects\workProject\libs\data_structures\tests\vector_tests\vector_tests.c > CMakeFiles\workProject.dir\libs\data_structures\tests\vector_tests\vector_tests.c.i
 
-CMakeFiles/workProject.dir/libs/data_structures/vector_tests/vector_tests.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/workProject.dir/libs/data_structures/vector_tests/vector_tests.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krytm\CLionProjects\workProject\libs\data_structures\vector_tests\vector_tests.c -o CMakeFiles\workProject.dir\libs\data_structures\vector_tests\vector_tests.c.s
+CMakeFiles/workProject.dir/libs/data_structures/tests/vector_tests/vector_tests.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/workProject.dir/libs/data_structures/tests/vector_tests/vector_tests.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krytm\CLionProjects\workProject\libs\data_structures\tests\vector_tests\vector_tests.c -o CMakeFiles\workProject.dir\libs\data_structures\tests\vector_tests\vector_tests.c.s
 
 CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.obj: CMakeFiles/workProject.dir/flags.make
 CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.obj: ../libs/govnocode/DiscMath/DiscMath.c
@@ -260,18 +260,18 @@ CMakeFiles/workProject.dir/libs/data_structures/vectorVoid/vectorVoid.c.s: cmake
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/workProject.dir/libs/data_structures/vectorVoid/vectorVoid.c.s"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krytm\CLionProjects\workProject\libs\data_structures\vectorVoid\vectorVoid.c -o CMakeFiles\workProject.dir\libs\data_structures\vectorVoid\vectorVoid.c.s
 
-CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.obj: CMakeFiles/workProject.dir/flags.make
-CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.obj: ../libs/data_structures/vectorVoid_tests/vectorVoid_tests.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\workProject.dir\libs\data_structures\vectorVoid_tests\vectorVoid_tests.c.obj -c C:\Users\krytm\CLionProjects\workProject\libs\data_structures\vectorVoid_tests\vectorVoid_tests.c
+CMakeFiles/workProject.dir/libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c.obj: CMakeFiles/workProject.dir/flags.make
+CMakeFiles/workProject.dir/libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c.obj: ../libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/workProject.dir/libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\workProject.dir\libs\data_structures\tests\vectorVoid_tests\vectorVoid_tests.c.obj -c C:\Users\krytm\CLionProjects\workProject\libs\data_structures\tests\vectorVoid_tests\vectorVoid_tests.c
 
-CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krytm\CLionProjects\workProject\libs\data_structures\vectorVoid_tests\vectorVoid_tests.c > CMakeFiles\workProject.dir\libs\data_structures\vectorVoid_tests\vectorVoid_tests.c.i
+CMakeFiles/workProject.dir/libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/workProject.dir/libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krytm\CLionProjects\workProject\libs\data_structures\tests\vectorVoid_tests\vectorVoid_tests.c > CMakeFiles\workProject.dir\libs\data_structures\tests\vectorVoid_tests\vectorVoid_tests.c.i
 
-CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krytm\CLionProjects\workProject\libs\data_structures\vectorVoid_tests\vectorVoid_tests.c -o CMakeFiles\workProject.dir\libs\data_structures\vectorVoid_tests\vectorVoid_tests.c.s
+CMakeFiles/workProject.dir/libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/workProject.dir/libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krytm\CLionProjects\workProject\libs\data_structures\tests\vectorVoid_tests\vectorVoid_tests.c -o CMakeFiles\workProject.dir\libs\data_structures\tests\vectorVoid_tests\vectorVoid_tests.c.s
 
 CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.obj: CMakeFiles/workProject.dir/flags.make
 CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.obj: ../libs/tasks/5dTasks/5dTasks.c
@@ -286,6 +286,32 @@ CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.s"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krytm\CLionProjects\workProject\libs\tasks\5dTasks\5dTasks.c -o CMakeFiles\workProject.dir\libs\tasks\5dTasks\5dTasks.c.s
 
+CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.obj: CMakeFiles/workProject.dir/flags.make
+CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.obj: ../libs/tasks/5dTasks/5dTasks_tests.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\workProject.dir\libs\tasks\5dTasks\5dTasks_tests.c.obj -c C:\Users\krytm\CLionProjects\workProject\libs\tasks\5dTasks\5dTasks_tests.c
+
+CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krytm\CLionProjects\workProject\libs\tasks\5dTasks\5dTasks_tests.c > CMakeFiles\workProject.dir\libs\tasks\5dTasks\5dTasks_tests.c.i
+
+CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krytm\CLionProjects\workProject\libs\tasks\5dTasks\5dTasks_tests.c -o CMakeFiles\workProject.dir\libs\tasks\5dTasks\5dTasks_tests.c.s
+
+CMakeFiles/workProject.dir/libs/data_structures/tests/matrix_tests/matrix_tests.c.obj: CMakeFiles/workProject.dir/flags.make
+CMakeFiles/workProject.dir/libs/data_structures/tests/matrix_tests/matrix_tests.c.obj: ../libs/data_structures/tests/matrix_tests/matrix_tests.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/workProject.dir/libs/data_structures/tests/matrix_tests/matrix_tests.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\workProject.dir\libs\data_structures\tests\matrix_tests\matrix_tests.c.obj -c C:\Users\krytm\CLionProjects\workProject\libs\data_structures\tests\matrix_tests\matrix_tests.c
+
+CMakeFiles/workProject.dir/libs/data_structures/tests/matrix_tests/matrix_tests.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/workProject.dir/libs/data_structures/tests/matrix_tests/matrix_tests.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krytm\CLionProjects\workProject\libs\data_structures\tests\matrix_tests\matrix_tests.c > CMakeFiles\workProject.dir\libs\data_structures\tests\matrix_tests\matrix_tests.c.i
+
+CMakeFiles/workProject.dir/libs/data_structures/tests/matrix_tests/matrix_tests.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/workProject.dir/libs/data_structures/tests/matrix_tests/matrix_tests.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krytm\CLionProjects\workProject\libs\data_structures\tests\matrix_tests\matrix_tests.c -o CMakeFiles\workProject.dir\libs\data_structures\tests\matrix_tests\matrix_tests.c.s
+
 # Object files for target workProject
 workProject_OBJECTS = \
 "CMakeFiles/workProject.dir/main.c.obj" \
@@ -295,16 +321,18 @@ workProject_OBJECTS = \
 "CMakeFiles/workProject.dir/libs/data_structures/bitset/bitset.c.obj" \
 "CMakeFiles/workProject.dir/libs/data_structures/unordered_array_set/unordered_array_set.c.obj" \
 "CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set/ordered_array_set.c.obj" \
-"CMakeFiles/workProject.dir/libs/data_structures/unordered_array_set_test/unordered_array_set_test.c.obj" \
-"CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c.obj" \
+"CMakeFiles/workProject.dir/libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c.obj" \
+"CMakeFiles/workProject.dir/libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c.obj" \
 "CMakeFiles/workProject.dir/libs/data_structures/matrix/matrix.c.obj" \
 "CMakeFiles/workProject.dir/libs/algorithms/base/base.c.obj" \
 "CMakeFiles/workProject.dir/libs/data_structures/vector/vector.c.obj" \
-"CMakeFiles/workProject.dir/libs/data_structures/vector_tests/vector_tests.c.obj" \
+"CMakeFiles/workProject.dir/libs/data_structures/tests/vector_tests/vector_tests.c.obj" \
 "CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.obj" \
 "CMakeFiles/workProject.dir/libs/data_structures/vectorVoid/vectorVoid.c.obj" \
-"CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.obj" \
-"CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.obj"
+"CMakeFiles/workProject.dir/libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c.obj" \
+"CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.obj" \
+"CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.obj" \
+"CMakeFiles/workProject.dir/libs/data_structures/tests/matrix_tests/matrix_tests.c.obj"
 
 # External object files for target workProject
 workProject_EXTERNAL_OBJECTS =
@@ -316,21 +344,23 @@ workProject.exe: CMakeFiles/workProject.dir/libs/algorithms/algorithms.c.obj
 workProject.exe: CMakeFiles/workProject.dir/libs/data_structures/bitset/bitset.c.obj
 workProject.exe: CMakeFiles/workProject.dir/libs/data_structures/unordered_array_set/unordered_array_set.c.obj
 workProject.exe: CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set/ordered_array_set.c.obj
-workProject.exe: CMakeFiles/workProject.dir/libs/data_structures/unordered_array_set_test/unordered_array_set_test.c.obj
-workProject.exe: CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c.obj
+workProject.exe: CMakeFiles/workProject.dir/libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c.obj
+workProject.exe: CMakeFiles/workProject.dir/libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c.obj
 workProject.exe: CMakeFiles/workProject.dir/libs/data_structures/matrix/matrix.c.obj
 workProject.exe: CMakeFiles/workProject.dir/libs/algorithms/base/base.c.obj
 workProject.exe: CMakeFiles/workProject.dir/libs/data_structures/vector/vector.c.obj
-workProject.exe: CMakeFiles/workProject.dir/libs/data_structures/vector_tests/vector_tests.c.obj
+workProject.exe: CMakeFiles/workProject.dir/libs/data_structures/tests/vector_tests/vector_tests.c.obj
 workProject.exe: CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.obj
 workProject.exe: CMakeFiles/workProject.dir/libs/data_structures/vectorVoid/vectorVoid.c.obj
-workProject.exe: CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.obj
+workProject.exe: CMakeFiles/workProject.dir/libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c.obj
 workProject.exe: CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.obj
+workProject.exe: CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.obj
+workProject.exe: CMakeFiles/workProject.dir/libs/data_structures/tests/matrix_tests/matrix_tests.c.obj
 workProject.exe: CMakeFiles/workProject.dir/build.make
 workProject.exe: CMakeFiles/workProject.dir/linklibs.rsp
 workProject.exe: CMakeFiles/workProject.dir/objects1.rsp
 workProject.exe: CMakeFiles/workProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking C executable workProject.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking C executable workProject.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\workProject.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

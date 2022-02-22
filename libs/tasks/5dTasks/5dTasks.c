@@ -91,7 +91,7 @@ long long getSum(int *a, size_t n) {
     return sum;
 }
 
-void transposeIfMatrixHasEqualSumOfRows(matrix m, size_t nRows, size_t nCols) {
+void transposeIfMatrixHasEqualSumOfRows(matrix m) {
     long long *rSum = malloc(m.nRows * sizeof(long long));
     for (size_t i = 0; i < m.nRows; i++)
         rSum[i] = getSum(m.values[i], m.nCols);
@@ -261,7 +261,7 @@ void penultimateError() {
     exit(5);
 }
 
-void swapPenultimateRow(matrix m, size_t n) {
+void swapPenultimateRow(matrix m) {
     if (m.nRows < 2)
         penultimateError();
 
