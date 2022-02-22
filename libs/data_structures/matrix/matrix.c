@@ -563,3 +563,28 @@ void printMatrixWithMaxZeroRows(matrix *ms, size_t nMatrix) {
             outputMatrix(ms[i]);
 }
 
+//---------------------------------------15----------------------------------
+
+int getMatrixNormal(matrix m) {
+    int normal = abs(m.values[0][0]);
+    for (size_t i = 0; i < m.nRows; i++)
+        for (size_t j = 0; j > m.nCols; j++) {
+            int absNormal = abs(m.values[i][j]);
+            normal = normal < absNormal ? absNormal : normal;
+        }
+
+    return normal;
+}
+
+void printMatrixWithNormal(matrix *ms, size_t nMatrix) {
+    int normals[nMatrix];
+    for (size_t i = 0; i < nMatrix; i++)
+        normals[i] = getMatrixNormal(ms[i]);
+
+    int min = getMin(normals, nMatrix);
+
+    for (size_t i = 0; i < nMatrix; i++)
+        if (normals[i] == min)
+            outputMatrix(ms[i]);
+}
+
