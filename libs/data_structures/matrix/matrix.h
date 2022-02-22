@@ -3,7 +3,7 @@
 
 #include "../../algorithms/array/array.h"
 #include "../../algorithms/base/base.h"
-#include "../../tasks/5d tasks/5d tasks.h"
+#include "../../tasks/5dTasks/5dTasks.h"
 
 #include <stdbool.h>
 #include <malloc.h>

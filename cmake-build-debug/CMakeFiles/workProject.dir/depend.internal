@@ -20,6 +20,7 @@ CMakeFiles/workProject.dir/libs/data_structures/matrix/matrix.c.obj
  C:/Users/krytm/CLionProjects/workProject/libs/algorithms/base/base.h
  C:/Users/krytm/CLionProjects/workProject/libs/data_structures/matrix/matrix.c
  C:/Users/krytm/CLionProjects/workProject/libs/data_structures/matrix/matrix.h
+ C:/Users/krytm/CLionProjects/workProject/libs/tasks/5dTasks/5dTasks.h
 CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set/ordered_array_set.c.obj
  C:/Users/krytm/CLionProjects/workProject/libs/algorithms/array/array.h
  C:/Users/krytm/CLionProjects/workProject/libs/data_structures/ordered_array_set/ordered_array_set.c
@@ -59,8 +60,12 @@ CMakeFiles/workProject.dir/libs/data_structures/vector_tests/vector_tests.c.obj
 CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.obj
  C:/Users/krytm/CLionProjects/workProject/libs/govnocode/DiscMath/DiscMath.c
  C:/Users/krytm/CLionProjects/workProject/libs/govnocode/DiscMath/DiscMath.h
-CMakeFiles/workProject.dir/main.c.obj
+CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.obj
  C:/Users/krytm/CLionProjects/workProject/libs/algorithms/array/array.h
  C:/Users/krytm/CLionProjects/workProject/libs/algorithms/base/base.h
  C:/Users/krytm/CLionProjects/workProject/libs/data_structures/matrix/matrix.h
+ C:/Users/krytm/CLionProjects/workProject/libs/tasks/5dTasks/5dTasks.c
+ C:/Users/krytm/CLionProjects/workProject/libs/tasks/5dTasks/5dTasks.h
+CMakeFiles/workProject.dir/main.c.obj
+ C:/Users/krytm/CLionProjects/workProject/libs/algorithms/base/base.h
  C:/Users/krytm/CLionProjects/workProject/main.c

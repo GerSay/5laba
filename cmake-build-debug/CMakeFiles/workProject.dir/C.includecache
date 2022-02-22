@@ -9,6 +9,18 @@
 C:/Users/krytm/CLionProjects/workProject/libs/algorithms/array/array.h
 stddef.h
 -
+stdio.h
+-
+limits.h
+-
+assert.h
+-
+stdbool.h
+-
+math.h
+-
+stdlib.h
+-
 
 C:/Users/krytm/CLionProjects/workProject/libs/algorithms/base/base.h
 stdio.h
@@ -23,16 +35,22 @@ C:/Users/krytm/CLionProjects/workProject/libs/data_structures/matrix/matrix.h
 C:/Users/krytm/CLionProjects/workProject/libs/algorithms/array/array.h
 ../../algorithms/base/base.h
 C:/Users/krytm/CLionProjects/workProject/libs/algorithms/base/base.h
+../../tasks/5dTasks/5dTasks.h
+C:/Users/krytm/CLionProjects/workProject/libs/tasks/5dTasks/5dTasks.h
 stdbool.h
--
-stdio.h
 -
 malloc.h
 -
 string.h
 -
+math.h
+-
 
-C:/Users/krytm/CLionProjects/workProject/main.c
-libs/data_structures/matrix/matrix.h
+C:/Users/krytm/CLionProjects/workProject/libs/tasks/5dTasks/5dTasks.c
+5dTasks.h
+C:/Users/krytm/CLionProjects/workProject/libs/tasks/5dTasks/5dTasks.h
+
+C:/Users/krytm/CLionProjects/workProject/libs/tasks/5dTasks/5dTasks.h
+../../data_structures/matrix/matrix.h
 C:/Users/krytm/CLionProjects/workProject/libs/data_structures/matrix/matrix.h
 

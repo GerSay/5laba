@@ -488,29 +488,29 @@ libs/govnocode/DiscMath/DiscMath.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.s
 .PHONY : libs/govnocode/DiscMath/DiscMath.c.s
 
-libs/tasks/5d_tasks/5d_tasks.obj: libs/tasks/5d_tasks/5d_tasks.c.obj
-.PHONY : libs/tasks/5d_tasks/5d_tasks.obj
+libs/tasks/5dTasks/5dTasks.obj: libs/tasks/5dTasks/5dTasks.c.obj
+.PHONY : libs/tasks/5dTasks/5dTasks.obj
 
 # target to build an object file
-libs/tasks/5d_tasks/5d_tasks.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/tasks/5d_tasks/5d_tasks.c.obj
-.PHONY : libs/tasks/5d_tasks/5d_tasks.c.obj
+libs/tasks/5dTasks/5dTasks.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.obj
+.PHONY : libs/tasks/5dTasks/5dTasks.c.obj
 
-libs/tasks/5d_tasks/5d_tasks.i: libs/tasks/5d_tasks/5d_tasks.c.i
-.PHONY : libs/tasks/5d_tasks/5d_tasks.i
+libs/tasks/5dTasks/5dTasks.i: libs/tasks/5dTasks/5dTasks.c.i
+.PHONY : libs/tasks/5dTasks/5dTasks.i
 
 # target to preprocess a source file
-libs/tasks/5d_tasks/5d_tasks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/tasks/5d_tasks/5d_tasks.c.i
-.PHONY : libs/tasks/5d_tasks/5d_tasks.c.i
+libs/tasks/5dTasks/5dTasks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.i
+.PHONY : libs/tasks/5dTasks/5dTasks.c.i
 
-libs/tasks/5d_tasks/5d_tasks.s: libs/tasks/5d_tasks/5d_tasks.c.s
-.PHONY : libs/tasks/5d_tasks/5d_tasks.s
+libs/tasks/5dTasks/5dTasks.s: libs/tasks/5dTasks/5dTasks.c.s
+.PHONY : libs/tasks/5dTasks/5dTasks.s
 
 # target to generate assembly for a file
-libs/tasks/5d_tasks/5d_tasks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/tasks/5d_tasks/5d_tasks.c.s
-.PHONY : libs/tasks/5d_tasks/5d_tasks.c.s
+libs/tasks/5dTasks/5dTasks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.s
+.PHONY : libs/tasks/5dTasks/5dTasks.c.s
 
 main.obj: main.c.obj
 .PHONY : main.obj
@@ -590,9 +590,9 @@ help:
 	@echo ... libs/govnocode/DiscMath/DiscMath.obj
 	@echo ... libs/govnocode/DiscMath/DiscMath.i
 	@echo ... libs/govnocode/DiscMath/DiscMath.s
-	@echo ... libs/tasks/5d_tasks/5d_tasks.obj
-	@echo ... libs/tasks/5d_tasks/5d_tasks.i
-	@echo ... libs/tasks/5d_tasks/5d_tasks.s
+	@echo ... libs/tasks/5dTasks/5dTasks.obj
+	@echo ... libs/tasks/5dTasks/5dTasks.i
+	@echo ... libs/tasks/5dTasks/5dTasks.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

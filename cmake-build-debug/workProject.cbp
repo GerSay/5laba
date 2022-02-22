@@ -166,10 +166,10 @@
 		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/govnocode/DiscMath/DiscMath.h">
 			<Option target="workProject"/>
 		</Unit>
-		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/tasks/5d tasks/5d tasks.c">
+		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/tasks/5dTasks/5dTasks.c">
 			<Option target="workProject"/>
 		</Unit>
-		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/tasks/5d tasks/5d tasks.h">
+		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/tasks/5dTasks/5dTasks.h">
 			<Option target="workProject"/>
 		</Unit>
 		<Unit filename="C:/Users/krytm/CLionProjects/workProject/main.c">

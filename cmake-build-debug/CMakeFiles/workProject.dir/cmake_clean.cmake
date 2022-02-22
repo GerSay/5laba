@@ -14,7 +14,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.obj"
   "CMakeFiles/workProject.dir/libs/data_structures/vector_tests/vector_tests.c.obj"
   "CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.obj"
-  "CMakeFiles/workProject.dir/libs/tasks/5d_tasks/5d_tasks.c.obj"
+  "CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.obj"
   "CMakeFiles/workProject.dir/main.c.obj"
   "libworkProject.dll.a"
   "workProject.exe"

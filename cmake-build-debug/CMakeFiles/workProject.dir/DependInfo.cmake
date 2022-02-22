@@ -23,7 +23,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.obj"
   "C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vector_tests/vector_tests.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/data_structures/vector_tests/vector_tests.c.obj"
   "C:/Users/krytm/CLionProjects/workProject/libs/govnocode/DiscMath/DiscMath.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.obj"
-  "C:/Users/krytm/CLionProjects/workProject/libs/tasks/5d tasks/5d tasks.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/tasks/5d_tasks/5d_tasks.c.obj"
+  "C:/Users/krytm/CLionProjects/workProject/libs/tasks/5dTasks/5dTasks.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.obj"
   "C:/Users/krytm/CLionProjects/workProject/main.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

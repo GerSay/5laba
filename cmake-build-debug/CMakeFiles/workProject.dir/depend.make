@@ -19,7 +19,8 @@ CMakeFiles/workProject.dir/libs/data_structures/matrix/matrix.c.obj: \
  ../libs/algorithms/array/array.h \
  ../libs/algorithms/base/base.h \
  ../libs/data_structures/matrix/matrix.c \
- ../libs/data_structures/matrix/matrix.h
+ ../libs/data_structures/matrix/matrix.h \
+ ../libs/tasks/5dTasks/5dTasks.h
 CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set/ordered_array_set.c.obj: \
  ../libs/algorithms/array/array.h \
  ../libs/data_structures/ordered_array_set/ordered_array_set.c \
@@ -59,8 +60,12 @@ CMakeFiles/workProject.dir/libs/data_structures/vector_tests/vector_tests.c.obj:
 CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.obj: \
  ../libs/govnocode/DiscMath/DiscMath.c \
  ../libs/govnocode/DiscMath/DiscMath.h
-CMakeFiles/workProject.dir/main.c.obj: \
+CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.obj: \
  ../libs/algorithms/array/array.h \
  ../libs/algorithms/base/base.h \
  ../libs/data_structures/matrix/matrix.h \
+ ../libs/tasks/5dTasks/5dTasks.c \
+ ../libs/tasks/5dTasks/5dTasks.h
+CMakeFiles/workProject.dir/main.c.obj: \
+ ../libs/algorithms/base/base.h \
  ../main.c

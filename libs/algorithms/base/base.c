@@ -1,6 +1,6 @@
 #include "base.h"
 
-void *maxU(void *a, void *b, size_t size) {
+/*void *maxU(void *a, void *b, size_t size) {
     char *pa = a;
     char *pb = b;
     while (size) {
@@ -15,9 +15,13 @@ void *maxU(void *a, void *b, size_t size) {
         size--;
     }
     return a;
+}*/
+
+void *max(void *a, void *b) {
+    return a > b ? a : b;
 }
 
-void *minU(void *a, void *b, size_t size) {
+/*void *minU(void *a, void *b, size_t size) {
     char *pa = a;
     char *pb = b;
     while (size) {
@@ -32,6 +36,10 @@ void *minU(void *a, void *b, size_t size) {
         size--;
     }
     return a;
+}*/
+
+void *min(void *a, void *b) {
+    return a < b ? a : b;
 }
 
 void swapU(void * const a, void * const b, size_t size) {
@@ -45,3 +53,4 @@ void swapU(void * const a, void * const b, size_t size) {
         pb++;
     }
 }
+

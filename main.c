@@ -1,13 +1,9 @@
-#include "libs/data_structures/matrix/matrix.h"
+#include "libs/algorithms/base/base.h"
 
 int main() {
-    matrix m;
-    inputAndCreateMatrix(&m);
-
-    swapRowsSquareMatrixWithMaxMinElement(m);
-
-    outputMatrix(m);
-    freeMemMatrix(m);
+    int x = 5;
+    int y = 6;
+    printf("%d %d", (int) max(&x, &y), (int) min(&x, &y));
 
     return 0;
 }

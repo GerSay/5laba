@@ -273,18 +273,18 @@ CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/vectorVoid_test
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.s"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krytm\CLionProjects\workProject\libs\data_structures\vectorVoid_tests\vectorVoid_tests.c -o CMakeFiles\workProject.dir\libs\data_structures\vectorVoid_tests\vectorVoid_tests.c.s
 
-CMakeFiles/workProject.dir/libs/tasks/5d_tasks/5d_tasks.c.obj: CMakeFiles/workProject.dir/flags.make
-CMakeFiles/workProject.dir/libs/tasks/5d_tasks/5d_tasks.c.obj: ../libs/tasks/5d\ tasks/5d\ tasks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/workProject.dir/libs/tasks/5d_tasks/5d_tasks.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\workProject.dir\libs\tasks\5d_tasks\5d_tasks.c.obj -c "C:\Users\krytm\CLionProjects\workProject\libs\tasks\5d tasks\5d tasks.c"
+CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.obj: CMakeFiles/workProject.dir/flags.make
+CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.obj: ../libs/tasks/5dTasks/5dTasks.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\workProject.dir\libs\tasks\5dTasks\5dTasks.c.obj -c C:\Users\krytm\CLionProjects\workProject\libs\tasks\5dTasks\5dTasks.c
 
-CMakeFiles/workProject.dir/libs/tasks/5d_tasks/5d_tasks.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/workProject.dir/libs/tasks/5d_tasks/5d_tasks.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\krytm\CLionProjects\workProject\libs\tasks\5d tasks\5d tasks.c" > CMakeFiles\workProject.dir\libs\tasks\5d_tasks\5d_tasks.c.i
+CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krytm\CLionProjects\workProject\libs\tasks\5dTasks\5dTasks.c > CMakeFiles\workProject.dir\libs\tasks\5dTasks\5dTasks.c.i
 
-CMakeFiles/workProject.dir/libs/tasks/5d_tasks/5d_tasks.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/workProject.dir/libs/tasks/5d_tasks/5d_tasks.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\krytm\CLionProjects\workProject\libs\tasks\5d tasks\5d tasks.c" -o CMakeFiles\workProject.dir\libs\tasks\5d_tasks\5d_tasks.c.s
+CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krytm\CLionProjects\workProject\libs\tasks\5dTasks\5dTasks.c -o CMakeFiles\workProject.dir\libs\tasks\5dTasks\5dTasks.c.s
 
 # Object files for target workProject
 workProject_OBJECTS = \
@@ -304,7 +304,7 @@ workProject_OBJECTS = \
 "CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.obj" \
 "CMakeFiles/workProject.dir/libs/data_structures/vectorVoid/vectorVoid.c.obj" \
 "CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.obj" \
-"CMakeFiles/workProject.dir/libs/tasks/5d_tasks/5d_tasks.c.obj"
+"CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.obj"
 
 # External object files for target workProject
 workProject_EXTERNAL_OBJECTS =
@@ -325,7 +325,7 @@ workProject.exe: CMakeFiles/workProject.dir/libs/data_structures/vector_tests/ve
 workProject.exe: CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.obj
 workProject.exe: CMakeFiles/workProject.dir/libs/data_structures/vectorVoid/vectorVoid.c.obj
 workProject.exe: CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.obj
-workProject.exe: CMakeFiles/workProject.dir/libs/tasks/5d_tasks/5d_tasks.c.obj
+workProject.exe: CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.obj
 workProject.exe: CMakeFiles/workProject.dir/build.make
 workProject.exe: CMakeFiles/workProject.dir/linklibs.rsp
 workProject.exe: CMakeFiles/workProject.dir/objects1.rsp
