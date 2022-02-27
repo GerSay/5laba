@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/krytm/CLionProjects/workProject/libs/data_structures/bitset/bitset.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/data_structures/bitset/bitset.c.obj"
   "C:/Users/krytm/CLionProjects/workProject/libs/data_structures/matrix/matrix.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/data_structures/matrix/matrix.c.obj"
   "C:/Users/krytm/CLionProjects/workProject/libs/data_structures/ordered_array_set/ordered_array_set.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set/ordered_array_set.c.obj"
+  "C:/Users/krytm/CLionProjects/workProject/libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.obj"
   "C:/Users/krytm/CLionProjects/workProject/libs/data_structures/tests/matrix_tests/matrix_tests.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/data_structures/tests/matrix_tests/matrix_tests.c.obj"
   "C:/Users/krytm/CLionProjects/workProject/libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c.obj"
   "C:/Users/krytm/CLionProjects/workProject/libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c.obj"
@@ -24,8 +25,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vector/vector.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/data_structures/vector/vector.c.obj"
   "C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid/vectorVoid.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/data_structures/vectorVoid/vectorVoid.c.obj"
   "C:/Users/krytm/CLionProjects/workProject/libs/govnocode/DiscMath/DiscMath.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.obj"
+  "C:/Users/krytm/CLionProjects/workProject/libs/govnocode/whoAreKB/whoAreKB.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/govnocode/whoAreKB/whoAreKB.c.obj"
   "C:/Users/krytm/CLionProjects/workProject/libs/tasks/5dTasks/5dTasks.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.obj"
-  "C:/Users/krytm/CLionProjects/workProject/libs/tasks/5dTasks/5dTasks_tests.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.obj"
   "C:/Users/krytm/CLionProjects/workProject/main.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

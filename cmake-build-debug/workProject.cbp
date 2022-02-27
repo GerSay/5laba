@@ -118,6 +118,12 @@
 		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/data_structures/ordered_array_set/ordered_array_set.h">
 			<Option target="workProject"/>
 		</Unit>
+		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c">
+			<Option target="workProject"/>
+		</Unit>
+		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/data_structures/tests/5dTasks_tests/5dTasks_tests.h">
+			<Option target="workProject"/>
+		</Unit>
 		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/data_structures/tests/matrix_tests/matrix_tests.c">
 			<Option target="workProject"/>
 		</Unit>
@@ -172,16 +178,16 @@
 		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/govnocode/DiscMath/DiscMath.h">
 			<Option target="workProject"/>
 		</Unit>
+		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/govnocode/whoAreKB/whoAreKB.c">
+			<Option target="workProject"/>
+		</Unit>
+		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/govnocode/whoAreKB/whoAreKB.h">
+			<Option target="workProject"/>
+		</Unit>
 		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/tasks/5dTasks/5dTasks.c">
 			<Option target="workProject"/>
 		</Unit>
 		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/tasks/5dTasks/5dTasks.h">
-			<Option target="workProject"/>
-		</Unit>
-		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/tasks/5dTasks/5dTasks_tests.c">
-			<Option target="workProject"/>
-		</Unit>
-		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/tasks/5dTasks/5dTasks_tests.h">
 			<Option target="workProject"/>
 		</Unit>
 		<Unit filename="C:/Users/krytm/CLionProjects/workProject/main.c">

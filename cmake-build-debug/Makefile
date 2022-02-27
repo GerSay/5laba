@@ -296,6 +296,30 @@ libs/data_structures/ordered_array_set/ordered_array_set.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set/ordered_array_set.c.s
 .PHONY : libs/data_structures/ordered_array_set/ordered_array_set.c.s
 
+libs/data_structures/tests/5dTasks_tests/5dTasks_tests.obj: libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.obj
+.PHONY : libs/data_structures/tests/5dTasks_tests/5dTasks_tests.obj
+
+# target to build an object file
+libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.obj
+.PHONY : libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.obj
+
+libs/data_structures/tests/5dTasks_tests/5dTasks_tests.i: libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.i
+.PHONY : libs/data_structures/tests/5dTasks_tests/5dTasks_tests.i
+
+# target to preprocess a source file
+libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.i
+.PHONY : libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.i
+
+libs/data_structures/tests/5dTasks_tests/5dTasks_tests.s: libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.s
+.PHONY : libs/data_structures/tests/5dTasks_tests/5dTasks_tests.s
+
+# target to generate assembly for a file
+libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.s
+.PHONY : libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.s
+
 libs/data_structures/tests/matrix_tests/matrix_tests.obj: libs/data_structures/tests/matrix_tests/matrix_tests.c.obj
 .PHONY : libs/data_structures/tests/matrix_tests/matrix_tests.obj
 
@@ -512,6 +536,30 @@ libs/govnocode/DiscMath/DiscMath.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.s
 .PHONY : libs/govnocode/DiscMath/DiscMath.c.s
 
+libs/govnocode/whoAreKB/whoAreKB.obj: libs/govnocode/whoAreKB/whoAreKB.c.obj
+.PHONY : libs/govnocode/whoAreKB/whoAreKB.obj
+
+# target to build an object file
+libs/govnocode/whoAreKB/whoAreKB.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/govnocode/whoAreKB/whoAreKB.c.obj
+.PHONY : libs/govnocode/whoAreKB/whoAreKB.c.obj
+
+libs/govnocode/whoAreKB/whoAreKB.i: libs/govnocode/whoAreKB/whoAreKB.c.i
+.PHONY : libs/govnocode/whoAreKB/whoAreKB.i
+
+# target to preprocess a source file
+libs/govnocode/whoAreKB/whoAreKB.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/govnocode/whoAreKB/whoAreKB.c.i
+.PHONY : libs/govnocode/whoAreKB/whoAreKB.c.i
+
+libs/govnocode/whoAreKB/whoAreKB.s: libs/govnocode/whoAreKB/whoAreKB.c.s
+.PHONY : libs/govnocode/whoAreKB/whoAreKB.s
+
+# target to generate assembly for a file
+libs/govnocode/whoAreKB/whoAreKB.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/govnocode/whoAreKB/whoAreKB.c.s
+.PHONY : libs/govnocode/whoAreKB/whoAreKB.c.s
+
 libs/tasks/5dTasks/5dTasks.obj: libs/tasks/5dTasks/5dTasks.c.obj
 .PHONY : libs/tasks/5dTasks/5dTasks.obj
 
@@ -535,30 +583,6 @@ libs/tasks/5dTasks/5dTasks.s: libs/tasks/5dTasks/5dTasks.c.s
 libs/tasks/5dTasks/5dTasks.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.s
 .PHONY : libs/tasks/5dTasks/5dTasks.c.s
-
-libs/tasks/5dTasks/5dTasks_tests.obj: libs/tasks/5dTasks/5dTasks_tests.c.obj
-.PHONY : libs/tasks/5dTasks/5dTasks_tests.obj
-
-# target to build an object file
-libs/tasks/5dTasks/5dTasks_tests.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.obj
-.PHONY : libs/tasks/5dTasks/5dTasks_tests.c.obj
-
-libs/tasks/5dTasks/5dTasks_tests.i: libs/tasks/5dTasks/5dTasks_tests.c.i
-.PHONY : libs/tasks/5dTasks/5dTasks_tests.i
-
-# target to preprocess a source file
-libs/tasks/5dTasks/5dTasks_tests.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.i
-.PHONY : libs/tasks/5dTasks/5dTasks_tests.c.i
-
-libs/tasks/5dTasks/5dTasks_tests.s: libs/tasks/5dTasks/5dTasks_tests.c.s
-.PHONY : libs/tasks/5dTasks/5dTasks_tests.s
-
-# target to generate assembly for a file
-libs/tasks/5dTasks/5dTasks_tests.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.s
-.PHONY : libs/tasks/5dTasks/5dTasks_tests.c.s
 
 main.obj: main.c.obj
 .PHONY : main.obj
@@ -614,6 +638,9 @@ help:
 	@echo ... libs/data_structures/ordered_array_set/ordered_array_set.obj
 	@echo ... libs/data_structures/ordered_array_set/ordered_array_set.i
 	@echo ... libs/data_structures/ordered_array_set/ordered_array_set.s
+	@echo ... libs/data_structures/tests/5dTasks_tests/5dTasks_tests.obj
+	@echo ... libs/data_structures/tests/5dTasks_tests/5dTasks_tests.i
+	@echo ... libs/data_structures/tests/5dTasks_tests/5dTasks_tests.s
 	@echo ... libs/data_structures/tests/matrix_tests/matrix_tests.obj
 	@echo ... libs/data_structures/tests/matrix_tests/matrix_tests.i
 	@echo ... libs/data_structures/tests/matrix_tests/matrix_tests.s
@@ -641,12 +668,12 @@ help:
 	@echo ... libs/govnocode/DiscMath/DiscMath.obj
 	@echo ... libs/govnocode/DiscMath/DiscMath.i
 	@echo ... libs/govnocode/DiscMath/DiscMath.s
+	@echo ... libs/govnocode/whoAreKB/whoAreKB.obj
+	@echo ... libs/govnocode/whoAreKB/whoAreKB.i
+	@echo ... libs/govnocode/whoAreKB/whoAreKB.s
 	@echo ... libs/tasks/5dTasks/5dTasks.obj
 	@echo ... libs/tasks/5dTasks/5dTasks.i
 	@echo ... libs/tasks/5dTasks/5dTasks.s
-	@echo ... libs/tasks/5dTasks/5dTasks_tests.obj
-	@echo ... libs/tasks/5dTasks/5dTasks_tests.i
-	@echo ... libs/tasks/5dTasks/5dTasks_tests.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

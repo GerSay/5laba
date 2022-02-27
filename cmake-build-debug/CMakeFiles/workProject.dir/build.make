@@ -286,18 +286,18 @@ CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.s"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krytm\CLionProjects\workProject\libs\tasks\5dTasks\5dTasks.c -o CMakeFiles\workProject.dir\libs\tasks\5dTasks\5dTasks.c.s
 
-CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.obj: CMakeFiles/workProject.dir/flags.make
-CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.obj: ../libs/tasks/5dTasks/5dTasks_tests.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\workProject.dir\libs\tasks\5dTasks\5dTasks_tests.c.obj -c C:\Users\krytm\CLionProjects\workProject\libs\tasks\5dTasks\5dTasks_tests.c
+CMakeFiles/workProject.dir/libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.obj: CMakeFiles/workProject.dir/flags.make
+CMakeFiles/workProject.dir/libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.obj: ../libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/workProject.dir/libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\workProject.dir\libs\data_structures\tests\5dTasks_tests\5dTasks_tests.c.obj -c C:\Users\krytm\CLionProjects\workProject\libs\data_structures\tests\5dTasks_tests\5dTasks_tests.c
 
-CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krytm\CLionProjects\workProject\libs\tasks\5dTasks\5dTasks_tests.c > CMakeFiles\workProject.dir\libs\tasks\5dTasks\5dTasks_tests.c.i
+CMakeFiles/workProject.dir/libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/workProject.dir/libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krytm\CLionProjects\workProject\libs\data_structures\tests\5dTasks_tests\5dTasks_tests.c > CMakeFiles\workProject.dir\libs\data_structures\tests\5dTasks_tests\5dTasks_tests.c.i
 
-CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krytm\CLionProjects\workProject\libs\tasks\5dTasks\5dTasks_tests.c -o CMakeFiles\workProject.dir\libs\tasks\5dTasks\5dTasks_tests.c.s
+CMakeFiles/workProject.dir/libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/workProject.dir/libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krytm\CLionProjects\workProject\libs\data_structures\tests\5dTasks_tests\5dTasks_tests.c -o CMakeFiles\workProject.dir\libs\data_structures\tests\5dTasks_tests\5dTasks_tests.c.s
 
 CMakeFiles/workProject.dir/libs/data_structures/tests/matrix_tests/matrix_tests.c.obj: CMakeFiles/workProject.dir/flags.make
 CMakeFiles/workProject.dir/libs/data_structures/tests/matrix_tests/matrix_tests.c.obj: ../libs/data_structures/tests/matrix_tests/matrix_tests.c
@@ -311,6 +311,19 @@ CMakeFiles/workProject.dir/libs/data_structures/tests/matrix_tests/matrix_tests.
 CMakeFiles/workProject.dir/libs/data_structures/tests/matrix_tests/matrix_tests.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/workProject.dir/libs/data_structures/tests/matrix_tests/matrix_tests.c.s"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krytm\CLionProjects\workProject\libs\data_structures\tests\matrix_tests\matrix_tests.c -o CMakeFiles\workProject.dir\libs\data_structures\tests\matrix_tests\matrix_tests.c.s
+
+CMakeFiles/workProject.dir/libs/govnocode/whoAreKB/whoAreKB.c.obj: CMakeFiles/workProject.dir/flags.make
+CMakeFiles/workProject.dir/libs/govnocode/whoAreKB/whoAreKB.c.obj: ../libs/govnocode/whoAreKB/whoAreKB.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/workProject.dir/libs/govnocode/whoAreKB/whoAreKB.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\workProject.dir\libs\govnocode\whoAreKB\whoAreKB.c.obj -c C:\Users\krytm\CLionProjects\workProject\libs\govnocode\whoAreKB\whoAreKB.c
+
+CMakeFiles/workProject.dir/libs/govnocode/whoAreKB/whoAreKB.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/workProject.dir/libs/govnocode/whoAreKB/whoAreKB.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krytm\CLionProjects\workProject\libs\govnocode\whoAreKB\whoAreKB.c > CMakeFiles\workProject.dir\libs\govnocode\whoAreKB\whoAreKB.c.i
+
+CMakeFiles/workProject.dir/libs/govnocode/whoAreKB/whoAreKB.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/workProject.dir/libs/govnocode/whoAreKB/whoAreKB.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krytm\CLionProjects\workProject\libs\govnocode\whoAreKB\whoAreKB.c -o CMakeFiles\workProject.dir\libs\govnocode\whoAreKB\whoAreKB.c.s
 
 # Object files for target workProject
 workProject_OBJECTS = \
@@ -331,8 +344,9 @@ workProject_OBJECTS = \
 "CMakeFiles/workProject.dir/libs/data_structures/vectorVoid/vectorVoid.c.obj" \
 "CMakeFiles/workProject.dir/libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c.obj" \
 "CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.obj" \
-"CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.obj" \
-"CMakeFiles/workProject.dir/libs/data_structures/tests/matrix_tests/matrix_tests.c.obj"
+"CMakeFiles/workProject.dir/libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.obj" \
+"CMakeFiles/workProject.dir/libs/data_structures/tests/matrix_tests/matrix_tests.c.obj" \
+"CMakeFiles/workProject.dir/libs/govnocode/whoAreKB/whoAreKB.c.obj"
 
 # External object files for target workProject
 workProject_EXTERNAL_OBJECTS =
@@ -354,13 +368,14 @@ workProject.exe: CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.o
 workProject.exe: CMakeFiles/workProject.dir/libs/data_structures/vectorVoid/vectorVoid.c.obj
 workProject.exe: CMakeFiles/workProject.dir/libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c.obj
 workProject.exe: CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.obj
-workProject.exe: CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.obj
+workProject.exe: CMakeFiles/workProject.dir/libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.obj
 workProject.exe: CMakeFiles/workProject.dir/libs/data_structures/tests/matrix_tests/matrix_tests.c.obj
+workProject.exe: CMakeFiles/workProject.dir/libs/govnocode/whoAreKB/whoAreKB.c.obj
 workProject.exe: CMakeFiles/workProject.dir/build.make
 workProject.exe: CMakeFiles/workProject.dir/linklibs.rsp
 workProject.exe: CMakeFiles/workProject.dir/objects1.rsp
 workProject.exe: CMakeFiles/workProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking C executable workProject.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking C executable workProject.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\workProject.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
