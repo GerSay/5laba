@@ -9,6 +9,7 @@ add_library(data_structures
         vectorVoid/vectorVoid.c
         tests/vectorVoid_tests/vectorVoid_tests.c
         matrix/matrix.c
+        string_/string_.c
         )
 
 target_link_libraries(data_structures algorithms tasks)

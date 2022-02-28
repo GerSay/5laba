@@ -296,6 +296,30 @@ libs/data_structures/ordered_array_set/ordered_array_set.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set/ordered_array_set.c.s
 .PHONY : libs/data_structures/ordered_array_set/ordered_array_set.c.s
 
+libs/data_structures/string_/string_.obj: libs/data_structures/string_/string_.c.obj
+.PHONY : libs/data_structures/string_/string_.obj
+
+# target to build an object file
+libs/data_structures/string_/string_.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/string_/string_.c.obj
+.PHONY : libs/data_structures/string_/string_.c.obj
+
+libs/data_structures/string_/string_.i: libs/data_structures/string_/string_.c.i
+.PHONY : libs/data_structures/string_/string_.i
+
+# target to preprocess a source file
+libs/data_structures/string_/string_.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/string_/string_.c.i
+.PHONY : libs/data_structures/string_/string_.c.i
+
+libs/data_structures/string_/string_.s: libs/data_structures/string_/string_.c.s
+.PHONY : libs/data_structures/string_/string_.s
+
+# target to generate assembly for a file
+libs/data_structures/string_/string_.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/string_/string_.c.s
+.PHONY : libs/data_structures/string_/string_.c.s
+
 libs/data_structures/tests/5dTasks_tests/5dTasks_tests.obj: libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.obj
 .PHONY : libs/data_structures/tests/5dTasks_tests/5dTasks_tests.obj
 
@@ -638,6 +662,9 @@ help:
 	@echo ... libs/data_structures/ordered_array_set/ordered_array_set.obj
 	@echo ... libs/data_structures/ordered_array_set/ordered_array_set.i
 	@echo ... libs/data_structures/ordered_array_set/ordered_array_set.s
+	@echo ... libs/data_structures/string_/string_.obj
+	@echo ... libs/data_structures/string_/string_.i
+	@echo ... libs/data_structures/string_/string_.s
 	@echo ... libs/data_structures/tests/5dTasks_tests/5dTasks_tests.obj
 	@echo ... libs/data_structures/tests/5dTasks_tests/5dTasks_tests.i
 	@echo ... libs/data_structures/tests/5dTasks_tests/5dTasks_tests.s

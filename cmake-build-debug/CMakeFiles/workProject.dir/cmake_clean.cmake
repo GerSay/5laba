@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/workProject.dir/libs/data_structures/bitset/bitset.c.obj"
   "CMakeFiles/workProject.dir/libs/data_structures/matrix/matrix.c.obj"
   "CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set/ordered_array_set.c.obj"
+  "CMakeFiles/workProject.dir/libs/data_structures/string_/string_.c.obj"
   "CMakeFiles/workProject.dir/libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.obj"
   "CMakeFiles/workProject.dir/libs/data_structures/tests/matrix_tests/matrix_tests.c.obj"
   "CMakeFiles/workProject.dir/libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c.obj"
