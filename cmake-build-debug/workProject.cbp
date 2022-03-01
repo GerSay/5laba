@@ -196,6 +196,12 @@
 		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/tasks/5dTasks/5dTasks.h">
 			<Option target="workProject"/>
 		</Unit>
+		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/tasks/5eTasks/5eTasks.c">
+			<Option target="workProject"/>
+		</Unit>
+		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/tasks/5eTasks/5eTasks.h">
+			<Option target="workProject"/>
+		</Unit>
 		<Unit filename="C:/Users/krytm/CLionProjects/workProject/main.c">
 			<Option target="workProject"/>
 		</Unit>

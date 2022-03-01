@@ -28,6 +28,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/krytm/CLionProjects/workProject/libs/govnocode/DiscMath/DiscMath.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.obj"
   "C:/Users/krytm/CLionProjects/workProject/libs/govnocode/whoAreKB/whoAreKB.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/govnocode/whoAreKB/whoAreKB.c.obj"
   "C:/Users/krytm/CLionProjects/workProject/libs/tasks/5dTasks/5dTasks.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.obj"
+  "C:/Users/krytm/CLionProjects/workProject/libs/tasks/5eTasks/5eTasks.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/tasks/5eTasks/5eTasks.c.obj"
   "C:/Users/krytm/CLionProjects/workProject/main.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

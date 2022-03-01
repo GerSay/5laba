@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/krytm/CLionProjects/workProject/main.c
+C:/Users/krytm/CLionProjects/workProject/libs/data_structures/string_/string_.c
+string_.h
+C:/Users/krytm/CLionProjects/workProject/libs/data_structures/string_/string_.h
+
+C:/Users/krytm/CLionProjects/workProject/libs/data_structures/string_/string_.h
 stdio.h
 -
 

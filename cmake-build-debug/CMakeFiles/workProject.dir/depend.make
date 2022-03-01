@@ -19,27 +19,49 @@ CMakeFiles/workProject.dir/libs/data_structures/matrix/matrix.c.obj: \
  ../libs/algorithms/array/array.h \
  ../libs/algorithms/base/base.h \
  ../libs/data_structures/matrix/matrix.c \
- ../libs/data_structures/matrix/matrix.h \
- ../libs/tasks/5dTasks/5dTasks.h
+ ../libs/data_structures/matrix/matrix.h
 CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set/ordered_array_set.c.obj: \
  ../libs/algorithms/array/array.h \
  ../libs/data_structures/ordered_array_set/ordered_array_set.c \
  ../libs/data_structures/ordered_array_set/ordered_array_set.h
-CMakeFiles/workProject.dir/libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c.obj: \
+CMakeFiles/workProject.dir/libs/data_structures/string_/string_.c.obj: \
+ ../libs/data_structures/string_/string_.c \
+ ../libs/data_structures/string_/string_.h
+CMakeFiles/workProject.dir/libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.obj: \
+ ../libs/algorithms/array/array.h \
+ ../libs/algorithms/base/base.h \
+ ../libs/data_structures/matrix/matrix.h \
+ ../libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c \
+ ../libs/data_structures/tests/5dTasks_tests/5dTasks_tests.h \
+ ../libs/tasks/5dTasks/5dTasks.h
+CMakeFiles/workProject.dir/libs/data_structures/tests/matrix_tests/matrix_tests.c.obj: \
+ ../libs/data_structures/tests/matrix_tests/matrix_tests.c \
+ ../libs/data_structures/tests/matrix_tests/matrix_tests.h
+CMakeFiles/workProject.dir/libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c.obj: \
  ../libs/algorithms/array/array.h \
  ../libs/data_structures/bitset/bitset.h \
  ../libs/data_structures/ordered_array_set/ordered_array_set.h \
- ../libs/data_structures/ordered_array_set_tests/ordered_array_set_tests.c
+ ../libs/data_structures/tests/ordered_array_set_tests/ordered_array_set_tests.c
+CMakeFiles/workProject.dir/libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c.obj: \
+ ../libs/algorithms/array/array.h \
+ ../libs/data_structures/bitset/bitset.h \
+ ../libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.c \
+ ../libs/data_structures/tests/unordered_array_set_test/unordered_array_set_test.h \
+ ../libs/data_structures/unordered_array_set/unordered_array_set.h
+CMakeFiles/workProject.dir/libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c.obj: \
+ ../libs/algorithms/array/array.h \
+ ../libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.c \
+ ../libs/data_structures/tests/vectorVoid_tests/vectorVoid_tests.h \
+ ../libs/data_structures/vectorVoid/vectorVoid.h
+CMakeFiles/workProject.dir/libs/data_structures/tests/vector_tests/vector_tests.c.obj: \
+ ../libs/algorithms/algorithms.h \
+ ../libs/data_structures/tests/vector_tests/vector_tests.c \
+ ../libs/data_structures/tests/vector_tests/vector_tests.h \
+ ../libs/data_structures/vector/vector.h
 CMakeFiles/workProject.dir/libs/data_structures/unordered_array_set/unordered_array_set.c.obj: \
  ../libs/algorithms/array/array.h \
  ../libs/data_structures/unordered_array_set/unordered_array_set.c \
  ../libs/data_structures/unordered_array_set/unordered_array_set.h
-CMakeFiles/workProject.dir/libs/data_structures/unordered_array_set_test/unordered_array_set_test.c.obj: \
- ../libs/algorithms/array/array.h \
- ../libs/data_structures/bitset/bitset.h \
- ../libs/data_structures/unordered_array_set/unordered_array_set.h \
- ../libs/data_structures/unordered_array_set_test/unordered_array_set_test.c \
- ../libs/data_structures/unordered_array_set_test/unordered_array_set_test.h
 CMakeFiles/workProject.dir/libs/data_structures/vector/vector.c.obj: \
  ../libs/data_structures/vector/vector.c \
  ../libs/data_structures/vector/vector.h
@@ -47,27 +69,20 @@ CMakeFiles/workProject.dir/libs/data_structures/vectorVoid/vectorVoid.c.obj: \
  ../libs/algorithms/array/array.h \
  ../libs/data_structures/vectorVoid/vectorVoid.c \
  ../libs/data_structures/vectorVoid/vectorVoid.h
-CMakeFiles/workProject.dir/libs/data_structures/vectorVoid_tests/vectorVoid_tests.c.obj: \
- ../libs/algorithms/array/array.h \
- ../libs/data_structures/vectorVoid/vectorVoid.h \
- ../libs/data_structures/vectorVoid_tests/vectorVoid_tests.c \
- ../libs/data_structures/vectorVoid_tests/vectorVoid_tests.h
-CMakeFiles/workProject.dir/libs/data_structures/vector_tests/vector_tests.c.obj: \
- ../libs/algorithms/algorithms.h \
- ../libs/data_structures/vector/vector.h \
- ../libs/data_structures/vector_tests/vector_tests.c \
- ../libs/data_structures/vector_tests/vector_tests.h
 CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.obj: \
  ../libs/govnocode/DiscMath/DiscMath.c \
  ../libs/govnocode/DiscMath/DiscMath.h
+CMakeFiles/workProject.dir/libs/govnocode/whoAreKB/whoAreKB.c.obj: \
+ ../libs/govnocode/whoAreKB/whoAreKB.c \
+ ../libs/govnocode/whoAreKB/whoAreKB.h
 CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.obj: \
  ../libs/algorithms/array/array.h \
  ../libs/algorithms/base/base.h \
  ../libs/data_structures/matrix/matrix.h \
  ../libs/tasks/5dTasks/5dTasks.c \
  ../libs/tasks/5dTasks/5dTasks.h
-CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks_tests.c.obj: \
- ../libs/tasks/5dTasks/5dTasks_tests.c \
- ../libs/tasks/5dTasks/5dTasks_tests.h
+CMakeFiles/workProject.dir/libs/tasks/5eTasks/5eTasks.c.obj: \
+ ../libs/tasks/5eTasks/5eTasks.c \
+ ../libs/tasks/5eTasks/5eTasks.h
 CMakeFiles/workProject.dir/main.c.obj: \
  ../main.c

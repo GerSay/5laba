@@ -19,6 +19,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.obj"
   "CMakeFiles/workProject.dir/libs/govnocode/whoAreKB/whoAreKB.c.obj"
   "CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.obj"
+  "CMakeFiles/workProject.dir/libs/tasks/5eTasks/5eTasks.c.obj"
   "CMakeFiles/workProject.dir/main.c.obj"
   "libworkProject.dll.a"
   "workProject.exe"

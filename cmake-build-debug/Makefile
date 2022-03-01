@@ -608,6 +608,30 @@ libs/tasks/5dTasks/5dTasks.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.s
 .PHONY : libs/tasks/5dTasks/5dTasks.c.s
 
+libs/tasks/5eTasks/5eTasks.obj: libs/tasks/5eTasks/5eTasks.c.obj
+.PHONY : libs/tasks/5eTasks/5eTasks.obj
+
+# target to build an object file
+libs/tasks/5eTasks/5eTasks.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/tasks/5eTasks/5eTasks.c.obj
+.PHONY : libs/tasks/5eTasks/5eTasks.c.obj
+
+libs/tasks/5eTasks/5eTasks.i: libs/tasks/5eTasks/5eTasks.c.i
+.PHONY : libs/tasks/5eTasks/5eTasks.i
+
+# target to preprocess a source file
+libs/tasks/5eTasks/5eTasks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/tasks/5eTasks/5eTasks.c.i
+.PHONY : libs/tasks/5eTasks/5eTasks.c.i
+
+libs/tasks/5eTasks/5eTasks.s: libs/tasks/5eTasks/5eTasks.c.s
+.PHONY : libs/tasks/5eTasks/5eTasks.s
+
+# target to generate assembly for a file
+libs/tasks/5eTasks/5eTasks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/tasks/5eTasks/5eTasks.c.s
+.PHONY : libs/tasks/5eTasks/5eTasks.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -701,6 +725,9 @@ help:
 	@echo ... libs/tasks/5dTasks/5dTasks.obj
 	@echo ... libs/tasks/5dTasks/5dTasks.i
 	@echo ... libs/tasks/5dTasks/5dTasks.s
+	@echo ... libs/tasks/5eTasks/5eTasks.obj
+	@echo ... libs/tasks/5eTasks/5eTasks.i
+	@echo ... libs/tasks/5eTasks/5eTasks.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

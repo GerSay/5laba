@@ -2,11 +2,12 @@
 #define WORKPROJECT_STRING__H
 
 #include <stdio.h>
-
+#include <ctype.h>
+#include <memory.h>
 
 size_t strlen_(char *begin);
 
-char *find(char *begin, const char *end, int ch);
+char *findForString(char *begin, const char *end, int ch);
 
 char *findNonSpace(char *begin);
 
