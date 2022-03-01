@@ -55,5 +55,24 @@ char *copy(const char *beginSource, const char *endSource, char *beginDestinatio
 }
 
 char *copyIf(char *beginSource, const char *endSource, char *beginDestination, int (*f) (int)) {
-
+    while (beginSource != endSource) {
+        if (f(*beginSource)) {
+            *beginDestination = *beginSource;
+            beginDestination++;
+        }
+        beginSource++;
+    }
+    return beginDestination;
 }
+
+char *copyIfReserve(char *rBeginSource, const char *rEndSource, char *beginDestination, int (*f) (int)) {
+    while (rBeginSource != rEndSource) {
+        if (f(*rBeginSource)) {
+            *beginDestination = *rBeginSource;
+            beginDestination++;
+        }
+        rBeginSource--;
+    }
+    return beginDestination;
+}
+
