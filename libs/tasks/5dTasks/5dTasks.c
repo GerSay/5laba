@@ -103,7 +103,10 @@ void transposeIfMatrixHasEqualSumOfRows(matrix m) {
 //---------------------------------------6-----------------------------------
 
 bool isMutuallyInverseMatrices(matrix m1, matrix m2) {
-    return isSquareMatrix(m1) && isEMatrix(mulMatrices(m1, m2));
+    matrix m = mulMatrices(m1, m2);
+    bool isMatrixE = isEMatrix(m);
+    freeMemMatrix(m);
+    return isMatrixE;
 }
 
 //---------------------------------------7-----------------------------------

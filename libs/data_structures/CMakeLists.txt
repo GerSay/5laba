@@ -12,6 +12,6 @@ add_library(data_structures
         string_/string_.c
         )
 
-        #define
+#
 
 target_link_libraries(data_structures algorithms tasks)
