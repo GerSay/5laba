@@ -10,6 +10,25 @@
 #define ASSERT_STRING(expected, got) assertString(expected, got, \
                                 __FILE__ , __FUNCTION__ , __LINE__)
 
+#define MAX_STRING_SIZE 100
+#define MAX_N_WORDS_IN_STRING 100
+#define MAX_WORD_SIZE 20
+
+
+char _stringBuffer[MAX_STRING_SIZE + 1];
+
+
+typedef struct wordDescriptor {
+    char *begin;
+    char *end;
+} wordDescriptor;
+
+typedef struct bagOfWords {
+    wordDescriptor word[MAX_N_WORDS_IN_STRING];
+    size_t size;
+} bagOfWords;
+
+
 
 size_t strlen_(char *begin);
 
@@ -31,7 +50,9 @@ char *copyIf(char *beginSource, const char *endSource, char *beginDestination, i
 
 char *copyIfReserve(char *rBeginSource, const char *rEndSource, char *beginDestination, int (*f) (int));
 
+bool getWord(char *beginSearch, wordDescriptor *word);
 
+bool getWordReverse(char *rBegin, char *rEnd, wordDescriptor *word);
 
 
 #endif //WORKPROJECT_STRING__H
