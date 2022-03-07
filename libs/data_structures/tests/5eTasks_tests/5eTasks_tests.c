@@ -359,33 +359,33 @@ void test_changingWords() {
 
 void test_reverseWords_moreLettersInWord() {
     char s[MAX_STRING_SIZE] = "crook don't steal";
-    reverseWords(s);
+    reverseWordsInString(s);
 
     ASSERT_STRING("steal don't crook", s);
 }
 
 void test_reverseWords_oneWord() {
     char s[MAX_STRING_SIZE] = "SOS";
-    reverseWords(s);
+    reverseWordsInString(s);
 
     ASSERT_STRING("SOS", s);
 }
 
 void test_reverseWords_oneLetter() {
     char s[MAX_STRING_SIZE] = "a b c d e f";
-    reverseWords(s);
+    reverseWordsInString(s);
 
     ASSERT_STRING("f e d c b a", s);
 }
 
 void test_reverseWords_empty() {
     char s[MAX_STRING_SIZE] = "";
-    reverseWords(s);
+    reverseWordsInString(s);
 
     ASSERT_STRING("", s);
 }
 
-void test_reverseWords() {
+void test_reverseWordsInString() {
     test_reverseWords_moreLettersInWord();
     test_reverseWords_oneLetter();
     test_reverseWords_empty();
