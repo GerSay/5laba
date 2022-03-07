@@ -104,3 +104,15 @@ int areWordsEqual(wordDescriptor w1, wordDescriptor w2) {
 
     return *begin1 - *begin2;
 }
+
+bool isPalindrome(char *begin, char *end) {
+    end--;
+    while (end - begin > 0) {
+        if (*begin != *end)
+            return 0;
+
+        begin++;
+        end--;
+    }
+    return 1;
+}

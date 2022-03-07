@@ -57,6 +57,8 @@ bool getWordReverse(char *rBegin, char *rEnd, wordDescriptor *word);
 
 int areWordsEqual(wordDescriptor w1, wordDescriptor w2);
 
+bool isPalindrome(char *begin, char *end);
+
 
 
 
