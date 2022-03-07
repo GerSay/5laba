@@ -244,25 +244,138 @@ void test_isWordsOrdered() {
 
 //----------------------------------------7-----------------------------------------------
 
-void test_reverseWords_moreLettersInWord() {
-    char s[MAX_STRING_SIZE] = "this   task   has   caused me   a lot of pain ";
+void test_reverseWord_moreLettersInWord() {
+    char s[MAX_STRING_SIZE] = "this task has caused me a lot of pain";
     reverseWords(s);
 
-    ASSERT_STRING("pain of lot a me caused has task this", s);
+    ASSERT_STRING("siht ksat sah desuac em a tol fo niap", s);
 }
 
-void test_reverseWords_oneWord() {
-    char s[MAX_STRING_SIZE] = "pain";
-    reverseWords(s);
-
-    ASSERT_STRING("pain", s);
-}
-
-void test_reverseWords_oneLetter() {
+void test_reverseWord_oneLetter() {
     char s[MAX_STRING_SIZE] = "a b c a b c";
     reverseWords(s);
 
-    ASSERT_STRING("c b a c b a", s);
+    ASSERT_STRING("a b c a b c", s);
+}
+
+void test_reverseWord_empty() {
+    char s[MAX_STRING_SIZE] = "";
+    reverseWords(s);
+
+    ASSERT_STRING("", s);
+}
+
+void test_reverseWord_oneWord() {
+    char s[MAX_STRING_SIZE] = "Hello";
+    reverseWords(s);
+
+    ASSERT_STRING("olleH", s);
+}
+
+void test_reverseWords() {
+    test_reverseWord_moreLettersInWord();
+    test_reverseWord_oneLetter();
+    test_reverseWord_empty();
+    test_reverseWord_oneWord();
+}
+
+//----------------------------------------8-----------------------------------------------
+
+void test_countOfPalindrome_hasPalindromes() {
+    char s[] = "radar, tot, moon, radar, people, lol, girl";
+    assert(countOfPalindrome(s) == 4);
+}
+
+void test_countOfPalindrome_oneWord() {
+    char s[] = "J";
+    assert(countOfPalindrome(s) == 1);
+}
+
+void test_countOfPalindrome_noSpaces() {
+    char s[] = "bid,tot,poop,gol,gig,wenew,gog";
+    assert(countOfPalindrome(s) == 4);
+}
+
+void test_countOfPalindrome_oneLetter() {
+    char s[] = "a, b,c, d,e, f,g";
+    assert(countOfPalindrome(s) == 7);
+}
+
+void test_countOfPalindrome() {
+    test_countOfPalindrome_hasPalindromes();
+    test_countOfPalindrome_noSpaces();
+    test_countOfPalindrome_oneLetter();
+    test_countOfPalindrome_oneWord();
+}
+
+//----------------------------------------9-----------------------------------------------
+
+void test_changingWords_equalWordCount() {
+    char s[MAX_STRING_SIZE];
+    changingWords(s, "Hello World", "Wow fantastic");
+    ASSERT_STRING("In is a bad work", s);
+}
+
+void test_changingWords_moreWordInFirstString() {
+    char s[MAX_STRING_SIZE];
+    changingWords(s, "SOS", "Wow");
+    ASSERT_STRING("crook don't steal", s);
+}
+
+void test_changingWords_moreWordInSecondString() {
+    char s[MAX_STRING_SIZE];
+    changingWords(s, "SOS", "Crook don't steal");
+    ASSERT_STRING("SOS Crook don't steal", s);
+}
+
+void test_changingWords_firstStringIsEmpty() {
+    char s[MAX_STRING_SIZE];
+    changingWords(s, "", "I'm sorry but I won't let you do it");
+    ASSERT_STRING("I'm sorry but I won't let you do it", s);
+}
+
+void test_changingWords_secondStringIsEmpty() {
+    char s[MAX_STRING_SIZE];
+    changingWords(s, "You're not stealing my work", "");
+    ASSERT_STRING("You're not stealing my work", s);
+}
+
+void test_changingWords_stringsAreEmpty() {
+    char s[MAX_STRING_SIZE];
+    changingWords(s, " ", " ");
+    ASSERT_STRING("", s);
+}
+
+void test_changingWords() {
+    test_changingWords_equalWordCount();
+    test_changingWords_moreWordInFirstString();
+    test_changingWords_moreWordInSecondString();
+    test_changingWords_firstStringIsEmpty();
+    test_changingWords_secondStringIsEmpty();
+    test_changingWords_stringsAreEmpty();
+}
+
+//----------------------------------------10----------------------------------------------
+
+void test_reverseWords_moreLettersInWord() {
+    char s[MAX_STRING_SIZE] = "crook don't steal";
+    reverseWords(s);
+
+    ASSERT_STRING("steal don't crook", s);
+}
+
+void test_reverseWords_oneWord() {
+    char s[MAX_STRING_SIZE] = "SOS";
+    reverseWords(s);
+
+    ASSERT_STRING("SOS", s);
+}
+
+void test_reverseWords_oneLetter() {
+    char s[MAX_STRING_SIZE] = "a b c d e f";
+    reverseWords(s);
+
+    ASSERT_STRING("f e d c b a", s);
 }
 
 void test_reverseWords_empty() {
@@ -278,44 +391,6 @@ void test_reverseWords() {
     test_reverseWords_empty();
     test_reverseWords_oneWord();
 }
-
-//----------------------------------------8-----------------------------------------------
-
-void test_countOfPalindrome_hasPalindromes() {
-    char s[] = "radar, tot, noon, redder, stats, apple, poop";
-    assert(countOfPalindrome(s) == 6);
-}
-
-void test_countOfPalindrome_oneWord() {
-    char s[] = "radar";
-    assert(countOfPalindrome(s) == 1);
-}
-
-void test_countOfPalindrome_noSpaces() {
-    char s[] = "radar,tot,noon,redder,stats,apple,poop";
-    assert(countOfPalindrome(s) == 6);
-}
-
-void test_countOfPalindrome_oneLetter() {
-    char s[] = "a,b,c,d,e,f,g";
-    assert(countOfPalindrome(s) == 7);
-}
-
-void test_countOfPalindrome() {
-    test_countOfPalindrome_hasPalindromes();
-    test_countOfPalindrome_noSpaces();
-    test_countOfPalindrome_oneLetter();
-    test_countOfPalindrome_oneWord();
-}
-
-//----------------------------------------9-----------------------------------------------
-
-
-
-//----------------------------------------10----------------------------------------------
-
-
-
 //----------------------------------------11----------------------------------------------
 
 

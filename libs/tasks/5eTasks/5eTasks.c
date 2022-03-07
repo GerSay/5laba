@@ -159,6 +159,32 @@ size_t countOfPalindrome(char *s) {
 
 //----------------------------------------9-----------------------------------------------
 
+void changingWords(char *s, char *s1, char *s2) {
+    char *beginCopy = s;
+    wordDescriptor word1, word2;
+    bool isWFirstFound, isWSecondFound;
+    char *beginSearch1 = s1, *beginSearch2 = s2;
+    while ((isWFirstFound = getWord(beginSearch1, &word1)),
+            (isWSecondFound = getWord(beginSearch2, &word2)),
+            isWFirstFound || isWSecondFound) {
+
+        if (isWFirstFound) {
+            beginCopy = copy(word1.begin, word1.end, beginCopy);
+            *beginCopy++ = ' ';
+            beginSearch1 = word1.end;
+        }
+        if (isWSecondFound) {
+            beginCopy = copy(word2.begin, word2.end, beginCopy);
+            *beginCopy++ = ' ';
+            beginSearch2 = word2.end;
+        }
+
+    }
+    if (beginCopy != s)
+        beginCopy--;
+
+    *beginCopy = '\0';
+}
 
 
 //----------------------------------------10----------------------------------------------
