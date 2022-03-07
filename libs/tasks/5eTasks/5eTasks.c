@@ -68,3 +68,23 @@ void digitToStartForEveryWord(char *s) {
 }
 
 //----------------------------------------4-----------------------------------------------
+
+void spaceAfterEveryFigure(char *s) {
+    char *startBuffer = _stringBuffer;
+    char *endOfBuffer = copy(s, getEndOfString(s), startBuffer);
+
+    while (startBuffer < endOfBuffer) {
+        if (isdigit(*startBuffer)) {
+            unsigned char a = *startBuffer - '0';
+            while (a--)
+                *s++ = ' ';
+        } else
+            *s++ = *startBuffer;
+
+        startBuffer++;
+    }
+    *s = '\0';
+}
+
+//----------------------------------------5-----------------------------------------------
+
