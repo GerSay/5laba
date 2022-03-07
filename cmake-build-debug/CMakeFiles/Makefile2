@@ -44,10 +44,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Users\krytm\Desktop\Новая папка\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Users\krytm\Desktop\Новая папка\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -63,6 +63,7 @@ CMAKE_BINARY_DIR = C:\Users\krytm\CLionProjects\workProject\cmake-build-debug
 
 # The main recursive "all" target.
 all: CMakeFiles/workProject.dir/all
+all: CMakeFiles/str.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,6 +72,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/workProject.dir/clean
+clean: CMakeFiles/str.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -80,7 +82,7 @@ clean: CMakeFiles/workProject.dir/clean
 CMakeFiles/workProject.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 "Built target workProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26 "Built target workProject"
 .PHONY : CMakeFiles/workProject.dir/all
 
 # Build rule for subdir invocation for target.
@@ -98,6 +100,32 @@ workProject: CMakeFiles/workProject.dir/rule
 CMakeFiles/workProject.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/clean
 .PHONY : CMakeFiles/workProject.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/str.dir
+
+# All Build rule for target.
+CMakeFiles/str.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target str"
+.PHONY : CMakeFiles/str.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/str.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/str.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/str.dir/rule
+
+# Convenience name for target.
+str: CMakeFiles/str.dir/rule
+.PHONY : str
+
+# clean rule for target.
+CMakeFiles/str.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/clean
+.PHONY : CMakeFiles/str.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

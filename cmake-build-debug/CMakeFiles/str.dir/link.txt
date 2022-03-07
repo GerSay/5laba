@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc libstr.a CMakeFiles/str.dir/libs/data_structures/string_/string_.c.obj CMakeFiles/str.dir/libs/data_structures/tests/5eTasks_tests/5eTasks_tests.c.obj
+C:\MinGW\bin\ranlib.exe libstr.a

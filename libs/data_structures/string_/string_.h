@@ -4,6 +4,12 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <memory.h>
+#include <stdbool.h>
+#include <limits.h>
+
+#define ASSERT_STRING(expected, got) assertString(expected, got, \
+                                __FILE__ , __FUNCTION__ , __LINE__)
+
 
 size_t strlen_(char *begin);
 

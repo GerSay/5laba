@@ -82,6 +82,7 @@ CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.obj: \
  ../libs/tasks/5dTasks/5dTasks.c \
  ../libs/tasks/5dTasks/5dTasks.h
 CMakeFiles/workProject.dir/libs/tasks/5eTasks/5eTasks.c.obj: \
+ ../libs/data_structures/string_/string_.h \
  ../libs/tasks/5eTasks/5eTasks.c \
  ../libs/tasks/5eTasks/5eTasks.h
 CMakeFiles/workProject.dir/main.c.obj: \

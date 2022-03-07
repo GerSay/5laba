@@ -47,10 +47,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Users\krytm\Desktop\Новая папка\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Users\krytm\Desktop\Новая папка\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\krytm\CLionProjects\workProject\cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Users\krytm\Desktop\Новая папка\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -77,7 +77,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Users\krytm\Desktop\Новая папка\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -127,6 +127,19 @@ workProject: cmake_check_build_system
 workProject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/build
 .PHONY : workProject/fast
+
+#=============================================================================
+# Target rules for targets named str
+
+# Build rule for target.
+str: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 str
+.PHONY : str
+
+# fast build rule for target.
+str/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/build
+.PHONY : str/fast
 
 libs/algorithms/algorithms.obj: libs/algorithms/algorithms.c.obj
 .PHONY : libs/algorithms/algorithms.obj
@@ -302,6 +315,7 @@ libs/data_structures/string_/string_.obj: libs/data_structures/string_/string_.c
 # target to build an object file
 libs/data_structures/string_/string_.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/string_/string_.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/libs/data_structures/string_/string_.c.obj
 .PHONY : libs/data_structures/string_/string_.c.obj
 
 libs/data_structures/string_/string_.i: libs/data_structures/string_/string_.c.i
@@ -310,6 +324,7 @@ libs/data_structures/string_/string_.i: libs/data_structures/string_/string_.c.i
 # target to preprocess a source file
 libs/data_structures/string_/string_.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/string_/string_.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/libs/data_structures/string_/string_.c.i
 .PHONY : libs/data_structures/string_/string_.c.i
 
 libs/data_structures/string_/string_.s: libs/data_structures/string_/string_.c.s
@@ -318,6 +333,7 @@ libs/data_structures/string_/string_.s: libs/data_structures/string_/string_.c.s
 # target to generate assembly for a file
 libs/data_structures/string_/string_.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/string_/string_.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/libs/data_structures/string_/string_.c.s
 .PHONY : libs/data_structures/string_/string_.c.s
 
 libs/data_structures/tests/5dTasks_tests/5dTasks_tests.obj: libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.obj
@@ -343,6 +359,30 @@ libs/data_structures/tests/5dTasks_tests/5dTasks_tests.s: libs/data_structures/t
 libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.s
 .PHONY : libs/data_structures/tests/5dTasks_tests/5dTasks_tests.c.s
+
+libs/data_structures/tests/5eTasks_tests/5eTasks_tests.obj: libs/data_structures/tests/5eTasks_tests/5eTasks_tests.c.obj
+.PHONY : libs/data_structures/tests/5eTasks_tests/5eTasks_tests.obj
+
+# target to build an object file
+libs/data_structures/tests/5eTasks_tests/5eTasks_tests.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/libs/data_structures/tests/5eTasks_tests/5eTasks_tests.c.obj
+.PHONY : libs/data_structures/tests/5eTasks_tests/5eTasks_tests.c.obj
+
+libs/data_structures/tests/5eTasks_tests/5eTasks_tests.i: libs/data_structures/tests/5eTasks_tests/5eTasks_tests.c.i
+.PHONY : libs/data_structures/tests/5eTasks_tests/5eTasks_tests.i
+
+# target to preprocess a source file
+libs/data_structures/tests/5eTasks_tests/5eTasks_tests.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/libs/data_structures/tests/5eTasks_tests/5eTasks_tests.c.i
+.PHONY : libs/data_structures/tests/5eTasks_tests/5eTasks_tests.c.i
+
+libs/data_structures/tests/5eTasks_tests/5eTasks_tests.s: libs/data_structures/tests/5eTasks_tests/5eTasks_tests.c.s
+.PHONY : libs/data_structures/tests/5eTasks_tests/5eTasks_tests.s
+
+# target to generate assembly for a file
+libs/data_structures/tests/5eTasks_tests/5eTasks_tests.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/libs/data_structures/tests/5eTasks_tests/5eTasks_tests.c.s
+.PHONY : libs/data_structures/tests/5eTasks_tests/5eTasks_tests.c.s
 
 libs/data_structures/tests/matrix_tests/matrix_tests.obj: libs/data_structures/tests/matrix_tests/matrix_tests.c.obj
 .PHONY : libs/data_structures/tests/matrix_tests/matrix_tests.obj
@@ -664,6 +704,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... str
 	@echo ... workProject
 	@echo ... libs/algorithms/algorithms.obj
 	@echo ... libs/algorithms/algorithms.i
@@ -692,6 +733,9 @@ help:
 	@echo ... libs/data_structures/tests/5dTasks_tests/5dTasks_tests.obj
 	@echo ... libs/data_structures/tests/5dTasks_tests/5dTasks_tests.i
 	@echo ... libs/data_structures/tests/5dTasks_tests/5dTasks_tests.s
+	@echo ... libs/data_structures/tests/5eTasks_tests/5eTasks_tests.obj
+	@echo ... libs/data_structures/tests/5eTasks_tests/5eTasks_tests.i
+	@echo ... libs/data_structures/tests/5eTasks_tests/5eTasks_tests.s
 	@echo ... libs/data_structures/tests/matrix_tests/matrix_tests.obj
 	@echo ... libs/data_structures/tests/matrix_tests/matrix_tests.i
 	@echo ... libs/data_structures/tests/matrix_tests/matrix_tests.s
