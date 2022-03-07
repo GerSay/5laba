@@ -96,4 +96,11 @@ bool getWordReverse(char *rBegin, char *rEnd, wordDescriptor *word) {
     return 1;
 }
 
+int areWordsEqual(wordDescriptor w1, wordDescriptor w2) {
+    char *begin1 = w1.begin;
+    char *begin2 = w2.begin;
+    while (begin1 != w1.end - 1 && (*begin1 == *begin2))
+        begin1++, begin2++;
 
+    return *begin1 - *begin2;
+}

@@ -88,3 +88,35 @@ void spaceAfterEveryFigure(char *s) {
 
 //----------------------------------------5-----------------------------------------------
 
+
+
+//----------------------------------------6-----------------------------------------------
+
+bool isWordsOrdered(char *s) {
+    char *beginSearch = s;
+    wordDescriptor currentWord;
+    if (!getWord(beginSearch, &currentWord))
+        return true;
+
+    wordDescriptor previousWord = currentWord;
+    beginSearch = previousWord.end;
+
+    while (getWord(beginSearch, &currentWord)) {
+        if (areWordsEqual(currentWord, previousWord) < 0)
+            return false;
+
+        previousWord = currentWord;
+        beginSearch = currentWord.end;
+    }
+    return true;
+}
+
+//----------------------------------------7-----------------------------------------------
+
+
+
+//----------------------------------------8-----------------------------------------------
+
+
+
+//----------------------------------------9-----------------------------------------------

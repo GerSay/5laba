@@ -6,6 +6,7 @@
 #include <memory.h>
 #include <stdbool.h>
 #include <limits.h>
+#include <assert.h>
 
 #define ASSERT_STRING(expected, got) assertString(expected, got, \
                                 __FILE__ , __FUNCTION__ , __LINE__)
@@ -53,6 +54,10 @@ char *copyIfReserve(char *rBeginSource, const char *rEndSource, char *beginDesti
 bool getWord(char *beginSearch, wordDescriptor *word);
 
 bool getWordReverse(char *rBegin, char *rEnd, wordDescriptor *word);
+
+int areWordsEqual(wordDescriptor w1, wordDescriptor w2);
+
+
 
 
 #endif //WORKPROJECT_STRING__H

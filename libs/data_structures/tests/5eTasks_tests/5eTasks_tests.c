@@ -197,7 +197,50 @@ void test_spaceAfterEveryFigure() {
 
 //----------------------------------------6-----------------------------------------------
 
+void test_isWordsOrdered_oneLetterOrdered() {
+    char s[] = "a b c d e f j";
+    assert(isWordsOrdered(s));
+}
 
+void test_isWordsOrdered_oneLetterUnordered() {
+    char s[] = "a b a d v a";
+    assert(!isWordsOrdered(s));
+}
+
+void test_isWordsOrdered_ordered() {
+    char s[] = "c c++ python basic pascal";
+    assert(isWordsOrdered(s));
+}
+
+void test_isWordsOrdered_unorderedLastLetterAreDifferent() {
+    char s[] = "babala ger";
+    assert(!isWordsOrdered(s));
+}
+
+void test_isWordsOrdered_orderedLastLetterAreDifferent() {
+    char s[] = "binikey say";
+    assert(isWordsOrdered(s));
+}
+
+void test_isWordsOrdered_oneWord() {
+    char s[] = "pilotolip";
+    assert(isWordsOrdered(s));
+}
+
+void test_isWordsOrdered_emptyString() {
+    char s[] = "";
+    assert(isWordsOrdered(s));
+}
+
+void test_isWordsOrdered() {
+    test_isWordsOrdered_unorderedLastLetterAreDifferent();
+    test_isWordsOrdered_oneLetterOrdered();
+    test_isWordsOrdered_oneLetterUnordered();
+    test_isWordsOrdered_ordered();
+    test_isWordsOrdered_orderedLastLetterAreDifferent();
+    test_isWordsOrdered_oneWord();
+    test_isWordsOrdered_emptyString();
+}
 
 //----------------------------------------7-----------------------------------------------
 
