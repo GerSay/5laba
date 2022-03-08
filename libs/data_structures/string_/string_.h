@@ -73,6 +73,8 @@ void getBagOfWords(bagOfWords *bag, char *s);
 
 void wordDescriptorToString(wordDescriptor word, char *destination);
 
+int compare(const void *a, const void *b);
+
 
 
 

@@ -505,11 +505,78 @@ void test_hasEqualWords() {
 
 //----------------------------------------14----------------------------------------------
 
+void test_areWordsFromSameLetters_hasThisWords() {
+    char s[] = "picture pitcure";
+    assert(areWordsFromSameLetters(s));
+}
+
+void test_areWordsFromSameLetters_hasThisWords2() {
+    char s[] = "picture erutcip";
+    assert(areWordsFromSameLetters(s));
+}
+
+void test_areWordsFromSameLetters_hasNotThisWords() {
+    char s[] = "father mother father";
+    assert(!areWordsFromSameLetters(s));
+}
+
+void test_areWordsFromSameLetters_empty() {
+    char s[] = "";
+    assert(!areWordsFromSameLetters(s));
+}
+
+void test_areWordsFromSameLetters_oneWord() {
+    char s[] = "kill my program";
+    assert(!areWordsFromSameLetters(s));
+}
+
+void test_areWordsFromSameLetters_differentRegisters() {
+    char s[] = "KuRt kUrT";
+    assert(!areWordsFromSameLetters(s));
+}
+
+void test_areWordsFromSameLetters() {
+    test_areWordsFromSameLetters_hasThisWords();
+    test_areWordsFromSameLetters_hasNotThisWords();
+    test_areWordsFromSameLetters_hasThisWords2();
+    test_areWordsFromSameLetters_empty();
+    test_areWordsFromSameLetters_oneWord();
+    test_areWordsFromSameLetters_differentRegisters();
+}
 
 
 //----------------------------------------15----------------------------------------------
 
+void test_deleteMatchesWithTheLastWord_someLastWords() {
+    char s[] = "Hello World Hello Hello Book Hello";
+    deleteMatchesWithTheLastWord(s);
+    ASSERT_STRING("World Book", s);
+}
 
+void test_deleteMatchesWithTheLastWord_moreEqualWords() {
+    char s[] = "Hello Hello Hello Hello";
+    deleteMatchesWithTheLastWord(s);
+    ASSERT_STRING("", s);
+}
+
+void test_deleteMatchesWithTheLastWord_oneWord() {
+    char s[] = "Hello";
+    deleteMatchesWithTheLastWord(s);
+    ASSERT_STRING("", s);
+}
+
+void test_deleteMatchesWithTheLastWord_empty() {
+    char s[] = "";
+    deleteMatchesWithTheLastWord(s);
+    ASSERT_STRING("", s);
+}
+
+void test_deleteMatchesWithTheLastWord() {
+    test_deleteMatchesWithTheLastWord_someLastWords();
+    test_deleteMatchesWithTheLastWord_oneWord();
+    test_deleteMatchesWithTheLastWord_empty();
+    test_deleteMatchesWithTheLastWord_moreEqualWords();
+}
 
 //----------------------------------------16----------------------------------------------
 
@@ -519,6 +586,9 @@ void test_hasEqualWords() {
 
 //----------------------------------------17----------------------------------------------
 
+/*
+                                    решение в 15 задаче
+*/
 
 
 //----------------------------------------18----------------------------------------------

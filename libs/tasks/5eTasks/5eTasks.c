@@ -96,19 +96,19 @@ bool isWordsOrdered(char *s) {
     char *beginSearch = s;
     wordDescriptor currentWord;
     if (!getWord(beginSearch, &currentWord))
-        return true;
+        return 1;
 
     wordDescriptor previousWord = currentWord;
     beginSearch = previousWord.end;
 
     while (getWord(beginSearch, &currentWord)) {
         if (areWordsEqual(currentWord, previousWord) < 0)
-            return false;
+            return 0;
 
         previousWord = currentWord;
         beginSearch = currentWord.end;
     }
-    return true;
+    return 1;
 }
 
 //----------------------------------------7-----------------------------------------------
@@ -276,11 +276,41 @@ bool hasEqualWords(char *s) {
 
 //----------------------------------------14----------------------------------------------
 
+bool areWordsFromSameLetters(char *s) {
+    *copy(s, getEndOfString(s), _stringBuffer) = '\0';
+    getBagOfWords(&_bag1, _stringBuffer);
 
+    for (size_t i = 0; i < _bag1.size; i++)
+        qsort(_bag1.word[i].begin, _bag1.word[i].end - _bag1.word[i].begin, sizeof(char), compare);
+
+    return hasEqualWords(_stringBuffer);
+}
 
 //----------------------------------------15----------------------------------------------
 
+void deleteMatchesWithTheLastWord(char *s) {
+    wordDescriptor lastWord;
+    bool isLast = getWordReverse(getEndOfString(s), s - 1, &lastWord);
 
+    if (!isLast)
+        return;
+
+    char *beginSearch = s;
+    char *beginCopy = s;
+    wordDescriptor currentWord;
+    while (getWord(beginSearch, &currentWord)) {
+        if (areWordsEqual(currentWord, lastWord) != 0) {
+            beginCopy = copy(currentWord.begin, currentWord.end, beginCopy);
+            *beginCopy++ = ' ';
+        }
+
+        beginSearch = currentWord.end;
+    }
+    if (beginCopy != s)
+        --beginCopy;
+
+    *beginCopy = '\0';
+}
 
 //----------------------------------------16----------------------------------------------
 
@@ -290,7 +320,9 @@ bool hasEqualWords(char *s) {
 
 //----------------------------------------17----------------------------------------------
 
-
+/*
+                                    решение в 15 задаче
+*/
 
 //----------------------------------------18----------------------------------------------
 
