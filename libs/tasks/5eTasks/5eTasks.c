@@ -284,10 +284,40 @@ bool hasEqualWords(char *s) {
 
 //----------------------------------------16----------------------------------------------
 
-
+/*
+                                    решение в 12 задаче
+*/
 
 //----------------------------------------17----------------------------------------------
 
 
 
 //----------------------------------------18----------------------------------------------
+
+
+
+//----------------------------------------19----------------------------------------------
+
+bool areLettersFirstWordInSecondString(char *word, char *s) {
+    if (*word == '\0' || *s == '\0')
+        return false;
+
+    bool isLetterInString[255];
+    for (int i = 0; i < 255; i++)
+        isLetterInString[i] = false;
+
+    while (*s != '\0') {
+        if (isalpha(*s) && !isLetterInString[*s])
+            isLetterInString[*s] = true;
+        s++;
+    }
+
+    while (*word != '\0') {
+        if (!isLetterInString[*word])
+            return false;
+
+        word++;
+    }
+
+    return true;
+}

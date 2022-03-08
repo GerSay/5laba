@@ -513,10 +513,59 @@ void test_hasEqualWords() {
 
 //----------------------------------------16----------------------------------------------
 
-
+/*
+                                    решение в 12 задаче
+*/
 
 //----------------------------------------17----------------------------------------------
 
 
 
 //----------------------------------------18----------------------------------------------
+
+
+
+//----------------------------------------19----------------------------------------------
+
+void test_areLettersFirstWordInSecondString_hasEqualLetters() {
+    char s[MAX_STRING_SIZE] = "projects";
+    char word[MAX_STRING_SIZE] = "jects";
+
+    assert(areLettersFirstWordInSecondString(word, s));
+}
+
+void test_areLettersFirstWordInSecondString_hasNotFullEqualLetters() {
+    char s[MAX_STRING_SIZE] = "oreh";
+    char word[MAX_STRING_SIZE] = "rax";
+
+    assert(!areLettersFirstWordInSecondString(word, s));
+}
+
+void test_areLettersFirstWordInSecondString_moreSpaces() {
+    char s[MAX_STRING_SIZE] = "o r e o l ";
+    char word[MAX_STRING_SIZE] = "oreo";
+
+    assert(areLettersFirstWordInSecondString(word, s));
+}
+
+void test_areLettersFirstWordInSecondString_wordIsEmpty() {
+    char s[MAX_STRING_SIZE] = "oreh";
+    char word[MAX_STRING_SIZE] = "";
+
+    assert(!areLettersFirstWordInSecondString(word, s));
+}
+
+void test_areLettersFirstWordInSecondString_stringIsEmpty() {
+    char s[MAX_STRING_SIZE] = "";
+    char word[MAX_STRING_SIZE] = "oreh";
+
+    assert(!areLettersFirstWordInSecondString(word, s));
+}
+
+void test_areLettersFirstWordInSecondString() {
+    test_areLettersFirstWordInSecondString_hasEqualLetters();
+    test_areLettersFirstWordInSecondString_hasNotFullEqualLetters();
+    test_areLettersFirstWordInSecondString_wordIsEmpty();
+    test_areLettersFirstWordInSecondString_stringIsEmpty();
+    test_areLettersFirstWordInSecondString_moreSpaces();
+}
