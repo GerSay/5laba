@@ -52,11 +52,11 @@ void printWordBeforeFirstWordWithA(char *s);
 
 //----------------------------------------12----------------------------------------------
 
-bool hasEqualWords(char *s);
+wordDescriptor getLastWordInFirstStringInTheSecondString(char *s1, char *s2);
 
 //----------------------------------------13----------------------------------------------
 
-
+bool hasEqualWords(char *s);
 
 //----------------------------------------14----------------------------------------------
 

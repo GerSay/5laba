@@ -71,6 +71,8 @@ bool isPalindrome(char *begin, char *end);
 
 void getBagOfWords(bagOfWords *bag, char *s);
 
+void wordDescriptorToString(wordDescriptor word, char *destination);
+
 
 
 

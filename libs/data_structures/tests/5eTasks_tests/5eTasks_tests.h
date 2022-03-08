@@ -45,15 +45,15 @@ void test_reverseWordsInString();
 
 //----------------------------------------11----------------------------------------------
 
-void test_getLastWordInFirstStringInTheSecondString();
+void test_getWordBeforeFirstWordWithA();
 
 //----------------------------------------12----------------------------------------------
 
-void test_hasEqualWords();
+void test_getLastWordInFirstStringInTheSecondString();
 
 //----------------------------------------13----------------------------------------------
 
-
+void test_hasEqualWords();
 
 //----------------------------------------14----------------------------------------------
 

@@ -393,7 +393,7 @@ void test_reverseWordsInString() {
 }
 //----------------------------------------11----------------------------------------------
 
-void testAll_getWordBeforeFirstWordWithA() {
+void test_getWordBeforeFirstWordWithA() {
     char *beginWord, *endWord;
 
     char s1[] = "";

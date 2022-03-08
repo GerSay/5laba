@@ -247,6 +247,23 @@ void printWordBeforeFirstWordWithA(char *s) {
 
 //----------------------------------------12----------------------------------------------
 
+wordDescriptor getLastWordInFirstStringInTheSecondString(char *s1, char *s2) {
+    getBagOfWords(&_bag1, s1);
+    getBagOfWords(&_bag2, s2);
+
+    wordDescriptor word = {NULL, NULL};
+    bool isFoundLast = false;
+    for (size_t i = _bag1.size; i > 0 && !isFoundLast; i--)
+        for (size_t j = 0; j < _bag2.size && !isFoundLast; j++)
+            if (areWordsEqual(_bag1.word[i - 1], _bag2.word[j]) == 0) {
+                word = _bag1.word[i - 1];
+                isFoundLast = true;
+            }
+    return word;
+}
+
+//----------------------------------------13----------------------------------------------
+
 bool hasEqualWords(char *s) {
     getBagOfWords(&_bag1, s);
 
@@ -256,10 +273,6 @@ bool hasEqualWords(char *s) {
                 return 1;
     return 0;
 }
-
-//----------------------------------------13----------------------------------------------
-
-
 
 //----------------------------------------14----------------------------------------------
 
