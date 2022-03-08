@@ -24,7 +24,7 @@ void spaceAfterEveryFigure(char *s);
 
 //----------------------------------------5-----------------------------------------------
 
-
+void replaceAllOccurrencesOfOneWordWithAnother(char *source, char *w1, char *w2);
 
 //----------------------------------------6-----------------------------------------------
 

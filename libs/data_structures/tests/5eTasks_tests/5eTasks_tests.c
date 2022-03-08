@@ -193,7 +193,38 @@ void test_spaceAfterEveryFigure() {
 
 //----------------------------------------5-----------------------------------------------
 
+void test_replace_filledString_equalLensOfW1AndW2() {
+    char s[MAX_STRING_SIZE + 1] = "this lab drove me crazy";
+    char w1[] = "lab";
+    char w2[] = "laboratory";
+    replaceAllOccurrencesOfOneWordWithAnother(s, w1, w2);
+    char expectedS[] = "this laboratory drove me crazy";
+    ASSERT_STRING(expectedS, s);
+}
 
+void test_replace_filledString_w1LenMoreThanW2Len() {
+    char s[MAX_STRING_SIZE + 1] = "I want to forget about the repository";
+    char w1[] = "repository";
+    char w2[] = "github";
+    replaceAllOccurrencesOfOneWordWithAnother(s, w1, w2);
+    char expectedS[] = "I want to forget about the github";
+    ASSERT_STRING(expectedS, s);
+}
+
+void test_replace_filledString_w1LenLessThanW2Len() {
+    char s[MAX_STRING_SIZE + 1] = "it was the third sleepless night";
+    char w1[] = "night";
+    char w2[] = "day";
+    replaceAllOccurrencesOfOneWordWithAnother(s, w1, w2);
+    char expectedS[] = "it was the third sleepless day";
+    ASSERT_STRING(expectedS, s);
+}
+
+void test_replaceAllOccurrencesOfOneWordWithAnother() {
+    test_replace_filledString_equalLensOfW1AndW2();
+    test_replace_filledString_w1LenMoreThanW2Len();
+    test_replace_filledString_w1LenLessThanW2Len();
+}
 
 //----------------------------------------6-----------------------------------------------
 
@@ -245,10 +276,10 @@ void test_isWordsOrdered() {
 //----------------------------------------7-----------------------------------------------
 
 void test_reverseWord_moreLettersInWord() {
-    char s[MAX_STRING_SIZE] = "this task has caused me a lot of pain";
+    char s[MAX_STRING_SIZE] = "need more french rolls";
     reverseWords(s);
 
-    ASSERT_STRING("siht ksat sah desuac em a tol fo niap", s);
+    ASSERT_STRING("deen erom hcnerf sllor", s);
 }
 
 void test_reverseWord_oneLetter() {
@@ -266,10 +297,10 @@ void test_reverseWord_empty() {
 }
 
 void test_reverseWord_oneWord() {
-    char s[MAX_STRING_SIZE] = "Hello";
+    char s[MAX_STRING_SIZE] = "madness";
     reverseWords(s);
 
-    ASSERT_STRING("olleH", s);
+    ASSERT_STRING("ssendam", s);
 }
 
 void test_reverseWords() {
