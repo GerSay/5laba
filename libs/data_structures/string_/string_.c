@@ -116,3 +116,16 @@ bool isPalindrome(char *begin, char *end) {
     }
     return 1;
 }
+
+void getBagOfWords(bagOfWords *bag, char *s) {
+    char *beginSearch = s;
+    bag->size = 0;
+    wordDescriptor word;
+    while (getWord(beginSearch, &word)) {
+        bag->word[bag->size] = word;
+
+        bag->size++;
+        beginSearch = word.end;
+    }
+}
+

@@ -247,7 +247,15 @@ void printWordBeforeFirstWordWithA(char *s) {
 
 //----------------------------------------12----------------------------------------------
 
+bool hasEqualWords(char *s) {
+    getBagOfWords(&_bag1, s);
 
+    for (size_t i = 0; i < _bag1.size; i++)
+        for (size_t j = i + 1; j < _bag1.size; j++)
+            if (areWordsEqual(_bag1.word[i], _bag1.word[j]) == 0)
+                return 1;
+    return 0;
+}
 
 //----------------------------------------13----------------------------------------------
 

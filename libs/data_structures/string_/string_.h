@@ -16,9 +16,6 @@
 #define MAX_WORD_SIZE 20
 
 
-char _stringBuffer[MAX_STRING_SIZE + 1];
-
-
 typedef struct wordDescriptor {
     char *begin;
     char *end;
@@ -28,6 +25,11 @@ typedef struct bagOfWords {
     wordDescriptor word[MAX_N_WORDS_IN_STRING];
     size_t size;
 } bagOfWords;
+
+
+char _stringBuffer[MAX_STRING_SIZE + 1];
+bagOfWords _bag1;
+bagOfWords _bag2;
 
 
 typedef enum wordBeforeFirstWordWithAReturnCode {
@@ -66,6 +68,8 @@ bool getWordReverse(char *rBegin, char *rEnd, wordDescriptor *word);
 int areWordsEqual(wordDescriptor w1, wordDescriptor w2);
 
 bool isPalindrome(char *begin, char *end);
+
+void getBagOfWords(bagOfWords *bag, char *s);
 
 
 
