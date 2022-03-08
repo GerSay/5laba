@@ -211,7 +211,39 @@ void reverseWordsInString(char *s) {
 
 //----------------------------------------11----------------------------------------------
 
+wordBeforeFirstWordWithAReturnCode getWordBeforeFirstWordWithA(char *s, char **beginWordBefore, char **endWordBefore) {
+    wordDescriptor w1;
+    char *begin = s;
+    if (!getWord(begin, &w1))
+        return EMPTY_STRING;
+    else if (findForString(w1.begin, w1.end, 'A') != w1.end || findForString(w1.begin, w1.end, 'a') != w1.end)
+        return FIRST_WORD_WITH_A;
 
+    begin = w1.end;
+    wordDescriptor w2;
+    while (getWord(begin, &w2)) {
+        if (findForString(w2.begin, w2.end, 'A') != w2.end || findForString(w2.begin, w2.end, 'a') != w2.end) {
+            *beginWordBefore = w1.begin;
+            *endWordBefore = w1.end;
+
+            return WORD_FOUND;
+        }
+        w1 = w2;
+        begin = w2.end;
+    }
+    return NOT_FOUND_A_WORD_WITH_A;
+}
+
+void printWordBeforeFirstWordWithA(char *s) {
+    char *begin = s;
+    char *beginWordBefore, *endWordBefore;
+
+    if (getWordBeforeFirstWordWithA(begin, &beginWordBefore, &endWordBefore) == WORD_FOUND) {
+        *endWordBefore = '\0';
+
+        printf("%s\n", beginWordBefore);
+    }
+}
 
 //----------------------------------------12----------------------------------------------
 

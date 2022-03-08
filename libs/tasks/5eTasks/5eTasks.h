@@ -46,7 +46,9 @@ void reverseWordsInString(char *s);
 
 //----------------------------------------11----------------------------------------------
 
+wordBeforeFirstWordWithAReturnCode getWordBeforeFirstWordWithA(char *s, char **beginWordBefore, char **endWordBefore);
 
+void printWordBeforeFirstWordWithA(char *s);
 
 //----------------------------------------12----------------------------------------------
 

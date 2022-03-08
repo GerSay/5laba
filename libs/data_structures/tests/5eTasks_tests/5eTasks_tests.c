@@ -393,15 +393,115 @@ void test_reverseWordsInString() {
 }
 //----------------------------------------11----------------------------------------------
 
+void testAll_getWordBeforeFirstWordWithA() {
+    char *beginWord, *endWord;
 
+    char s1[] = "";
+    assert(getWordBeforeFirstWordWithA(s1, &beginWord, &endWord) == EMPTY_STRING);
+
+    char s2[] = " ABC";
+    assert(getWordBeforeFirstWordWithA(s2, &beginWord, &endWord) == FIRST_WORD_WITH_A);
+
+    char s3[] = "BC A";
+    assert(getWordBeforeFirstWordWithA(s3, &beginWord, &endWord) == WORD_FOUND);
+    char got[MAX_WORD_SIZE];
+    copy(beginWord, endWord, got);
+    got[endWord - beginWord] = '\0';
+    ASSERT_STRING("BC", got);
+
+    char s4[] = "bc a";
+    assert(getWordBeforeFirstWordWithA(s4, &beginWord, &endWord) == WORD_FOUND);
+    copy(beginWord, endWord, got);
+    got[endWord - beginWord] = '\0';
+    ASSERT_STRING("bc", got);
+
+    char s5[] = "B Q WE YR OW IUWR ";
+    assert(getWordBeforeFirstWordWithA(s5, &beginWord, &endWord) == NOT_FOUND_A_WORD_WITH_A);
+}
 
 //----------------------------------------12----------------------------------------------
 
+void test_getLastWordInFirstStringInTheSecondString_hasWordInStrings() {
+    char s1[] = "apple string last first second";
+    char s2[] = "first third programming apple";
+    wordDescriptor word = getLastWordInFirstStringInTheSecondString(s1, s2);
 
+    char res[MAX_STRING_SIZE];
+    wordDescriptorToString(word, res);
+    ASSERT_STRING ("first", res);
+}
+
+void test_getLastWordInFirstStringInTheSecondString_hasOneWordInStrings() {
+    char s1[] = "apple cinema gaming programming";
+    char s2[] = "math programming listening";
+    wordDescriptor word = getLastWordInFirstStringInTheSecondString(s1, s2);
+
+    char res[MAX_STRING_SIZE];
+    wordDescriptorToString(word, res);
+    ASSERT_STRING ("programming", res);
+}
+
+void test_getLastWordInFirstStringInTheSecondString_hasNotUnion() {
+    char s1[] = "apple cinema gaming programming";
+    char s2[] = "math cooking listening";
+    wordDescriptor word = getLastWordInFirstStringInTheSecondString(s1, s2);
+
+    char res[MAX_STRING_SIZE];
+    wordDescriptorToString(word, res);
+    ASSERT_STRING ("", res);
+}
+
+void test_getLastWordInFirstStringInTheSecondString_emptyStrings() {
+    char s1[] = "";
+    char s2[] = "";
+    wordDescriptor word = getLastWordInFirstStringInTheSecondString(s1, s2);
+
+    char res[MAX_STRING_SIZE];
+    wordDescriptorToString(word, res);
+    ASSERT_STRING ("", res);
+}
+
+void test_getLastWordInFirstStringInTheSecondString() {
+    test_getLastWordInFirstStringInTheSecondString_hasWordInStrings();
+    test_getLastWordInFirstStringInTheSecondString_hasOneWordInStrings();
+    test_getLastWordInFirstStringInTheSecondString_hasNotUnion();
+    test_getLastWordInFirstStringInTheSecondString_emptyStrings();
+}
 
 //----------------------------------------13----------------------------------------------
 
+void test_hasEqualWords_LettersHasEqualWords() {
+    char s[] = "a b a d e";
+    assert(hasEqualWords(s));
+}
 
+void test_hasEqualWords_hasEqualWords() {
+    char s[] = "Help me Help";
+    assert(hasEqualWords(s));
+}
+
+void test_hasEqualWords_hasNotEqualWords() {
+    char s[] = "It's a Hell";
+    assert(!hasEqualWords(s));
+}
+
+void test_hasEqualWords_oneWord() {
+    char s[] = "Crazy";
+    assert(!hasEqualWords(s));
+}
+
+void test_hasEqualWords_empty() {
+    char s[] = "";
+    assert(!hasEqualWords(s));
+}
+
+void test_hasEqualWords() {
+    test_hasEqualWords_hasEqualWords();
+    test_hasEqualWords_LettersHasEqualWords();
+    test_hasEqualWords_hasNotEqualWords();
+    test_hasEqualWords_oneWord();
+    test_hasEqualWords_empty();
+}
 
 //----------------------------------------14----------------------------------------------
 
