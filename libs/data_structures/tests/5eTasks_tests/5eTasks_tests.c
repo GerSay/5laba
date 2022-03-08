@@ -523,7 +523,59 @@ void test_hasEqualWords() {
 
 //----------------------------------------18----------------------------------------------
 
+void test_addLastWordsSecondStringToFirstString_firstStringMoreSecond() {
+    char s1[MAX_STRING_SIZE] = "Hello Fucking World Bye";
+    char s2[MAX_STRING_SIZE] = "Cat Home";
 
+    addLastWordsSecondStringToFirstString(s1, s2, 4, 2);
+
+    ASSERT_STRING("Cat Home World Bye", s2);
+}
+
+void test_addLastWordsSecondStringToFirstString_oneWordInFirst() {
+    char s1[MAX_STRING_SIZE] = "Hello";
+    char s2[MAX_STRING_SIZE] = "Cat Home";
+
+    addLastWordsSecondStringToFirstString(s1, s2, 1, 2);
+
+    ASSERT_STRING("Hello Home", s1);
+}
+
+void test_addLastWordsSecondStringToFirstString_oneWordInStrings() {
+    char s1[MAX_STRING_SIZE] = "Hello";
+    char s2[MAX_STRING_SIZE] = "";
+
+    addLastWordsSecondStringToFirstString(s1, s2, 1, 0);
+
+    ASSERT_STRING("Hello", s1);
+}
+
+void test_addLastWordsSecondStringToFirstString_emptyStrings() {
+    char s1[MAX_STRING_SIZE] = "";
+    char s2[MAX_STRING_SIZE] = "";
+
+    addLastWordsSecondStringToFirstString(s1, s2, 0, 0);
+
+    ASSERT_STRING("", s1);
+    ASSERT_STRING("", s2);
+}
+
+void test_addLastWordsSecondStringToFirstString_secondStringMoreFirstString() {
+    char s1[MAX_STRING_SIZE] = "Cat Home";
+    char s2[MAX_STRING_SIZE] = "Hello Fucking World Bye";
+
+    addLastWordsSecondStringToFirstString(s1, s2, 2, 4);
+
+    ASSERT_STRING("Cat Home World Bye", s1);
+}
+
+void test_addLastWordsSecondStringToFirstString() {
+    test_addLastWordsSecondStringToFirstString_secondStringMoreFirstString();
+    test_addLastWordsSecondStringToFirstString_firstStringMoreSecond();
+    test_addLastWordsSecondStringToFirstString_oneWordInFirst();
+    test_addLastWordsSecondStringToFirstString_oneWordInStrings();
+    test_addLastWordsSecondStringToFirstString_emptyStrings();
+}
 
 //----------------------------------------19----------------------------------------------
 

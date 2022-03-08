@@ -294,30 +294,55 @@ bool hasEqualWords(char *s) {
 
 //----------------------------------------18----------------------------------------------
 
+void addLastWordsSecondStringToFirstString_(char *s1, char *s2, size_t size1, size_t size2) {
+    size_t difference = size1 - size2;
 
+    char *beginSearch = getEndOfString(s1) - 1;
+    wordDescriptor w;
+    while (difference--) {
+        getWordReverse(beginSearch, s1 - 1, &w);
+
+        beginSearch -= w.end - w.begin + 1;
+        beginSearch = findNonSpaceReverse(beginSearch, s1 - 1);
+    }
+    char *endS2 = getEndOfString(s2);
+    *endS2++ = ' ';
+
+    *copy(w.begin, getEndOfString(s1), endS2) = '\0';
+}
+
+void addLastWordsSecondStringToFirstString(char *s1, char *s2, size_t size1, size_t size2) {
+    if (size1 == size2)
+        return;
+
+    if (size1 > size2)
+        addLastWordsSecondStringToFirstString_(s1, s2, size1, size2);
+    else
+        addLastWordsSecondStringToFirstString_(s2, s1, size2, size1);
+}
 
 //----------------------------------------19----------------------------------------------
 
 bool areLettersFirstWordInSecondString(char *word, char *s) {
     if (*word == '\0' || *s == '\0')
-        return false;
+        return 0;
 
     bool isLetterInString[255];
     for (int i = 0; i < 255; i++)
-        isLetterInString[i] = false;
+        isLetterInString[i] = 0;
 
     while (*s != '\0') {
         if (isalpha(*s) && !isLetterInString[*s])
-            isLetterInString[*s] = true;
+            isLetterInString[*s] = 1;
         s++;
     }
 
     while (*word != '\0') {
         if (!isLetterInString[*word])
-            return false;
+            return 0;
 
         word++;
     }
 
-    return true;
+    return 1;
 }
