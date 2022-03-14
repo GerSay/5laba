@@ -170,3 +170,6 @@ void varNine(int *a, size_t sizeA, int *b, size_t sizeB, int *c, size_t *sizeC) 
         else
             c[(*sizeC)++] = b[iB++];
 }
+
+///////////////////////////////////////////////////////////////////////////////////////
+

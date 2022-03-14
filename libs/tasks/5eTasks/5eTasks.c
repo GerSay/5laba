@@ -23,14 +23,6 @@ void assertString(const char *expected, char *got, char const *fileName,
         fprintf(stderr, "%s - OK\n", funcName);
 }
 
-int main() {
-    char s1[] = "Hello";
-    char s2[] = "World";
-    assertString(s1, s2, "digitToStartTransform.h", "test_digitToStartTransform_oneWord", 30);
-
-    return 0;
-}
-
 //----------------------------------------2-----------------------------------------------
 
 void removeExtraSpaces(char *s) {

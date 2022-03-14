@@ -26,6 +26,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vector/vector.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/data_structures/vector/vector.c.obj"
   "C:/Users/krytm/CLionProjects/workProject/libs/data_structures/vectorVoid/vectorVoid.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/data_structures/vectorVoid/vectorVoid.c.obj"
   "C:/Users/krytm/CLionProjects/workProject/libs/govnocode/DiscMath/DiscMath.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.obj"
+  "C:/Users/krytm/CLionProjects/workProject/libs/govnocode/DiscMath/lr_1.1/lr_1.1.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.obj"
   "C:/Users/krytm/CLionProjects/workProject/libs/govnocode/whoAreKB/whoAreKB.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/govnocode/whoAreKB/whoAreKB.c.obj"
   "C:/Users/krytm/CLionProjects/workProject/libs/tasks/5dTasks/5dTasks.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.obj"
   "C:/Users/krytm/CLionProjects/workProject/libs/tasks/5eTasks/5eTasks.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/workProject.dir/libs/tasks/5eTasks/5eTasks.c.obj"

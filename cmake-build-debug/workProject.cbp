@@ -230,6 +230,14 @@
 		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/govnocode/DiscMath/DiscMath.h">
 			<Option target="workProject"/>
 		</Unit>
+		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/govnocode/DiscMath/lr_1.1/lr_1.1.c">
+			<Option target="workProject"/>
+			<Option target="str"/>
+		</Unit>
+		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/govnocode/DiscMath/lr_1.1/lr_1.1.h">
+			<Option target="workProject"/>
+			<Option target="str"/>
+		</Unit>
 		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/govnocode/whoAreKB/whoAreKB.c">
 			<Option target="workProject"/>
 		</Unit>

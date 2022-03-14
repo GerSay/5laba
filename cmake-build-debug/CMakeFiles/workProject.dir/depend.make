@@ -72,6 +72,10 @@ CMakeFiles/workProject.dir/libs/data_structures/vectorVoid/vectorVoid.c.obj: \
 CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.obj: \
  ../libs/govnocode/DiscMath/DiscMath.c \
  ../libs/govnocode/DiscMath/DiscMath.h
+CMakeFiles/workProject.dir/libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.obj: \
+ ../libs/algorithms/base/base.h \
+ ../libs/govnocode/DiscMath/lr_1.1/lr_1.1.c \
+ ../libs/govnocode/DiscMath/lr_1.1/lr_1.1.h
 CMakeFiles/workProject.dir/libs/govnocode/whoAreKB/whoAreKB.c.obj: \
  ../libs/govnocode/whoAreKB/whoAreKB.c \
  ../libs/govnocode/whoAreKB/whoAreKB.h
@@ -86,4 +90,6 @@ CMakeFiles/workProject.dir/libs/tasks/5eTasks/5eTasks.c.obj: \
  ../libs/tasks/5eTasks/5eTasks.c \
  ../libs/tasks/5eTasks/5eTasks.h
 CMakeFiles/workProject.dir/main.c.obj: \
+ ../libs/algorithms/base/base.h \
+ ../libs/govnocode/DiscMath/lr_1.1/lr_1.1.h \
  ../main.c

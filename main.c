@@ -3,8 +3,8 @@
 #include <stdbool.h>
 #include <time.h>
 
-#include "libs/algorithms/array/array.h"
 #include "libs/algorithms/base/base.h"
+#include "libs/govnocode/DiscMath/lr_1.1/lr_1.1.h"
 
 
 #define TIME_TEST(testCode, time) {             \
@@ -15,9 +15,14 @@
     time = (double) sort_time / CLOCKS_PER_SEC; \
 }
 
+/*
 #define ARRAY_SIZE(a) sizeof(a) / sizeof(a[0])
+*/
 
 #define DECREASE_FACTOR 1.24733
+
+#define SEAD 10000
+
 
 typedef struct sortFunc {
     void (*sort) (int *a, size_t n);
@@ -91,7 +96,7 @@ void selectionSort(int *a, size_t n) {
 }
 
 void insertionSort(int *a, size_t n) {
-    int newElement,
+    int newElement;
     size_t location;
     for (size_t i = 1; i < n; i++) {
         newElement = a[i];
@@ -132,7 +137,28 @@ void shellSort(int *a, size_t n) {
 
 //////////////////////////////////////////////////////////////////////////
 
-void timeExperiment() {
+void generateRandomArray(int *a, size_t n) {
+    srand(time(NULL));
+    for (size_t i = 0; i < n; i++) {
+        a[i] = rand() % SEAD;
+        printf("%d ", a[i]);
+    }
+    printf("\n");
+}
+
+void generateOrderedArray(int *a, size_t n) {
+    srand(time(NULL));
+    a[0] = rand() % SEAD;
+    for (size_t i = 1; i < n; i++) {
+        a[i] = rand() % SEAD + 1;
+        srand(a[i]);
+        printf("%d ", a[i]);
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////
+
+/*void timeExperiment() {
     //описание функций сортировки
     sortFunc sorts[] = {
             {selectionSort, "selectionSort"},
@@ -162,7 +188,7 @@ void timeExperiment() {
                 static char filename[128];
                 sprintf(filename, "%s_%s_time",
                         sorts[i].name, generatingFuncs[j].name);
-                checkTime(sorts[i].name, generatingSuncs[j].generate,
+                checkTime(sorts[i].name, generatingFuncs[j].generate,
                           size, filename);
             }
         }
@@ -189,10 +215,21 @@ void timeExperiment() {
 
         exit(1);
     }
-}
+}*/
+/*
 
 int main() {
-    timeExperiment();
+    int a[100];
+    generateRandomArray(a, 100);
+    generateOrderedArray(a, 100);
+
+
+    return 0;
+}*/
+
+int main() {
+    task_4();
+    task_5();
 
     return 0;
 }

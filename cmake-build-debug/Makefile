@@ -47,10 +47,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Users\krytm\Desktop\Новая папка\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Users\krytm\Desktop\dirt\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Users\krytm\Desktop\Новая папка\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Users\krytm\Desktop\dirt\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\krytm\CLionProjects\workProject\cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Users\krytm\Desktop\Новая папка\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Users\krytm\Desktop\dirt\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -77,7 +77,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Users\krytm\Desktop\Новая папка\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Users\krytm\Desktop\dirt\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -600,6 +600,33 @@ libs/govnocode/DiscMath/DiscMath.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/govnocode/DiscMath/DiscMath.c.s
 .PHONY : libs/govnocode/DiscMath/DiscMath.c.s
 
+libs/govnocode/DiscMath/lr_1.1/lr_1.1.obj: libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.obj
+.PHONY : libs/govnocode/DiscMath/lr_1.1/lr_1.1.obj
+
+# target to build an object file
+libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.obj
+.PHONY : libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.obj
+
+libs/govnocode/DiscMath/lr_1.1/lr_1.1.i: libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.i
+.PHONY : libs/govnocode/DiscMath/lr_1.1/lr_1.1.i
+
+# target to preprocess a source file
+libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.i
+.PHONY : libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.i
+
+libs/govnocode/DiscMath/lr_1.1/lr_1.1.s: libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.s
+.PHONY : libs/govnocode/DiscMath/lr_1.1/lr_1.1.s
+
+# target to generate assembly for a file
+libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.s
+.PHONY : libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.s
+
 libs/govnocode/whoAreKB/whoAreKB.obj: libs/govnocode/whoAreKB/whoAreKB.c.obj
 .PHONY : libs/govnocode/whoAreKB/whoAreKB.obj
 
@@ -763,6 +790,9 @@ help:
 	@echo ... libs/govnocode/DiscMath/DiscMath.obj
 	@echo ... libs/govnocode/DiscMath/DiscMath.i
 	@echo ... libs/govnocode/DiscMath/DiscMath.s
+	@echo ... libs/govnocode/DiscMath/lr_1.1/lr_1.1.obj
+	@echo ... libs/govnocode/DiscMath/lr_1.1/lr_1.1.i
+	@echo ... libs/govnocode/DiscMath/lr_1.1/lr_1.1.s
 	@echo ... libs/govnocode/whoAreKB/whoAreKB.obj
 	@echo ... libs/govnocode/whoAreKB/whoAreKB.i
 	@echo ... libs/govnocode/whoAreKB/whoAreKB.s
