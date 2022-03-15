@@ -79,6 +79,12 @@ CMakeFiles/workProject.dir/libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.obj: \
 CMakeFiles/workProject.dir/libs/govnocode/whoAreKB/whoAreKB.c.obj: \
  ../libs/govnocode/whoAreKB/whoAreKB.c \
  ../libs/govnocode/whoAreKB/whoAreKB.h
+CMakeFiles/workProject.dir/libs/tasks/5cTasks/5cTasks.c.obj: \
+ ../libs/algorithms/algorithms.h \
+ ../libs/algorithms/array/array.h \
+ ../libs/algorithms/base/base.h \
+ ../libs/tasks/5cTasks/5cTasks.c \
+ ../libs/tasks/5cTasks/5cTasks.h
 CMakeFiles/workProject.dir/libs/tasks/5dTasks/5dTasks.c.obj: \
  ../libs/algorithms/array/array.h \
  ../libs/algorithms/base/base.h \
@@ -90,6 +96,9 @@ CMakeFiles/workProject.dir/libs/tasks/5eTasks/5eTasks.c.obj: \
  ../libs/tasks/5eTasks/5eTasks.c \
  ../libs/tasks/5eTasks/5eTasks.h
 CMakeFiles/workProject.dir/main.c.obj: \
+ ../libs/algorithms/algorithms.h \
+ ../libs/algorithms/array/array.h \
  ../libs/algorithms/base/base.h \
  ../libs/govnocode/DiscMath/lr_1.1/lr_1.1.h \
+ ../libs/tasks/5cTasks/5cTasks.h \
  ../main.c

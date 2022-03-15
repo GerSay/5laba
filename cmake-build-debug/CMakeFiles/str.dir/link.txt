@@ -1,2 +1,2 @@
-C:\MinGW\bin\ar.exe qc libstr.a CMakeFiles/str.dir/libs/data_structures/string_/string_.c.obj CMakeFiles/str.dir/libs/data_structures/tests/5eTasks_tests/5eTasks_tests.c.obj CMakeFiles/str.dir/libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.obj
+C:\MinGW\bin\ar.exe qc libstr.a CMakeFiles/str.dir/libs/data_structures/string_/string_.c.obj CMakeFiles/str.dir/libs/data_structures/tests/5eTasks_tests/5eTasks_tests.c.obj CMakeFiles/str.dir/libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.obj CMakeFiles/str.dir/libs/tasks/5cTasks/5cTasks.c.obj
 C:\MinGW\bin\ranlib.exe libstr.a

@@ -6,21 +6,47 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/krytm/CLionProjects/workProject/libs/algorithms/algorithms.h
+
+C:/Users/krytm/CLionProjects/workProject/libs/algorithms/array/array.h
+stddef.h
+-
+stdio.h
+-
+limits.h
+-
+assert.h
+-
+stdbool.h
+-
+math.h
+-
+stdlib.h
+-
+
 C:/Users/krytm/CLionProjects/workProject/libs/algorithms/base/base.h
 stdio.h
 -
 
-C:/Users/krytm/CLionProjects/workProject/libs/govnocode/DiscMath/lr_1.1/lr_1.1.c
-lr_1.1.h
-C:/Users/krytm/CLionProjects/workProject/libs/govnocode/DiscMath/lr_1.1/lr_1.1.h
+C:/Users/krytm/CLionProjects/workProject/libs/tasks/5cTasks/5cTasks.c
+5cTasks.h
+C:/Users/krytm/CLionProjects/workProject/libs/tasks/5cTasks/5cTasks.h
 
-C:/Users/krytm/CLionProjects/workProject/libs/govnocode/DiscMath/lr_1.1/lr_1.1.h
-memory.h
+C:/Users/krytm/CLionProjects/workProject/libs/tasks/5cTasks/5cTasks.h
+stdlib.h
 -
 stdio.h
 -
 stdbool.h
 -
-../../../../libs/algorithms/base/base.h
+time.h
+-
+memory.h
+-
+../../../libs/algorithms/base/base.h
 C:/Users/krytm/CLionProjects/workProject/libs/algorithms/base/base.h
+../../../libs/algorithms/array/array.h
+C:/Users/krytm/CLionProjects/workProject/libs/algorithms/array/array.h
+../../../libs/algorithms/algorithms.h
+C:/Users/krytm/CLionProjects/workProject/libs/algorithms/algorithms.h
 

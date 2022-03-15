@@ -651,6 +651,33 @@ libs/govnocode/whoAreKB/whoAreKB.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/govnocode/whoAreKB/whoAreKB.c.s
 .PHONY : libs/govnocode/whoAreKB/whoAreKB.c.s
 
+libs/tasks/5cTasks/5cTasks.obj: libs/tasks/5cTasks/5cTasks.c.obj
+.PHONY : libs/tasks/5cTasks/5cTasks.obj
+
+# target to build an object file
+libs/tasks/5cTasks/5cTasks.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/tasks/5cTasks/5cTasks.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/libs/tasks/5cTasks/5cTasks.c.obj
+.PHONY : libs/tasks/5cTasks/5cTasks.c.obj
+
+libs/tasks/5cTasks/5cTasks.i: libs/tasks/5cTasks/5cTasks.c.i
+.PHONY : libs/tasks/5cTasks/5cTasks.i
+
+# target to preprocess a source file
+libs/tasks/5cTasks/5cTasks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/tasks/5cTasks/5cTasks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/libs/tasks/5cTasks/5cTasks.c.i
+.PHONY : libs/tasks/5cTasks/5cTasks.c.i
+
+libs/tasks/5cTasks/5cTasks.s: libs/tasks/5cTasks/5cTasks.c.s
+.PHONY : libs/tasks/5cTasks/5cTasks.s
+
+# target to generate assembly for a file
+libs/tasks/5cTasks/5cTasks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workProject.dir\build.make CMakeFiles/workProject.dir/libs/tasks/5cTasks/5cTasks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/libs/tasks/5cTasks/5cTasks.c.s
+.PHONY : libs/tasks/5cTasks/5cTasks.c.s
+
 libs/tasks/5dTasks/5dTasks.obj: libs/tasks/5dTasks/5dTasks.c.obj
 .PHONY : libs/tasks/5dTasks/5dTasks.obj
 
@@ -796,6 +823,9 @@ help:
 	@echo ... libs/govnocode/whoAreKB/whoAreKB.obj
 	@echo ... libs/govnocode/whoAreKB/whoAreKB.i
 	@echo ... libs/govnocode/whoAreKB/whoAreKB.s
+	@echo ... libs/tasks/5cTasks/5cTasks.obj
+	@echo ... libs/tasks/5cTasks/5cTasks.i
+	@echo ... libs/tasks/5cTasks/5cTasks.s
 	@echo ... libs/tasks/5dTasks/5dTasks.obj
 	@echo ... libs/tasks/5dTasks/5dTasks.i
 	@echo ... libs/tasks/5dTasks/5dTasks.s

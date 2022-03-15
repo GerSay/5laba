@@ -104,11 +104,25 @@ CMakeFiles/str.dir/libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/str.dir/libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.s"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krytm\CLionProjects\workProject\libs\govnocode\DiscMath\lr_1.1\lr_1.1.c -o CMakeFiles\str.dir\libs\govnocode\DiscMath\lr_1.1\lr_1.1.c.s
 
+CMakeFiles/str.dir/libs/tasks/5cTasks/5cTasks.c.obj: CMakeFiles/str.dir/flags.make
+CMakeFiles/str.dir/libs/tasks/5cTasks/5cTasks.c.obj: ../libs/tasks/5cTasks/5cTasks.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/str.dir/libs/tasks/5cTasks/5cTasks.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\str.dir\libs\tasks\5cTasks\5cTasks.c.obj -c C:\Users\krytm\CLionProjects\workProject\libs\tasks\5cTasks\5cTasks.c
+
+CMakeFiles/str.dir/libs/tasks/5cTasks/5cTasks.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/str.dir/libs/tasks/5cTasks/5cTasks.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krytm\CLionProjects\workProject\libs\tasks\5cTasks\5cTasks.c > CMakeFiles\str.dir\libs\tasks\5cTasks\5cTasks.c.i
+
+CMakeFiles/str.dir/libs/tasks/5cTasks/5cTasks.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/str.dir/libs/tasks/5cTasks/5cTasks.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krytm\CLionProjects\workProject\libs\tasks\5cTasks\5cTasks.c -o CMakeFiles\str.dir\libs\tasks\5cTasks\5cTasks.c.s
+
 # Object files for target str
 str_OBJECTS = \
 "CMakeFiles/str.dir/libs/data_structures/string_/string_.c.obj" \
 "CMakeFiles/str.dir/libs/data_structures/tests/5eTasks_tests/5eTasks_tests.c.obj" \
-"CMakeFiles/str.dir/libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.obj"
+"CMakeFiles/str.dir/libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.obj" \
+"CMakeFiles/str.dir/libs/tasks/5cTasks/5cTasks.c.obj"
 
 # External object files for target str
 str_EXTERNAL_OBJECTS =
@@ -116,9 +130,10 @@ str_EXTERNAL_OBJECTS =
 libstr.a: CMakeFiles/str.dir/libs/data_structures/string_/string_.c.obj
 libstr.a: CMakeFiles/str.dir/libs/data_structures/tests/5eTasks_tests/5eTasks_tests.c.obj
 libstr.a: CMakeFiles/str.dir/libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.obj
+libstr.a: CMakeFiles/str.dir/libs/tasks/5cTasks/5cTasks.c.obj
 libstr.a: CMakeFiles/str.dir/build.make
 libstr.a: CMakeFiles/str.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C static library libstr.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\krytm\CLionProjects\workProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libstr.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\str.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\str.dir\link.txt --verbose=$(VERBOSE)
 

@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/krytm/CLionProjects/workProject/libs/data_structures/string_/string_.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/str.dir/libs/data_structures/string_/string_.c.obj"
   "C:/Users/krytm/CLionProjects/workProject/libs/data_structures/tests/5eTasks_tests/5eTasks_tests.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/str.dir/libs/data_structures/tests/5eTasks_tests/5eTasks_tests.c.obj"
   "C:/Users/krytm/CLionProjects/workProject/libs/govnocode/DiscMath/lr_1.1/lr_1.1.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/str.dir/libs/govnocode/DiscMath/lr_1.1/lr_1.1.c.obj"
+  "C:/Users/krytm/CLionProjects/workProject/libs/tasks/5cTasks/5cTasks.c" "C:/Users/krytm/CLionProjects/workProject/cmake-build-debug/CMakeFiles/str.dir/libs/tasks/5cTasks/5cTasks.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

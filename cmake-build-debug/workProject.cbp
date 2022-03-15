@@ -244,6 +244,14 @@
 		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/govnocode/whoAreKB/whoAreKB.h">
 			<Option target="workProject"/>
 		</Unit>
+		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/tasks/5cTasks/5cTasks.c">
+			<Option target="workProject"/>
+			<Option target="str"/>
+		</Unit>
+		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/tasks/5cTasks/5cTasks.h">
+			<Option target="workProject"/>
+			<Option target="str"/>
+		</Unit>
 		<Unit filename="C:/Users/krytm/CLionProjects/workProject/libs/tasks/5dTasks/5dTasks.c">
 			<Option target="workProject"/>
 		</Unit>

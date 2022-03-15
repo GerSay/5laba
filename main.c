@@ -1,3 +1,4 @@
+/*
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -15,9 +16,7 @@
     time = (double) sort_time / CLOCKS_PER_SEC; \
 }
 
-/*
 #define ARRAY_SIZE(a) sizeof(a) / sizeof(a[0])
-*/
 
 #define DECREASE_FACTOR 1.24733
 
@@ -65,75 +64,7 @@ void checkTime(void (*sortFunc) (int *, size_t),
 
 
 ///////////////////////////////////////////////////////////////////////
-void exchangeSort(int *a, size_t n) {
-    int tmp;
-    bool noSwap;
 
-    for (size_t i = n; i > 0; i--) {
-        noSwap = 1;
-        for (size_t j = 0; j + 1 < i; j++) {
-            if (a[j] > a[j + 1])
-                tmp = a[j];
-                a[j] = a[j + 1];
-                a[j + 1] = tmp;
-                noSwap = 0;
-            }
-        if (noSwap == 1)
-            break;
-    }
-}
-
-void selectionSort(int *a, size_t n) {
-    for (size_t i = 0; i < n; i++) {
-        size_t minPos = i;
-        for (size_t j = i + 1; j < n; j++)
-            if (a[minPos] > a[j])
-                minPos = j;
-        int tmp = a[minPos];
-        a[minPos] = a[i];
-        a[i] = tmp;
-    }
-}
-
-void insertionSort(int *a, size_t n) {
-    int newElement;
-    size_t location;
-    for (size_t i = 1; i < n; i++) {
-        newElement = a[i];
-        location = i - 1;
-        while(location >= 0 && a[location] > newElement) {
-            a[location + 1] = a[location];
-            location--;
-        }
-        a[location + 1] = newElement;
-    }
-}
-
-void combSort(int *a, size_t n) {
-    size_t t = n - 1;
-    while (t > 0) {
-        for (size_t i = 0, j = t; j < n; i++, j++)
-            if (a[i] > a[j])
-                swapU(&a[i], &a[j], sizeof(a));
-        t /= DECREASE_FACTOR;
-    }
-}
-
-void shellSort(int *a, size_t n) {
-    int tmp;
-    for (size_t step = n / 2; step > 0; step /= 2)
-        for (size_t i = step; i < n; i++) {
-            tmp = a[i];
-            size_t j = i;
-            for (; j >= step; j -= step) {
-                if (tmp < a[j - step])
-                    a[j] = a[j - step];
-                else
-                    break;
-            }
-            a[j] = tmp;
-        }
-}
 
 //////////////////////////////////////////////////////////////////////////
 
@@ -157,8 +88,9 @@ void generateOrderedArray(int *a, size_t n) {
 }
 
 ///////////////////////////////////////////////////////////////////////////
-
-/*void timeExperiment() {
+*/
+/*
+void timeExperiment() {
     //описание функций сортировки
     sortFunc sorts[] = {
             {selectionSort, "selectionSort"},
@@ -215,8 +147,8 @@ void generateOrderedArray(int *a, size_t n) {
 
         exit(1);
     }
-}*/
-/*
+}*//*
+
 
 int main() {
     int a[100];
@@ -225,11 +157,13 @@ int main() {
 
 
     return 0;
-}*/
+}
+*/
+
+#include "libs/tasks/5cTasks/5cTasks.h"
 
 int main() {
-    task_4();
-    task_5();
+    timeExperiment();
 
     return 0;
 }
