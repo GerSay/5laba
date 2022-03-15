@@ -325,5 +325,36 @@ void  timeExperimentForNoSquareComplexity() {
         }
         printf("\n");
     }
+}
 
+void  task_two() {
+    // описание функций сортировки
+    SortFunc sorts[] = {
+            {selectionSort, "selectionSort"},
+    };
+    const unsigned FUNCS_N = ARRAY_SIZE(sorts);
+
+    // описание функций генерации
+    GeneratingFunc generatingFuncs[] = {
+            {generateRandomArray,      "random"},
+    };
+    const unsigned CASES_N = ARRAY_SIZE(generatingFuncs);
+
+    // запись статистики в файл
+    for (size_t size = SEAD; size <= SEAD * COUNT_REPEAT; size += SEAD) {
+        printf(" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n");
+        printf(" Size : %d\n", size);
+        for (size_t i = 0; i < FUNCS_N; i++) {
+            for (size_t j = 0; j < CASES_N; j++) {
+                // генерация имени файла
+                static char filename[128];
+                sprintf(filename, "taskTwo_%s_%s_time",
+                        sorts[i].name, generatingFuncs[j].name);
+                checkTime(sorts[i].sort,
+                          generatingFuncs[j].generate,
+                          size, filename);
+            }
+        }
+        printf("\n");
+    }
 }
