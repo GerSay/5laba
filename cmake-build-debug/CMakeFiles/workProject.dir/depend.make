@@ -99,6 +99,5 @@ CMakeFiles/workProject.dir/main.c.obj: \
  ../libs/algorithms/algorithms.h \
  ../libs/algorithms/array/array.h \
  ../libs/algorithms/base/base.h \
- ../libs/govnocode/DiscMath/lr_1.1/lr_1.1.h \
  ../libs/tasks/5cTasks/5cTasks.h \
  ../main.c

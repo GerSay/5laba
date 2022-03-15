@@ -15,8 +15,8 @@
 
 #define BITS_TEP 8
 #define NUMBER_STEP 255
-#define SEAD 10000
-#define BUFFER_SIZE 100000
+#define SEAD 500000
+#define BUFFER_SIZE 5000000
 #define COUNT_REPEAT 10
 
 #define TIME_TEST(testCode, time) { \
@@ -49,5 +49,7 @@ typedef struct number {
 
 
 void timeExperiment();
+
+void  timeExperimentForNoSquareComplexity();
 
 #endif //WORKPROJECT_5CTASKS_H

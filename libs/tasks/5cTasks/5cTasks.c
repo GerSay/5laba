@@ -1,9 +1,10 @@
 #include "5cTasks.h"
 
 bool isOrdered(const int *a, size_t n) {
-    for (size_t i = 1; i < n; i++)
+    for (size_t i = 1; i < n; i++) {
         if (a[i] < a[i - 1])
             return 0;
+    }
 
     return 1;
 }
@@ -30,7 +31,7 @@ void checkTime(void (*sortFunc )(int *, size_t), void (*generateFunc )(int *, si
 
         // запись в файл
         char filename[256];
-        sprintf(filename, "C:\\Users\\krytm\\Desktop\\%s.csv", experimentName);
+        sprintf(filename, "C:\\Users\\krytm\\Desktop\\time\\%s.csv", experimentName);
         FILE *f = fopen(filename, "a");
         if (f == NULL) {
             printf("FileOpenError%s", filename);
@@ -42,87 +43,68 @@ void checkTime(void (*sortFunc )(int *, size_t), void (*generateFunc )(int *, si
         printf(" Wrong !\n");
 
         // вывод массива, который не смог быть отсортирован
-        printf("\n");
         outputArray_(innerBuffer, size);
-        printf("\n");
 
         exit(1);
     }
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-void exchangeSort(int *a, size_t n) {
-    int tmp;
-    bool noSwap;
-
-    for (size_t i = n; i > 0; i--) {
-        noSwap = 1;
-        for (size_t j = 0; j + 1 < i; j++) {
-            if (a[j] > a[j + 1])
-                tmp = a[j];
-            a[j] = a[j + 1];
-            a[j + 1] = tmp;
-            noSwap = 0;
-        }
-        if (noSwap == 1)
-            break;
-    }
-}
-
 void selectionSort(int *a, size_t n) {
     for (size_t i = 0; i < n; i++) {
-        size_t minPos = i;
+        size_t minIndex = i;
+
         for (size_t j = i + 1; j < n; j++)
-            if (a[minPos] > a[j])
-                minPos = j;
-        int tmp = a[minPos];
-        a[minPos] = a[i];
-        a[i] = tmp;
+            if (a[j] < a[minIndex])
+                minIndex = j;
+
+        swapU(&a[i], &a[minIndex], sizeof(int));
     }
 }
 
 void insertionSort(int *a, size_t n) {
-    int newElement;
-    size_t location;
     for (size_t i = 1; i < n; i++) {
-        newElement = a[i];
-        location = i - 1;
-        while(location >= 0 && a[location] > newElement) {
-            a[location + 1] = a[location];
-            location--;
+        int t = a[i];
+        size_t j = i;
+        while (j > 0 && t < a[j - 1]) {
+            a[j] = a[j - 1];
+            j--;
         }
-        a[location + 1] = newElement;
+        a[j] = t;
     }
 }
 
-void combSort(int *a, size_t n) {
-    size_t t = n - 1;
-    while (t > 0) {
-        for (size_t i = 0, j = t; j < n; i++, j++)
-            if (a[i] > a[j])
-                swapU(&a[i], &a[j], sizeof(a));
-        t /= DECREASE_FACTOR;
+void bubbleSort(int *a, size_t n) {
+    for (size_t i = 0; i < n; i++) {
+        for (size_t j = 0; j < n - 1; j++)
+            if (a[j] > a[j + 1])
+                swapU(&a[j], &a[j + 1], sizeof(int));
+    }
+}
+
+void combSort(int *a, size_t size) {
+    size_t step = size;
+    int swapped = 1;
+    while (step > 1 || swapped) {
+        if (step > 1)
+            step /= DECREASE_FACTOR;
+        swapped = 0;
+        for (size_t i = 0, j = i + step; j < size; i++, j++)
+            if (a[i] > a[j]) {
+                swapU(&a[i], &a[j], sizeof(int));
+                swapped = 1;
+            }
     }
 }
 
 void shellSort(int *a, size_t n) {
-    int tmp;
-    for (size_t step = n / 2; step > 0; step /= 2)
-        for (size_t i = step; i < n; i++) {
-            tmp = a[i];
-            size_t j = i;
-            for (; j >= step; j -= step) {
-                if (tmp < a[j - step])
-                    a[j] = a[j - step];
-                else
-                    break;
+    for (size_t i = n / 2; i > 0; i /= 2)
+        for (size_t j = i; j < n; j++)
+            for (int k = j - i; k >= 0 && a[k] > a[k + i]; k -= i) {
+                int t = a[k];
+                a[k] = a[k + i];
+                a[k + i] = t;
             }
-            a[j] = tmp;
-        }
 }
-
-
 
 void digitSort(int *a, size_t n) {
     number numbers[n];
@@ -155,26 +137,24 @@ void digitSort(int *a, size_t n) {
     }
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 void generateRandomArray(int *a, size_t n) {
     srand(time(0));
-    for (size_t i = 0; i < n; ++i)
+    for (size_t i = 0; i < n; i++)
         a[i] = rand() % 100000;
 }
 
 void generateOrderedArray(int *a, size_t n) {
-    for (size_t i = 0; i < n; ++i)
+    for (size_t i = 0; i < n; i++)
         a[i] = i;
 }
 
 void generateOrderedBackwards(int *a, size_t n) {
-    for (int i = 0; i < n; ++i)
+    for (size_t i = 0; i < n; ++i)
         a[i] = n - i;
 }
 
-void merge(const int *a, const int n,
-           const int *b, const int m, int *c) {
+void merge(int *a, size_t n, int *b, size_t m, int *c) {
     int i = 0, j = 0;
     while (i < n || j < m)
         if (j == m || i < n && a[i] < b[j]) {
@@ -191,21 +171,15 @@ void mergeSort_(int *source, int l, int r, int *buffer) {
     if (n <= 1)
         return;
 
-    // определяем середину последовательности
-    // и рекурсивно вызываем функцию сортировки для каждой половины
     int m = (l + r) / 2;
     mergeSort_(source, l, m, buffer);
     mergeSort_(source, m, r, buffer);
 
-    // производим слияние элементов, результат сохраняем в буфере
     merge(source + l, m - l, source + m, r - m, buffer);
-    // переписываем сформированную последовательность с буфера
-    // в исходный массив
     memcpy(source + l, buffer, sizeof(int) * n);
 }
 
 void mergeSort(int *a, size_t n) {
-    // создаём буфер из которого будут браться элементы массива
     int *buffer = (int *) malloc(sizeof(int) * n);
     mergeSort_(a, 0, n, buffer);
     free(buffer);
@@ -234,7 +208,7 @@ size_t getLeftChildIndex(size_t parentIndex) {
     return 2 * parentIndex + 1;
 }
 
-size_t getMinChildIndex(const int *a, size_t size, size_t parentIndex) {
+size_t getMinChildIndex(int *a, size_t size, size_t parentIndex) {
     size_t minChildIndex = getLeftChildIndex(parentIndex);
     size_t rightChildIndex = minChildIndex + 1;
     if (hasRightChild(parentIndex, size))
@@ -265,20 +239,61 @@ void heapSort(int *a, size_t size) {
         removeMinHeap(a, &heapSize);
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 void timeExperiment() {
     // описание функций сортировки
     SortFunc sorts[] = {
             {selectionSort, "selectionSort"},
             {insertionSort, "insertionSort"},
-            {exchangeSort,    "exchangeSort"},
+            {bubbleSort,    "bubbleSort"},
             {combSort,      "combSort"},
             {shellSort,     "shellSort"},
             {digitSort,     "digitSort"},
             {mergeSort,     "mergeSort"},
             {heapSort,      "heapSort"},
-            // вы добавите свои сортировки
+    };
+    const unsigned FUNCS_N = ARRAY_SIZE(sorts);
+
+    // описание функций генерации
+    GeneratingFunc generatingFuncs[] = {
+            // генерируется случайный массив
+            {generateRandomArray,      "random"},
+            // генерируется массив 0, 1, 2, ..., n - 1
+            {generateOrderedArray,     "ordered"},
+            // генерируется массив n - 1, n - 2, ..., 0
+            {generateOrderedBackwards, "orderedBackwards"}
+    };
+    const unsigned CASES_N = ARRAY_SIZE(generatingFuncs);
+
+    // запись статистики в файл
+    for (size_t size = 5000; size <= 50000; size += 5000) {
+        printf(" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n");
+        printf(" Size : %d\n", size);
+        for (size_t i = 0; i < FUNCS_N; i++) {
+            for (size_t j = 0; j < CASES_N; j++) {
+                // генерация имени файла
+                static char filename[128];
+                sprintf(filename, "%s_%s_time",
+                        sorts[i].name, generatingFuncs[j].name);
+                checkTime(sorts[i].sort,
+                          generatingFuncs[j].generate,
+                          size, filename);
+            }
+        }
+        printf("\n");
+    }
+}
+
+void  timeExperimentForNoSquareComplexity() {
+    // описание функций сортировки
+    SortFunc sorts[] = {
+            {combSort,      "combSort"},
+            {shellSort,     "shellSort"},
+/*
+            {digitSort,     "digitSort"},
+*/
+            {mergeSort,     "mergeSort"},
+            {heapSort,      "heapSort"},
     };
     const unsigned FUNCS_N = ARRAY_SIZE(sorts);
 
@@ -297,17 +312,18 @@ void timeExperiment() {
     for (size_t size = SEAD; size <= SEAD * COUNT_REPEAT; size += SEAD) {
         printf(" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n");
         printf(" Size : %d\n", size);
-        for (size_t i = 0; i < FUNCS_N; i++)
+        for (size_t i = 0; i < FUNCS_N; i++) {
             for (size_t j = 0; j < CASES_N; j++) {
                 // генерация имени файла
                 static char filename[128];
-                sprintf(filename, "%s_% s_time",
+                sprintf(filename, "complexity_%s_%s_time",
                         sorts[i].name, generatingFuncs[j].name);
                 checkTime(sorts[i].sort,
                           generatingFuncs[j].generate,
                           size, filename);
             }
-
+        }
         printf("\n");
     }
+
 }
